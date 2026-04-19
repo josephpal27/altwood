@@ -3,7 +3,7 @@ import Button from "../Button"
 const HomeBanner = () => {
     return (
         <>
-            <section className="px-0 relative">
+            <section className="p-0 relative">
                 <img
                     src="/images/banners/home-banner-1.jpg"
                     alt="Home Banner"
@@ -15,7 +15,7 @@ const HomeBanner = () => {
                     absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-black/60
                     px-[7%] py-[4rem]
                 ">
-                    <h1 className="text-white">
+                    <h1 className="text-white text-[3.5rem]">
                         The leading vitrified tiles <br /> company in world
                     </h1>
                     <p className="text-white w-[50%] mt-[1rem]">

@@ -12,14 +12,18 @@ html{
   scroll-behavior: unset !important;
 }
 
+body{
+  background-color: #f7f7f7;
+}
+
 h1, h2, h3, h4, h5, h6{
-  @apply font-clash text-[3.5rem] font-[500] leading-[1.2];
+  @apply font-clash text-[3rem] font-[500] leading-[1.1];
 }
 
 p, span, ul, li, a, label, b, button, input, textarea, select, option{
-  @apply font-inter text-[1.1rem] font-[450]
+  @apply font-inter text-[1.1rem] font-[450] text-gray-700
 }
 
 section{
-  @apply px-[7%]
+  @apply px-[7%] pt-[5rem]
 }
