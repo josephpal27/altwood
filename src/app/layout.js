@@ -1,6 +1,18 @@
-// import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const clash = localFont({
+  src: "/fonts/ClashGrotesk-Variable.woff2",
+  variable: "--font-clash",
+  weight: "100 900",
+});
 
 export const metadata = {
   title: "Altwood - The Best Plywood Manufacturer in India",
@@ -9,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${clash.variable}`}>
       <body>
         <Navbar />
         {children}

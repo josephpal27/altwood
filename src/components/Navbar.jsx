@@ -72,7 +72,7 @@ const Navbar = () => {
                     <img src="/images/logo.png" alt="logo" className="h-10 w-auto z-10" />
 
                     {/* CENTER */}
-                    <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-gray-800 font-medium">
+                    <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-gray-800 font-[600]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
 
