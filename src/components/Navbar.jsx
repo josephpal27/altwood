@@ -55,8 +55,8 @@ const Navbar = () => {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
-        { name: "Services", href: "/services" },
-        { name: "Products", href: "/products" },
+        { name: "Products", href: "/services" },
+        { name: "Contact Us", href: "/products" },
     ];
 
     return (
@@ -97,7 +97,7 @@ const Navbar = () => {
                     {/* RIGHT BUTTON */}
                     <div className="hidden md:block z-10">
                         <button className="flex items-center gap-2 bg-gradient-to-r from-red-700 to-yellow-500 text-white px-5 py-2 rounded-full font-medium shadow hover:opacity-90 transition">
-                            Get in Touch <FiArrowUpRight />
+                            Download Brochure <FiArrowUpRight />
                         </button>
                     </div>
 
@@ -141,7 +141,7 @@ const Navbar = () => {
 
                 <div className="p-6">
                     <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-red-700 to-yellow-500 text-white px-5 py-3 rounded-full font-medium">
-                        Get in Touch <FiArrowUpRight />
+                        Download Brochure <FiArrowUpRight />
                     </button>
                 </div>
             </div>

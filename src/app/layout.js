@@ -8,8 +8,9 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const clash = localFont({
-  src: "/fonts/ClashGrotesk-Variable.woff2",
+const clashGroteskVariable = localFont({
+  // src: "../fonts/ClashGrotesk-Variable.woff2",
+  src: "../../public/fonts/ClashGrotesk-Variable.woff2",
   variable: "--font-clash",
   weight: "100 900",
 });
@@ -21,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${clash.variable}`}>
+    <html lang="en" className={`${inter.variable} ${clashGroteskVariable.variable}`}>
       <body>
         <Navbar />
         {children}
