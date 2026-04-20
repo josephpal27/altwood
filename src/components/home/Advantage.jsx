@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import { MdArrowOutward } from "react-icons/md";
 
 const advantageData = [
     {
@@ -34,7 +35,7 @@ const Advantage = () => {
             ">
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-60 w-full h-full"></div>
+                <div className="absolute inset-0 bg-[#141414] bg-opacity-70 w-full h-full"></div>
 
                 {/* Head */}
                 <div className="flex flex-col items-center relative">
@@ -56,11 +57,11 @@ const Advantage = () => {
                     mt-[3.5rem]
                 ">
                     {advantageData.map((item) => {
-                        return(
-                            <div className="w-[31.5%] overflow-hidden rounded-lg relative group">
-                                <img 
-                                    src={item.image} 
-                                    alt={item.title} 
+                        return (
+                            <div className="w-[31.5%] overflow-hidden rounded-lg relative group" key={item.id}>
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
                                     loading="lazy"
                                     className="w-full transition duration-500 group-hover:scale-105"
                                 />
@@ -68,6 +69,16 @@ const Advantage = () => {
                                     w-full h-full absolute top-0 left-0 flex flex-col justify-end bg-gradient-to-b from-transparent to-black/50
                                     p-[1.5rem] 
                                 ">
+                                    <div className="
+                                        bg-[#6b1930] hover:bg-black rounded-full flex justify-center items-center text-white overflow-hidden
+                                        w-[50px]
+                                        h-[50px]
+                                        text-[1.5rem]
+                                        absolute top-[1rem] right-[1rem]
+                                        scale-0 group-hover:scale-100 transition duration-500 hover:rotate-45
+                                    ">
+                                        <MdArrowOutward />
+                                    </div>
                                     <span className="text-white text-[1.5rem] font-[600] leading-[1.2]">
                                         {item.title}
                                     </span>
@@ -85,7 +96,7 @@ const Advantage = () => {
                 <div className="relative flex justify-center items-center mt-[4rem]">
                     {/* Icon will add here */}
                     <p className="text-center text-white flex items-center gap-[0.6rem]">
-                        Let's make something great work together.  
+                        Let's make something great work together.
                         <Link href="/contact" className="text-white underline">Get Free Quote</Link>
                     </p>
                 </div>

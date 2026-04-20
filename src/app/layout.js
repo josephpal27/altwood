@@ -9,7 +9,6 @@ const inter = Inter({
 });
 
 const clashGroteskVariable = localFont({
-  // src: "../fonts/ClashGrotesk-Variable.woff2",
   src: "../../public/fonts/ClashGrotesk-Variable.woff2",
   variable: "--font-clash",
   weight: "100 900",
