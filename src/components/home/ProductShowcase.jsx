@@ -45,42 +45,41 @@ const ProductShowcase = () => {
             </h4>
 
             {/* Row */}
-            <div className="flex">
+            <div className="flex h-[80dvh] gap-[1rem]">
                 {servicesData.map((item, index) => (
                     <div
                         key={index}
                         onMouseEnter={() => setActive(index)}
                         onMouseLeave={() => setActive(null)}
                         className={`
-              relative rounded-[20px] overflow-hidden cursor-pointer
-              transition-all duration-500 ease-in-out
-              ${active === index ? "flex-[5]" : "flex-[1.5]"}
-            `}
+                            relative rounded-[20px] overflow-hidden cursor-pointer
+                            transition-all duration-500 ease-in-out
+                            ${active === index ? "flex-[5]" : "flex-[1.5]"}
+                        `}
                     >
                         {/* Image */}
                         <img
                             src={item.img}
                             alt={item.title}
                             className={`
-                w-full h-full object-cover
-                transition-transform duration-700
-                ${active === index ? "scale-110" : "scale-100"}
-              `}
+                                w-full h-full object-cover
+                                transition-transform duration-700
+                                ${active === index ? "scale-105" : "scale-100"}
+                            `}
                         />
 
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
                         {/* Content (visible on hover) */}
-                        <div
-                            className={`
-                absolute bottom-0 left-0 w-full p-6 text-white
-                transition-all duration-500
-                ${active === index
-                                    ? "opacity-100 translate-y-0"
-                                    : "opacity-0 translate-y-10"
-                                }
-              `}
+                        <div className={`
+                            absolute bottom-0 left-0 w-full p-6 text-white
+                            transition-all duration-500
+                            ${active === index
+                                ? "opacity-100 translate-y-0"
+                                : "opacity-0 translate-y-10"
+                            }
+                        `}
                         >
                             <h3 className="text-xl font-semibold mb-1">
                                 {item.title}
@@ -91,20 +90,19 @@ const ProductShowcase = () => {
                         </div>
 
                         {/* Vertical Text (default state) */}
-                        <div
-                            className={`
-                absolute inset-0 flex items-center justify-center
-                text-white text-[14px] tracking-widest font-medium
-                transition-all duration-500
-                ${active === index
-                                    ? "opacity-0 scale-90"
-                                    : "opacity-100 scale-100"
-                                }
-              `}
+                        <di className={`
+                            absolute inset-0 flex items-center justify-center
+                            text-white text-[14px] tracking-widest font-medium
+                            transition-all duration-500
+                            ${active === index
+                                ? "opacity-0 scale-90"
+                                : "opacity-100 scale-100"
+                            }
+                        `}
                             style={{ writingMode: "vertical-rl" }}
                         >
                             {item.title}
-                        </div>
+                        </di>
                     </div>
                 ))}
             </div>
