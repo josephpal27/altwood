@@ -12,7 +12,7 @@ const OurStory = () => {
                         loading="lazy"
                         className="w-[80%] rounded-lg"
                     />
-                    <div className="rounded-lg bg-white w-[60%] absolute right-0 bottom-[4rem] p-1">
+                    <div className="rounded-lg bg-[#f7f7f7] w-[60%] absolute right-0 bottom-[4rem] p-1">
                         <img
                             src="/images/demo-4.jpg"
                             alt="Our Story 2"

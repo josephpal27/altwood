@@ -45,7 +45,7 @@ const ProductShowcase = () => {
             </h4>
 
             {/* Row */}
-            <div className="flex h-[80dvh] gap-[1rem]">
+            <div className="flex h-[80dvh] gap-[1rem] mt-[3rem]">
                 {servicesData.map((item, index) => (
                     <div
                         key={index}
@@ -54,7 +54,7 @@ const ProductShowcase = () => {
                         className={`
                             relative rounded-[20px] overflow-hidden cursor-pointer
                             transition-all duration-500 ease-in-out
-                            ${active === index ? "flex-[5]" : "flex-[1.5]"}
+                            ${active === index ? "flex-[10]" : "flex-[1.5]"}
                         `}
                     >
                         {/* Image */}
@@ -73,24 +73,24 @@ const ProductShowcase = () => {
 
                         {/* Content (visible on hover) */}
                         <div className={`
-                            absolute bottom-0 left-0 w-full p-6 text-white
-                            transition-all duration-500
+                            absolute bottom-0 left-0 w-full p-6 
+                            transition-all duration-300
                             ${active === index
                                 ? "opacity-100 translate-y-0"
                                 : "opacity-0 translate-y-10"
                             }
                         `}
                         >
-                            <h3 className="text-xl font-semibold mb-1">
+                            <span className="text-xl font-semibold mb-1 text-white">
                                 {item.title}
-                            </h3>
-                            <p className="text-sm opacity-80">
+                            </span>
+                            <p className="text-sm opacity-80 text-white">
                                 {item.desc}
                             </p>
                         </div>
 
                         {/* Vertical Text (default state) */}
-                        <di className={`
+                        <div className={`
                             absolute inset-0 flex items-center justify-center
                             text-white text-[14px] tracking-widest font-medium
                             transition-all duration-500
@@ -102,7 +102,7 @@ const ProductShowcase = () => {
                             style={{ writingMode: "vertical-rl" }}
                         >
                             {item.title}
-                        </di>
+                        </div>
                     </div>
                 ))}
             </div>
