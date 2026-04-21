@@ -4,34 +4,34 @@ import { useState } from "react";
 
 const servicesData = [
     {
-        title: "MODULAR KITCHEN",
-        desc: "Premium modern kitchen design",
-        img: "/images/services/1.jpg",
+        title: "Shuttering Plywood",
+        desc: "High density waterproof, BWP grade.",
+        img: "/images/product-showcase/1.jpg",
     },
     {
-        title: "CUSTOM FURNITURE",
-        desc: "Handcrafted furniture solutions",
-        img: "/images/services/2.jpg",
+        title: "Plywood",
+        desc: "Marine Grade (IS: 710), BWP Grade, BWR Grade (IS: 303).",
+        img: "/images/product-showcase/2.jpg",
     },
     {
-        title: "WOODEN STAIRS",
-        desc: "Elegant staircase design",
-        img: "/images/services/3.jpg",
+        title: "Flush Doors",
+        desc: "100% premium pine wood, BWP treatment (IS: 2202).",
+        img: "/images/product-showcase/3.jpg",
     },
     {
-        title: "WOOD FLOORING",
-        desc: "Luxury wooden flooring",
-        img: "/images/services/4.jpg",
+        title: "Block Boards",
+        desc: "Strong bonded core, moisture-resistant (IS: 1659).",
+        img: "/images/product-showcase/4.jpg",
     },
     {
-        title: "WARDROBES",
-        desc: "Smart storage solutions",
-        img: "/images/services/1.jpg",
+        title: "MDF",
+        desc: "High-density (650-800 KG/M³), termite & borer resistant.",
+        img: "/images/product-showcase/1.jpg",
     },
     {
-        title: "INTERIOR DESIGN",
-        desc: "Complete home interiors",
-        img: "/images/services/2.jpg",
+        title: "HDHMR",
+        desc: "Heavy-core density (>850 KG/M³), super moisture resistant.",
+        img: "/images/product-showcase/2.jpg",
     },
 ];
 
@@ -39,13 +39,13 @@ const ProductShowcase = () => {
     const [active, setActive] = useState(null);
 
     return (
-        <section className="">
+        <section className="pt-[4rem]">
             <h4 className="text-center">
                 Premium Interior Services
             </h4>
 
             {/* Row */}
-            <div className="flex h-[80dvh] gap-[1rem] mt-[3rem]">
+            <div className="flex h-[70dvh] gap-[1rem] mt-[3.5rem]">
                 {servicesData.map((item, index) => (
                     <div
                         key={index}
@@ -73,7 +73,7 @@ const ProductShowcase = () => {
 
                         {/* Content (visible on hover) */}
                         <div className={`
-                            absolute bottom-0 left-0 w-full p-6 
+                            absolute bottom-0 left-0 w-full p-[2rem]
                             transition-all duration-300
                             ${active === index
                                 ? "opacity-100 translate-y-0"
@@ -81,18 +81,18 @@ const ProductShowcase = () => {
                             }
                         `}
                         >
-                            <span className="text-xl font-semibold mb-1 text-white">
+                            <span className="text-[1.5rem] font-[600] text-white">
                                 {item.title}
                             </span>
-                            <p className="text-sm opacity-80 text-white">
+                            <p className="opacity-90 text-white mt-[0.5rem]">
                                 {item.desc}
                             </p>
                         </div>
 
                         {/* Vertical Text (default state) */}
                         <div className={`
-                            absolute inset-0 flex items-center justify-center
-                            text-white text-[14px] tracking-widest font-medium
+                            absolute inset-0 flex items-center justify-center uppercase
+                            text-white text-[1.8rem] tracking-widest font-[700]
                             transition-all duration-500
                             ${active === index
                                 ? "opacity-0 scale-90"
