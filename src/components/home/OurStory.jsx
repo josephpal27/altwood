@@ -29,7 +29,7 @@ const OurStory = () => {
                         border-[1px] border-gray-300 w-max rounded-full flex items-center gap-[0.5rem]
                         px-[1.1rem] py-[0.3rem]
                     ">
-                        <span className="w-2 h-2 rounded-full bg-[#a87310] block"/>
+                        <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
                         <span className="text-[1rem] text-black font-[500]">Our Story</span>
                     </div>
                     <h2 className="mt-[2rem]">
@@ -69,16 +69,16 @@ const OurStory = () => {
                                         95%
                                     </span>
                                 </div>
-                                <progress 
-                                    max="100" 
-                                    value="95" 
-                                    className="w-full mt-[1rem]">
-
-                                </progress>
+                                {/* Progress Bar */}
+                                <div className="mt-[1rem] w-full bg-[#e5e5e5] h-[12px] rounded-full overflow-hidden">
+                                    <div className="
+                                        h-full rounded-full bg-[#6b1d2b] transition-all duration-700 ease-in-out w-[95%]
+                                    "/>
+                                </div>
                             </div>
                         </div>
                         <div className="w-[30%]">
-                            <img 
+                            <img
                                 src="/images/demo-3.jpg"
                                 alt="Our Story 3"
                                 loading="lazy"

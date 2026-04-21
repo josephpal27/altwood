@@ -81,10 +81,10 @@ const ProductShowcase = () => {
                             }
                         `}
                         >
-                            <span className="text-[1.5rem] font-[600] text-white">
+                            <span className="text-[1.7rem] font-[700] text-white">
                                 {item.title}
                             </span>
-                            <p className="opacity-90 text-white mt-[0.5rem]">
+                            <p className="opacity-90 text-white mt-[0.5rem] text-nowrap">
                                 {item.desc}
                             </p>
                         </div>
@@ -99,7 +99,7 @@ const ProductShowcase = () => {
                                 : "opacity-100 scale-100"
                             }
                         `}
-                            style={{ writingMode: "vertical-rl" }}
+                            style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
                         >
                             {item.title}
                         </div>
