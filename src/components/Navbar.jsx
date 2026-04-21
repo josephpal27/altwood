@@ -67,7 +67,7 @@ const Navbar = () => {
             }`}>
                 <div className="
                     bg-white rounded-full flex items-center justify-between shadow-md relative
-                    p-[1rem]
+                    p-[0.8rem]
                 ">
 
                     {/* Left Logo */}
