@@ -4,22 +4,22 @@ import { MdArrowOutward } from "react-icons/md";
 const advantageData = [
     {
         id: 1,
-        title: "Living Room Tiles",
-        desc: "Transform your living space with tiles that combine style.",
+        title: "Lorem ipsum dolor amet",
+        desc: "Lorem ipsum dolor sit amet, dolor adipiscing dolor elit.",
         image: "/images/icons/1.svg",
         url: "/products",
     },
     {
         id: 2,
-        title: "Living Room Tiles",
-        desc: "Transform your living space with tiles that combine style.",
+        title: "Lorem ipsum dolor amet",
+        desc: "Lorem ipsum dolor sit amet, dolor adipiscing dolor elit.",
         image: "/images/icons/2.svg",
         url: "/products",
     },
     {
         id: 3,
-        title: "Living Room Tiles",
-        desc: "Transform your living space with tiles that combine style.",
+        title: "Lorem ipsum dolor amet",
+        desc: "Lorem ipsum dolor sit amet, dolor adipiscing dolor elit.",
         image: "/images/icons/3.svg",
         url: "/products",
     },

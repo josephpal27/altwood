@@ -49,7 +49,7 @@ const Footer = () => {
                 px-[7%]
             ">
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-[#272727] bg-opacity-70 w-full h-full"></div>
+                <div className="absolute inset-0 bg-[#272727] bg-opacity-80 w-full h-full"></div>
 
                 {/* Content */}
                 <div className="flex justify-between flex-wrap pt-[5.5rem] relative">
