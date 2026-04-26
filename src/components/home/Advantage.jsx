@@ -6,21 +6,21 @@ const advantageData = [
         id: 1,
         title: "Living Room Tiles",
         desc: "Transform your living space with tiles that combine style.",
-        image: "/images/demo-3.jpg",
+        image: "/images/icons/1.svg",
         url: "/products",
     },
     {
         id: 2,
         title: "Living Room Tiles",
         desc: "Transform your living space with tiles that combine style.",
-        image: "/images/demo-3.jpg",
+        image: "/images/icons/2.svg",
         url: "/products",
     },
     {
         id: 3,
         title: "Living Room Tiles",
         desc: "Transform your living space with tiles that combine style.",
-        image: "/images/demo-3.jpg",
+        image: "/images/icons/3.svg",
         url: "/products",
     },
 ]
@@ -29,13 +29,13 @@ const Advantage = () => {
     return (
         <>
             <section className="
-                bg-[url('/images/banners/advantage-bg-2.jpg')] bg-cover bg-center relative
+                bg-[url('/images/banners/advantage-bg.jpg')] bg-cover bg-center relative
                 mt-[5rem]
                 pb-[4.5rem]
             ">
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-[#141414] bg-opacity-70 w-full h-full"></div>
+                <div className="absolute inset-0 bg-[#272727] bg-opacity-70 w-full h-full"></div>
 
                 {/* Head */}
                 <div className="flex flex-col items-center relative">
@@ -58,34 +58,42 @@ const Advantage = () => {
                 ">
                     {advantageData.map((item) => {
                         return (
-                            <div className="w-[31.5%] overflow-hidden rounded-lg relative group" key={item.id}>
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    loading="lazy"
-                                    className="w-full transition duration-500 group-hover:scale-105"
-                                />
-                                <div className="
-                                    w-full h-full absolute top-0 left-0 flex flex-col justify-end bg-gradient-to-b from-transparent to-black/50
-                                    p-[1.5rem] 
+                            <div key={item.id} className="
+                                w-[31.5%] overflow-hidden rounded-lg bg-[#313131] 
+                                p-[2.5rem] 
+                                hover:translate-y-[-7px] transition duration-300
+                            ">
+                                <img src={item.image} alt={item.title} loading="lazy" className="
+                                    w-[22%]
+                                " />
+                                <span className="
+                                    text-white block
+                                    text-[1.4rem] font-[700]
+                                    mt-[2.5rem]
                                 ">
-                                    <div className="
-                                        bg-[#6b1930] hover:bg-black rounded-full flex justify-center items-center text-white overflow-hidden
-                                        w-[50px]
-                                        h-[50px]
-                                        text-[1.5rem]
-                                        absolute top-[1rem] right-[1rem]
-                                        scale-0 group-hover:scale-100 transition duration-500 hover:rotate-45
-                                    ">
-                                        <MdArrowOutward />
-                                    </div>
-                                    <span className="text-white text-[1.5rem] font-[600] leading-[1.2]">
-                                        {item.title}
-                                    </span>
-                                    <div className="w-full h-[1px] bg-[#cdcdcd2d] my-[1rem]"></div>
-                                    <p className="text-white">
-                                        {item.desc}
-                                    </p>
+                                    {item.title}
+                                </span>
+                                <p className="
+                                    text-[#ededed]
+                                    mt-[1rem]
+                                ">
+                                    {item.desc}
+                                </p>
+                                <div className="
+                                    border-t border-gray-600 
+                                    mt-[1.5rem] 
+                                    pt-[1.5rem]
+                                ">
+                                    <Link href={item.url} className="
+                                    text-white w-max group
+                                    flex items-center gap-[0.5rem]
+                                ">
+                                    View Products 
+                                    <MdArrowOutward className="
+                                        text-[1.2rem] 
+                                        group-hover:rotate-45 transition duration-500
+                                    "/>
+                                </Link>
                                 </div>
                             </div>
                         )
