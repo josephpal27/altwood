@@ -12,7 +12,6 @@ export default function Home() {
       <Advantage />
       <ProductShowcase />
       <TenSteps />
-      <section></section>
     </>
   );
 }

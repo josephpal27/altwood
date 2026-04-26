@@ -69,7 +69,6 @@ const stepsData = [
 const TenSteps = () => {
 
     const [current, setCurrent] = useState(stepsData[0].image);
-    const [next, setNext] = useState(null);
 
     const handleHover = (img) => {
         if (img === current) return;
@@ -78,50 +77,62 @@ const TenSteps = () => {
 
     return (
         <>
-            <section className="p-0 relative overflow-hidden mt-[5.5rem] bg-black">
+            <section className="p-0 mt-[5rem]">
 
-                {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full z-10">
-                    <AnimatePresence mode="sync">
-                        <motion.img
-                            key={current}
-                            src={current}
-                            initial={{ opacity: 0, scale: 1.05, filter: "blur(4px)" }}
-                            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                            exit={{ opacity: 0, scale: 1.02, filter: "blur(4px)" }}
-                            transition={{
-                                duration: 0.5,
-                                ease: [0.4, 0, 0.2, 1],
-                            }}
-                            className="absolute inset-0 w-full h-full object-cover"
-                        />
-                    </AnimatePresence>
+                <div className="px-[7%] flex flex-col items-center">
+                    <h5>
+                        Built On Trust
+                    </h5>
+                    <p className="text-center w-[55%] mt-[1rem]">
+                        Altwood blends five decades of heritage with modern innovation to create premium, personalised wood solutions that enrich any space. Quality craftsmanship meets accessible pricing, making timeless beauty affordable for all.
+                    </p>
                 </div>
 
-                {/* Content */}
-                <div className="
-                    flex justify-between flex-wrap z-20 relative h-[100dvh]
-                ">
-                    {stepsData.map((item, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className="
+                <div className="relative overflow-hidden bg-black mt-[3rem]">
+                    {/* Background Image */}
+                    <div className="absolute top-0 left-0 w-full h-full z-10">
+                        <AnimatePresence mode="sync">
+                            <motion.img
+                                key={current}
+                                src={current}
+                                initial={{ opacity: 0, scale: 1.05, filter: "blur(4px)" }}
+                                animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                                exit={{ opacity: 0, scale: 1.02, filter: "blur(4px)" }}
+                                transition={{
+                                    duration: 0.5,
+                                    ease: [0.4, 0, 0.2, 1],
+                                }}
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                        </AnimatePresence>
+                    </div>
+
+                    {/* Content */}
+                    <div className="
+                        flex justify-between flex-wrap z-20 relative h-[100dvh]
+                    ">
+                        {stepsData.map((item, index) => {
+                            return (
+                                <div
+                                    key={index}
+                                    className="
                                     w-[20%] border-[#ededed3c] border-b-[1px] border-r-[1px]   
                                     flex flex-col justify-center items-center text-center p-[1rem]   
                                 "
-                                onMouseEnter={() => handleHover(item.image)}
-                            >
-                                <span className="text-white text-[1.3rem] font-[600]">
-                                    {item.title}
-                                </span>
-                                <p className="text-white mt-[0.7rem] text-[1rem]">
-                                    {item.desc}
-                                </p>
-                            </div>
-                        )
-                    })}
+                                    onMouseEnter={() => handleHover(item.image)}
+                                >
+                                    <span className="text-white text-[1.3rem] font-[600]">
+                                        {item.title}
+                                    </span>
+                                    <p className="text-white mt-[0.7rem] text-[1rem]">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
+
             </section>
         </>
     )

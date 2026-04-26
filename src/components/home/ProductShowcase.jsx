@@ -4,32 +4,32 @@ import { useState } from "react";
 
 const servicesData = [
     {
-        title: "Shuttering Plywood",
+        title: "Film Faced",
         desc: "High density waterproof, BWP grade.",
         img: "/images/product-showcase/1.jpg",
     },
     {
-        title: "Plywood",
+        title: "Marine Grade",
         desc: "Marine Grade (IS: 710), BWP Grade, BWR Grade (IS: 303).",
         img: "/images/product-showcase/2.jpg",
     },
     {
-        title: "Flush Doors",
+        title: "BWP Grade",
         desc: "100% premium pine wood, BWP treatment (IS: 2202).",
         img: "/images/product-showcase/3.jpg",
     },
     {
-        title: "Block Boards",
+        title: "BWR Grade",
         desc: "Strong bonded core, moisture-resistant (IS: 1659).",
         img: "/images/product-showcase/4.jpg",
     },
     {
-        title: "MDF",
+        title: "Flush Door",
         desc: "High-density (650-800 KG/M³), termite & borer resistant.",
         img: "/images/product-showcase/1.jpg",
     },
     {
-        title: "HDHMR",
+        title: "Block Board",
         desc: "Heavy-core density (>850 KG/M³), super moisture resistant.",
         img: "/images/product-showcase/2.jpg",
     },
@@ -41,11 +41,11 @@ const ProductShowcase = () => {
     return (
         <section className="pt-[4rem]">
             <h4 className="text-center">
-                Premium Interior Services
+                Premium Plywood Collection
             </h4>
 
             {/* Row */}
-            <div className="flex h-[70dvh] gap-[1rem] mt-[3.5rem]">
+            <div className="flex h-[70dvh] gap-[1rem] mt-[3rem]">
                 {servicesData.map((item, index) => (
                     <div
                         key={index}

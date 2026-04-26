@@ -54,7 +54,7 @@ const Advantage = () => {
                 {/* Cards */}
                 <div className="
                     flex justify-between flex-wrap relative
-                    mt-[3.5rem]
+                    mt-[3rem]
                 ">
                     {advantageData.map((item) => {
                         return (
@@ -93,7 +93,7 @@ const Advantage = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="relative flex justify-center items-center mt-[4rem]">
+                <div className="relative flex justify-center items-center mt-[3.5rem]">
                     {/* Icon will add here */}
                     <p className="text-center text-white flex items-center gap-[0.6rem]">
                         Let's make something great work together.
