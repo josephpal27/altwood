@@ -30,7 +30,7 @@ const Compliances = () => {
                     {compliancesData.map((item, index) => {
                         return(
                             <div key={index} className="
-                                w-[31.5%] h-[55vh] bg-white rounded-md shadow-md
+                                w-[31.5%] aspect-square bg-white rounded-md shadow-md
                             ">
 
                             </div>

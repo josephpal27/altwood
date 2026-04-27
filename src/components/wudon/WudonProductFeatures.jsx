@@ -1,7 +1,6 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { mdfData } from "@/data/mdfData";
 
-const WudonProductFeatures = () => {
+const WudonProductFeatures = ({data, reverse}) => {
     return (
         <>
             <section>
@@ -9,21 +8,24 @@ const WudonProductFeatures = () => {
                 {/* Head */}
                 <div className="flex flex-col items-center">
                     <h3>
-                        MDF
+                        {data.title}
                     </h3>
                     <p className="w-[50%] text-center mt-[1rem]">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Dolore, adipisci.
+                        {data.description}
                     </p>
                 </div>
 
                 {/* Content Row */}
-                <div className="flex justify-between flex-wrap mt-[2.5rem]">
-                    <div className="w-[50%]">
+                <div className={`
+                    flex justify-between flex-wrap mt-[3rem] 
+                    ${reverse ? "flex-row-reverse" : ""}
+                `}>
+                    <div className="w-[48%]">
                         <span className="text-[2rem] font-clash font-[600] text-[#1d1d1d]">
                             Key Features :
                         </span>
                         <div className="mt-[2rem]">
-                            {mdfData.map((item) => {
+                            {data.features.map((item) => {
                                 return (
                                     <p key={item.id} className="
                                         flex items-center gap-[0.5rem]
@@ -40,7 +42,7 @@ const WudonProductFeatures = () => {
                         </div>
                     </div>
                     <div className="w-[48%]">
-                        <img src="/images/wudon/mdf.png" alt="MDF" loading="lazy" className="w-full rounded-md" />
+                        <img src={data.image} alt={data.title} loading="lazy" className="w-full rounded-md" />
                     </div>
                 </div>
 

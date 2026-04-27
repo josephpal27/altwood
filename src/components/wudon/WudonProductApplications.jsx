@@ -3,27 +3,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
-const wudonApplicationsData = [
-    {
-        id: 1,
-        title: "Precision Work",
-        image: "/images/1.jpg",
-    },
-    {
-        id: 2,
-        title: "Smooth Finishes",
-        image: "/images/4.jpg",
-    },
-    {
-        id: 3,
-        title: "Decorative Applications",
-        image: "/images/3.jpg",
-    },
-]
+const WudonProductApplications = ({data}) => {
 
-const WudonProductApplications = () => {
-
-    const [current, setCurrent] = useState(wudonApplicationsData[0].image);
+    const [current, setCurrent] = useState(data[0].image);
 
     const handleHover = (img) => {
         if (img === current) return;
@@ -62,7 +44,7 @@ const WudonProductApplications = () => {
                     <div className="
                         flex justify-between flex-wrap z-20 relative h-[100dvh]
                     ">
-                        {wudonApplicationsData.map((item, index) => {
+                        {data.map((item, index) => {
                             return (
                                 <div
                                     key={index}
