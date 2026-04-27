@@ -1,12 +1,12 @@
 import Button from "../Button"
 
-const HomeBanner = () => {
+const WudonBanner = () => {
     return (
         <>
             <section className="p-0 relative">
                 <img
-                    src="/images/banners/home-banner.jpg"
-                    alt="Home Banner"
+                    src="/images/banners/wudon-banner.jpg"
+                    alt="Wudon Banner"
                     loading="eager"
                     className="w-full h-screen object-cover"
                 />
@@ -16,10 +16,10 @@ const HomeBanner = () => {
                     px-[7%] py-[4rem]
                 ">
                     <h1 className="text-white text-[3.5rem]">
-                        The leading vitrified tiles <br /> company in world
+                        Wudon
                     </h1>
-                    <p className="text-white w-[50%] mt-[1rem]">
-                        Our tiles and marble are crafted with precision to meet the evolving needs of architecture & interior design offering elegant textures.
+                    <p className="text-white w-[55%] mt-[1rem]">
+                        Wudon embodies a vision to deliver world-class engineered wood solutions for modern India. From our early beginnings, we rapidly built a strong presence across multiple states, driven by quality, technology, and consistent performance.
                     </p>
                     <div className="mt-[2rem]">
                         <Button label="Explore Our Collection" url="/" />
@@ -30,4 +30,4 @@ const HomeBanner = () => {
     )
 }
 
-export default HomeBanner
+export default WudonBanner
