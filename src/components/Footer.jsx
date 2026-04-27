@@ -54,7 +54,7 @@ const Footer = () => {
                 {/* Content */}
                 <div className="flex justify-between flex-wrap pt-[5.5rem] relative">
                     {/* Left */}
-                    <div className="w-[32%] rounded-sm bg-[#313131] p-[2.5rem]">
+                    <div className="w-[32%] rounded-md bg-[#313131] p-[2.5rem]">
                         <div className="
                             bg-white aspect-square rounded-full flex items-center justify-center
                             w-[23%] px-[7px]

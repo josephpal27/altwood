@@ -59,7 +59,7 @@ const Advantage = () => {
                     {advantageData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[31.5%] overflow-hidden rounded-lg bg-[#313131] 
+                                w-[31.5%] overflow-hidden rounded-md bg-[#313131] 
                                 p-[2.5rem] 
                                 hover:translate-y-[-7px] transition duration-300
                             ">
