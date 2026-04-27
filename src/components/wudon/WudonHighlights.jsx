@@ -55,23 +55,25 @@ const WudonHighlights = () => {
                     {wudonHighlightsData.map((item) => {
                         return(
                             <div key={item.id} className="
-                                w-[48%] bg-white shadow-sm rounded-md flex flex-col justify-between
+                                w-[48%] bg-white shadow-sm rounded-md flex flex-col justify-between relative overflow-hidden
                                 mt-[1.6rem]
                                 p-[1.5rem]
+                                group
                             ">
                                 <div className="
-                                    border-b border-gray-200 pb-[1rem]
+                                    border-b-[1px] border-gray-200 group-hover:border-gray-300 pb-[1rem] relative z-10
                                 ">
                                     <span className="
                                         text-[1.2rem]
-                                        font-clash text-[#1d1d1d] font-[600]
+                                        font-clash text-[#1d1d1d] group-hover:text-white font-[600] transition duration-300
                                     " dangerouslySetInnerHTML={{__html: item.title}} />
                                 </div>
-                                <div>
-                                    <p>
+                                <div className="relative z-10">
+                                    <p className="group-hover:text-white transition duration-300">
                                         {item.desc}
                                     </p>
                                 </div>
+                                <div className="absolute w-full h-full top-0 left-[-100%] group-hover:left-0 transition-left duration-500 bg-[#6b1930]"></div>
                             </div>
                         )
                     })}
