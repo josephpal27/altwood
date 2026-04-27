@@ -66,7 +66,7 @@ const stepsData = [
     },
 ]
 
-const TenSteps = () => {
+const BuiltOnTrust = () => {
 
     const [current, setCurrent] = useState(stepsData[0].image);
 
@@ -83,7 +83,7 @@ const TenSteps = () => {
                     <h5>
                         Built On Trust
                     </h5>
-                    <p className="text-center w-[55%] mt-[1rem]">
+                    <p className="text-center w-[80%] mt-[1rem]">
                         Altwood blends five decades of heritage with modern innovation to create premium, personalised wood solutions that enrich any space. Quality craftsmanship meets accessible pricing, making timeless beauty affordable for all.
                     </p>
                 </div>
@@ -138,4 +138,4 @@ const TenSteps = () => {
     )
 }
 
-export default TenSteps
+export default BuiltOnTrust

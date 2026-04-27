@@ -3,7 +3,7 @@ import Compliances from "@/components/home/Compliances";
 import HomeBanner from "@/components/home/HomeBanner";
 import OurStory from "@/components/home/OurStory";
 import ProductShowcase from "@/components/home/ProductShowcase";
-import TenSteps from "@/components/home/TenSteps";
+import BuiltOnTrust from "@/components/home/BuiltOnTrust";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <OurStory />
       <Advantage />
       <ProductShowcase />
-      <TenSteps />
+      <BuiltOnTrust />
       <Compliances />
     </>
   );

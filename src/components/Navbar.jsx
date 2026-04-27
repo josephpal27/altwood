@@ -64,17 +64,19 @@ const Navbar = () => {
                 px-[7%]
                 top-[1rem]
                 ${showNav ? "translate-y-0" : "-translate-y-[150%]"
-            }`}>
+                }`}>
                 <div className="
                     bg-white rounded-full flex items-center justify-between shadow-md relative
                     p-[0.8rem]
                 ">
 
                     {/* Left Logo */}
-                    <img src="/images/logo.png" alt="logo" className="
-                        w-[80px] 
-                        ml-[0.5rem]
-                    " />
+                    <Link href="/">
+                        <img src="/images/logo.png" alt="logo" className="
+                            w-[80px] 
+                            ml-[0.5rem]
+                        " />
+                    </Link>
 
                     {/* Center */}
                     <ul className="
@@ -104,7 +106,7 @@ const Navbar = () => {
 
                     {/* Right Button*/}
                     <div className="hidden md:block z-10">
-                        <Button label="Download Brochure" url="/" />
+                        <Button label="Explore Wudon" url="/wudon" />
                     </div>
 
                     {/* Mobile Menu */}
@@ -120,7 +122,7 @@ const Navbar = () => {
             <div className={`
                 fixed inset-0 bg-black/40 z-50 transition-opacity duration-300 
                 ${open ? "opacity-100 visible" : "opacity-0 invisible"
-            }`}
+                }`}
                 onClick={() => setOpen(false)}
             />
 
@@ -128,7 +130,7 @@ const Navbar = () => {
             <div className={`
                 fixed top-0 left-0 h-full w-[70%] max-w-sm bg-[#f7f7f7] z-50 shadow-lg transform transition-transform duration-500 
                 ${open ? "translate-x-0" : "-translate-x-full"
-            }`}>
+                }`}>
                 <div className="flex justify-between items-center p-4 border-b">
                     <img src="/images/logo.png" className="w-[80px]" />
                     <button onClick={() => setOpen(false)}>
