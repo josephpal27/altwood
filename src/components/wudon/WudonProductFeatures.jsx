@@ -1,4 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
+import GlareImage from "../GlareImage";
 
 const WudonProductFeatures = ({data, reverse}) => {
     return (
@@ -42,7 +43,11 @@ const WudonProductFeatures = ({data, reverse}) => {
                         </div>
                     </div>
                     <div className="w-[48%]">
-                        <img src={data.image} alt={data.title} loading="lazy" className="w-full rounded-md" />
+                        <GlareImage
+                            src={data.image}
+                            alt={data.title}
+                            className="w-full rounded-md"
+                        />
                     </div>
                 </div>
 

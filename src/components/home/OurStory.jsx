@@ -7,24 +7,17 @@ const OurStory = () => {
             <section className="flex justify-between flex-wrap">
                 {/* Left */}
                 <div className="w-[46%] relative">
-                    <img
+                    <GlareImage
                         src="/images/demo-1.jpg"
                         alt="Our Story 1"
-                        loading="lazy"
                         className="w-[80%] rounded-lg"
                     />
                     <div className="rounded-lg bg-[#f7f7f7] w-[60%] absolute right-0 bottom-[4rem] p-1">
-                        <img
+                        <GlareImage
                             src="/images/demo-4.jpg"
                             alt="Our Story 2"
-                            loading="lazy"
                             className="w-full rounded-md"
                         />
-                        <GlareImage
-  src="/images/demo-1.jpg"
-  alt="Our Story 1"
-  className="w-[80%]"
-/>
                     </div>
                 </div>
                 {/* Right */}
@@ -84,10 +77,9 @@ const OurStory = () => {
                             </div>
                         </div>
                         <div className="w-[30%]">
-                            <img
+                            <GlareImage
                                 src="/images/demo-3.jpg"
                                 alt="Our Story 3"
-                                loading="lazy"
                                 className="w-full rounded-lg"
                             />
                         </div>
