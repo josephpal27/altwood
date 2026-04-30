@@ -72,7 +72,7 @@ const OurStory = () => {
                                 {/* Progress Bar */}
                                 <div className="mt-[1rem] w-full bg-[#e5e5e5] h-[12px] rounded-full overflow-hidden">
                                     <div className="
-                                        h-full rounded-full bg-[#6b1d2b] transition-all duration-700 ease-in-out w-[95%]
+                                        h-full rounded-full bg-[#114a27] transition-all duration-700 ease-in-out w-[95%]
                                     "/>
                                 </div>
                             </div>
