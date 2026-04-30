@@ -33,7 +33,7 @@ const OurStory = () => {
                         <span className="text-[1rem] text-black font-[500]">Our Story</span>
                     </div>
                     <h2 className="mt-[2rem]">
-                        Five decades of expertise. <br /> A legacy in the making.
+                        Five Decades of Expertise. <br /> A Legacy in the Making.
                     </h2>
                     <p className="mt-[1.5rem]">
                         We blend India's rich heritage with modern technology to craft premium wood solutions that stand the test of time. Your vision is our guide.

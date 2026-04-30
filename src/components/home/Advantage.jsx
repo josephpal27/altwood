@@ -4,22 +4,22 @@ import { MdArrowOutward } from "react-icons/md";
 const advantageData = [
     {
         id: 1,
-        title: "Lorem ipsum dolor amet",
-        desc: "Lorem ipsum dolor sit amet, dolor adipiscing dolor elit.",
+        title: "Five Decades of Expertise",
+        desc: "Backed by 50 years of manufacturing, every panel reflects generations of refinement and trust.",
         image: "/images/icons/1.svg",
         url: "/products",
     },
     {
         id: 2,
-        title: "Lorem ipsum dolor amet",
-        desc: "Lorem ipsum dolor sit amet, dolor adipiscing dolor elit.",
+        title: "Engineered Strength",
+        desc: "Precision-crafted using advanced processes for superior moisture resistance and lasting performance.",
         image: "/images/icons/2.svg",
         url: "/products",
     },
     {
         id: 3,
-        title: "Lorem ipsum dolor amet",
-        desc: "Lorem ipsum dolor sit amet, dolor adipiscing dolor elit.",
+        title: "Diversified Solutions",
+        desc: "From structural plywood to custom MDF panels, tailored solutions for every unique architectural vision.",
         image: "/images/icons/3.svg",
         url: "/products",
     },
@@ -44,10 +44,10 @@ const Advantage = () => {
                         px-[1.1rem] py-[0.3rem]
                     ">
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
-                        <span className="text-[1rem] text-white font-[500]">Premium Tiles Collection</span>
+                        <span className="text-[1rem] text-white font-[500]">The Altwood Advantage</span>
                     </div>
                     <h3 className="mt-[1.5rem] text-white text-center">
-                        Elevate every space with our <br /> finest tile selection
+                        Elevating Spaces with Engineered Precision
                     </h3>
                 </div>
 
@@ -104,8 +104,8 @@ const Advantage = () => {
                 <div className="relative flex justify-center items-center mt-[3.5rem]">
                     {/* Icon will add here */}
                     <p className="text-center text-white flex items-center gap-[0.6rem]">
-                        Let's make something great work together.
-                        <Link href="/contact" className="text-white underline">Get Free Quote</Link>
+                        Let's bring your vision to life.
+                        <Link href="/contact" className="text-white underline">Get a Free Quote</Link>
                     </p>
                 </div>
             </section>
