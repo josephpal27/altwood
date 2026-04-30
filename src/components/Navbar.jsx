@@ -13,6 +13,8 @@ const Navbar = () => {
 
     const pathname = usePathname();
 
+    const isWudonPage = pathname === "/wudon" || pathname === "/wudon/";
+
     // Scroll Hide/Show Logic
     useEffect(() => {
         const handleScroll = () => {
@@ -72,7 +74,14 @@ const Navbar = () => {
 
                     {/* Left Logo */}
                     <Link href="/">
-                        <img src="/images/logo.png" alt="logo" className="
+                        <img
+                            src={
+                                isWudonPage
+                                    ? "/images/logo/wudon-logo.png"
+                                    : "/images/logo/altwood-logo.png"
+                            }
+                            alt="Logo"
+                            className="
                             w-[80px] 
                             ml-[0.5rem]
                         " />
@@ -132,7 +141,15 @@ const Navbar = () => {
                 ${open ? "translate-x-0" : "-translate-x-full"
                 }`}>
                 <div className="flex justify-between items-center p-4 border-b">
-                    <img src="/images/logo.png" className="w-[80px]" />
+                    <img
+                        src={
+                            isWudonPage
+                            ? "/images/logo/wudon-logo.png"
+                            : "/images/logo/altwood-logo.png"
+                        }
+                        alt="Logo"
+                        className="w-[80px]"
+                    />
                     <button onClick={() => setOpen(false)}>
                         <FiX size={24} />
                     </button>
@@ -149,7 +166,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className="p-[1rem] mt-[1rem]">
-                    <Button label="Download Brochure" url="/" />
+                    <Button label="Explore Wudon" url="/wudon" />
                 </div>
             </div>
         </>
