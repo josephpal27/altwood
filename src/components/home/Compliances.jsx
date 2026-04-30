@@ -1,3 +1,8 @@
+"use client"
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
+
 const compliancesData = [
     {},
     {},
@@ -17,9 +22,15 @@ const Compliances = () => {
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
                         <span className="text-[1rem] text-black font-[500]">Compliances</span>
                     </div>
-                    <h6 className="mt-[2rem]">
+                    <motion.h6
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="mt-[2rem]"
+                    >
                         Trusted by partners and <br /> projects worldwide
-                    </h6>
+                    </motion.h6>
                 </div>
                 {/* Cards Row */}
                 <div className="

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 
 const servicesData = [
     {
@@ -40,9 +42,15 @@ const ProductShowcase = () => {
 
     return (
         <section className="pt-[4rem]">
-            <h4 className="text-center">
+            <motion.h4
+                variants={headingVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-center"
+            >
                 Premium Plywood Collection
-            </h4>
+            </motion.h4>
 
             {/* Row */}
             <div className="flex h-[70dvh] gap-[1rem] mt-[3rem]">

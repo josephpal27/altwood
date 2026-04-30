@@ -59,7 +59,7 @@ const Footer = () => {
                             bg-white aspect-square rounded-full flex items-center justify-center
                             w-[23%] px-[7px]
                         ">
-                            <img src="/images/logo.png" alt="Logo" loading="lazy" className="
+                            <img src="/images/logo/altwood-logo.png" alt="Logo" loading="lazy" className="
                                 w-full
                             " />
                         </div>

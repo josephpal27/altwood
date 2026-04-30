@@ -1,4 +1,8 @@
+"use client"
+
 import Button from "../Button"
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 
 const HomeBanner = () => {
     return (
@@ -15,9 +19,15 @@ const HomeBanner = () => {
                     absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-black/60
                     px-[7%] py-[4rem]
                 ">
-                    <h1 className="text-white text-[3.5rem]">
+                    <motion.h1
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="text-white text-[3.5rem]"
+                    >
                         The Leading Vitrified Tiles <br /> Company in World
-                    </h1>
+                    </motion.h1>
                     <p className="text-white w-[50%] mt-[1rem]">
                         Our tiles and marble are crafted with precision to meet the evolving needs of architecture & interior design offering elegant textures.
                     </p>

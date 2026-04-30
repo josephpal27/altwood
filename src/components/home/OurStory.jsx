@@ -1,5 +1,9 @@
+"use client"
+
 import Button from "../Button"
 import GlareImage from "../GlareImage"
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 
 const OurStory = () => {
     return (
@@ -31,9 +35,15 @@ const OurStory = () => {
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
                         <span className="text-[1rem] text-black font-[500]">Our Story</span>
                     </div>
-                    <h2 className="mt-[2rem]">
+                    <motion.h2
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="mt-[2rem]"
+                    >
                         Five Decades of Expertise. <br /> A Legacy in the Making.
-                    </h2>
+                    </motion.h2>
                     <p className="mt-[1.5rem]">
                         We blend India's rich heritage with modern technology to craft premium wood solutions that stand the test of time. Your vision is our guide.
                     </p>

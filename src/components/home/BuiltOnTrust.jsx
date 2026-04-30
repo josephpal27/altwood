@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 
 const stepsData = [
     {
@@ -80,9 +81,15 @@ const BuiltOnTrust = () => {
             <section className="p-0 mt-[5rem]">
 
                 <div className="px-[7%] flex flex-col items-center">
-                    <h5>
+                    <motion.h5
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className=""
+                    >
                         Built On Trust
-                    </h5>
+                    </motion.h5>
                     <p className="text-center w-[80%] mt-[1rem]">
                         Altwood blends five decades of heritage with modern innovation to create premium, personalised wood solutions that enrich any space. Quality craftsmanship meets accessible pricing, making timeless beauty affordable for all.
                     </p>

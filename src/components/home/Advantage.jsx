@@ -1,5 +1,9 @@
+"use client"
+
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 
 const advantageData = [
     {
@@ -46,9 +50,15 @@ const Advantage = () => {
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
                         <span className="text-[1rem] text-white font-[500]">The Altwood Advantage</span>
                     </div>
-                    <h3 className="mt-[1.5rem] text-white text-center">
+                    <motion.h3
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="mt-[1.5rem] text-white text-center"
+                    >
                         Elevating Spaces with Engineered Precision
-                    </h3>
+                    </motion.h3>
                 </div>
 
                 {/* Cards */}
@@ -88,12 +98,12 @@ const Advantage = () => {
                                     text-white w-max group
                                     flex items-center gap-[0.5rem]
                                 ">
-                                    View Products 
-                                    <MdArrowOutward className="
+                                        View Products
+                                        <MdArrowOutward className="
                                         text-[1.2rem] 
                                         group-hover:rotate-45 transition duration-500
                                     "/>
-                                </Link>
+                                    </Link>
                                 </div>
                             </div>
                         )

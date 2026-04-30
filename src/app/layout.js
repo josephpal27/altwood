@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,6 +26,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${clashGroteskVariable.variable}`}>
       <body>
+        {/* Global Effects */}
+        <CustomCursor />
+        <SmoothScroll />
+
+        {/* Site Content */}
         <Navbar />
         {children}
         <Footer />
