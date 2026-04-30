@@ -1,4 +1,5 @@
 import Button from "../Button"
+import GlareImage from "../GlareImage"
 
 const OurStory = () => {
     return (
@@ -19,6 +20,11 @@ const OurStory = () => {
                             loading="lazy"
                             className="w-full rounded-md"
                         />
+                        <GlareImage
+  src="/images/demo-1.jpg"
+  alt="Our Story 1"
+  className="w-[80%]"
+/>
                     </div>
                 </div>
                 {/* Right */}
