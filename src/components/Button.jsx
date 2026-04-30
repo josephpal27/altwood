@@ -12,7 +12,7 @@ const Button = ({ label, url }) => {
   return (
     <Link href={url} className={`
         ${isWudonPage ? "bg-[#29396e]" : "bg-[#114a27]"} text-white w-max rounded-full flex items-center gap-[0.6rem]
-        pl-[1.1rem] py-[0.5rem] pr-[0.5rem] text-[1rem] ${isWudonPage ? "hover:bg-[#ad030c]" : "hover:bg-[#7d4c0a]"} group transition duration-500
+        pl-[1.1rem] py-[0.5rem] pr-[0.5rem] text-[1rem] font-[600] ${isWudonPage ? "hover:bg-[#ad030c]" : "hover:bg-[#7d4c0a]"} group transition duration-500
     `}>
       {label}
       <MdArrowOutward className={`

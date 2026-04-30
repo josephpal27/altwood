@@ -16,7 +16,7 @@ const HomeBanner = () => {
                     px-[7%] py-[4rem]
                 ">
                     <h1 className="text-white text-[3.5rem]">
-                        The leading vitrified tiles <br /> company in world
+                        The Leading Vitrified Tiles <br /> Company in World
                     </h1>
                     <p className="text-white w-[50%] mt-[1rem]">
                         Our tiles and marble are crafted with precision to meet the evolving needs of architecture & interior design offering elegant textures.
