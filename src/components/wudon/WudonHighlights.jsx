@@ -73,7 +73,7 @@ const WudonHighlights = () => {
                                         {item.desc}
                                     </p>
                                 </div>
-                                <div className="absolute w-full h-full top-0 left-[-100%] group-hover:left-0 transition-left duration-500 bg-[#114a27]"></div>
+                                <div className="absolute w-full h-full top-0 left-[-100%] group-hover:left-0 transition-left duration-500 bg-[#29396e]"></div>
                             </div>
                         )
                     })}

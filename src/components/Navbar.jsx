@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Button from "./Button";
@@ -115,7 +115,10 @@ const Navbar = () => {
 
                     {/* Right Button*/}
                     <div className="hidden md:block z-10">
-                        <Button label="Explore Wudon" url="/wudon" />
+                        <Button
+                            label={isWudonPage ? "Explore Altwood" : "Explore Wudon"}
+                            url={isWudonPage ? "/" : "/wudon"}
+                        />
                     </div>
 
                     {/* Mobile Menu */}
@@ -144,8 +147,8 @@ const Navbar = () => {
                     <img
                         src={
                             isWudonPage
-                            ? "/images/logo/wudon-logo.png"
-                            : "/images/logo/altwood-logo.png"
+                                ? "/images/logo/wudon-logo.png"
+                                : "/images/logo/altwood-logo.png"
                         }
                         alt="Logo"
                         className="w-[80px]"
@@ -166,7 +169,10 @@ const Navbar = () => {
                 </ul>
 
                 <div className="p-[1rem] mt-[1rem]">
-                    <Button label="Explore Wudon" url="/wudon" />
+                    <Button
+                        label={isWudonPage ? "Explore Altwood" : "Explore Wudon"}
+                        url={isWudonPage ? "/" : "/wudon"}
+                    />
                 </div>
             </div>
         </>
