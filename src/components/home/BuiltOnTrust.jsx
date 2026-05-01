@@ -9,61 +9,61 @@ const stepsData = [
         id: 1,
         title: "Step 1",
         desc: "Responsible timber sourcing",
-        image: "/images/1.jpg",
+        image: "/images/built-on-trust/1.avif",
     },
     {
         id: 2,
         title: "Step 2",
         desc: "Log conditioning and seasoning",
-        image: "/images/2.jpg",
+        image: "/images/built-on-trust/2.jpeg",
     },
     {
         id: 3,
         title: "Step 3",
         desc: "Precision log peeling",
-        image: "/images/3.jpg",
+        image: "/images/built-on-trust/3.jpeg",
     },
     {
         id: 4,
         title: "Step 4",
         desc: "Log drying and moisture control",
-        image: "/images/4.jpg",
+        image: "/images/built-on-trust/4.jpeg",
     },
     {
         id: 5,
         title: "Step 5",
         desc: "Log grading and selection",
-        image: "/images/5.jpg",
+        image: "/images/built-on-trust/5.jpeg",
     },
     {
         id: 6,
         title: "Step 6",
         desc: "Adhesive application",
-        image: "/images/1.jpg",
+        image: "/images/built-on-trust/6.jpeg",
     },
     {
         id: 7,
         title: "Step 7",
         desc: "Layer assembly and cross graining",
-        image: "/images/2.jpg",
+        image: "/images/built-on-trust/7.jpeg",
     },
     {
         id: 8,
         title: "Step 8",
         desc: "Hot pressing under controlled pressure",
-        image: "/images/3.jpg",
+        image: "/images/built-on-trust/8.jpeg",
     },
     {
         id: 9,
         title: "Step 9",
         desc: "Finishing, sanding and edge calibration",
-        image: "/images/4.jpg",
+        image: "/images/built-on-trust/9.jpeg",
     },
     {
         id: 10,
         title: "Step 10",
         desc: "Quality inspection",
-        image: "/images/5.jpg",
+        image: "/images/built-on-trust/10.jpeg",
     },
 ]
 
@@ -116,7 +116,7 @@ const BuiltOnTrust = () => {
 
                     {/* Content */}
                     <div className="
-                        flex justify-between flex-wrap z-20 relative h-[100dvh]
+                        flex justify-between flex-wrap z-20 relative h-[100dvh] bg-[#0000005d]
                     ">
                         {stepsData.map((item, index) => {
                             return (
