@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations"
+import { MdArrowOutward } from "react-icons/md";
+import Link from "next/link";
 
 const servicesData = [
     {
@@ -82,19 +84,31 @@ const ProductShowcase = () => {
                         {/* Content (visible on hover) */}
                         <div className={`
                             absolute bottom-0 left-0 w-full p-[2rem]
-                            transition-all duration-300
+                            transition-all duration-300 z-10
+                            flex justify-between items-end
                             ${active === index
                                 ? "opacity-100 translate-y-0"
                                 : "opacity-0 translate-y-10"
                             }
                         `}
                         >
-                            <span className="text-[1.7rem] font-[700] text-white">
-                                {item.title}
-                            </span>
-                            <p className="opacity-90 text-white mt-[0.5rem] text-nowrap">
-                                {item.desc}
-                            </p>
+                            <div className="w-[85%]">
+                                <span className="text-[1.7rem] font-[700] text-white">
+                                    {item.title}
+                                </span>
+                                <p className="opacity-90 text-white mt-[0.5rem] text-nowrap">
+                                    {item.desc}
+                                </p>
+                            </div>
+                            <div>
+                                <Link href="/products/">
+                                    <MdArrowOutward className="
+                                        w-[45px] h-[45px] 
+                                        rounded-full p-[0.5rem] hover:rotate-45 text-white transition duration-500
+                                        bg-[#114a27] hover:bg-[#7d4c0a]
+                                    " />
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Vertical Text (default state) */}
