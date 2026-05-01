@@ -26,10 +26,10 @@ const HomeBanner = () => {
                         viewport={{ once: true }}
                         className="text-white text-[3.5rem]"
                     >
-                        The Leading Vitrified Tiles <br /> Company in World
+                        Leading Plywood <br /> Manufacturers In India
                     </motion.h1>
                     <p className="text-white w-[50%] mt-[1rem]">
-                        Our tiles and marble are crafted with precision to meet the evolving needs of architecture & interior design offering elegant textures.
+                        Our premium plywood and wood panels are crafted with precision to meet the evolving needs of architecture and interior design, offering unmatched strength and durability.
                     </p>
                     <div className="mt-[2rem]">
                         <Button label="Explore Our Collection" url="/" />

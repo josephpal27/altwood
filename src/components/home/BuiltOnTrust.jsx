@@ -15,55 +15,55 @@ const stepsData = [
         id: 2,
         title: "Step 2",
         desc: "Log conditioning and seasoning",
-        image: "/images/built-on-trust/2.jpeg",
+        image: "/images/built-on-trust/2.avif",
     },
     {
         id: 3,
         title: "Step 3",
         desc: "Precision log peeling",
-        image: "/images/built-on-trust/3.jpeg",
+        image: "/images/built-on-trust/3.avif",
     },
     {
         id: 4,
         title: "Step 4",
         desc: "Log drying and moisture control",
-        image: "/images/built-on-trust/4.jpeg",
+        image: "/images/built-on-trust/4.avif",
     },
     {
         id: 5,
         title: "Step 5",
         desc: "Log grading and selection",
-        image: "/images/built-on-trust/5.jpeg",
+        image: "/images/built-on-trust/5.avif",
     },
     {
         id: 6,
         title: "Step 6",
         desc: "Adhesive application",
-        image: "/images/built-on-trust/6.jpeg",
+        image: "/images/built-on-trust/6.avif",
     },
     {
         id: 7,
         title: "Step 7",
         desc: "Layer assembly and cross graining",
-        image: "/images/built-on-trust/7.jpeg",
+        image: "/images/built-on-trust/7.avif",
     },
     {
         id: 8,
         title: "Step 8",
         desc: "Hot pressing under controlled pressure",
-        image: "/images/built-on-trust/8.jpeg",
+        image: "/images/built-on-trust/8.avif",
     },
     {
         id: 9,
         title: "Step 9",
         desc: "Finishing, sanding and edge calibration",
-        image: "/images/built-on-trust/9.jpeg",
+        image: "/images/built-on-trust/9.avif",
     },
     {
         id: 10,
         title: "Step 10",
         desc: "Quality inspection",
-        image: "/images/built-on-trust/10.jpeg",
+        image: "/images/built-on-trust/10.avif",
     },
 ]
 
@@ -128,10 +128,10 @@ const BuiltOnTrust = () => {
                                 "
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
-                                    <span className="text-white text-[1.3rem] font-[600]">
+                                    <span className="text-white text-[1.3rem] font-[600] font-clash">
                                         {item.title}
                                     </span>
-                                    <p className="text-white mt-[0.7rem] text-[1rem]">
+                                    <p className="text-white mt-[0.7rem] text-[1.1rem]">
                                         {item.desc}
                                     </p>
                                 </div>
