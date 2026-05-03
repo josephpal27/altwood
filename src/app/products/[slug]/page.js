@@ -1,3 +1,4 @@
+import ProductDetailsApplications from "@/components/product-details/ProductDetailsApplications";
 import ProductDetailsBanner from "@/components/product-details/ProductDetailsBanner";
 import ProductDetailsFeatures from "@/components/product-details/ProductDetailsFeatures";
 import { productsData } from "@/data/productsData";
@@ -46,6 +47,7 @@ export default async function ProductDetails({ params }) {
         <>
             <ProductDetailsBanner product={product} />
             <ProductDetailsFeatures product={product} />
+            <ProductDetailsApplications />
         </>
     );
 }
