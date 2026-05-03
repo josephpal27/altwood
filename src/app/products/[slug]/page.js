@@ -1,4 +1,5 @@
 import ProductDetailsBanner from "@/components/product-details/ProductDetailsBanner";
+import ProductDetailsFeatures from "@/components/product-details/ProductDetailsFeatures";
 import { productsData } from "@/data/productsData";
 import { notFound } from "next/navigation";
 
@@ -44,6 +45,7 @@ export default async function ProductDetails({ params }) {
     return (
         <>
             <ProductDetailsBanner banner={product?.banner} name={product?.name} />
+            <ProductDetailsFeatures />
         </>
     );
 }
