@@ -44,8 +44,8 @@ export default async function ProductDetails({ params }) {
 
     return (
         <>
-            <ProductDetailsBanner banner={product?.banner} name={product?.name} />
-            <ProductDetailsFeatures />
+            <ProductDetailsBanner product={product} />
+            <ProductDetailsFeatures product={product} />
         </>
     );
 }

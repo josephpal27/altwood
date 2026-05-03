@@ -4,6 +4,7 @@ export const productsData = [
         name: "Film Faced",
         slug: "film-faced",
         banner: "/images/banners/product-details-banner.jpg",
+        productImage: "/images/wudon/hdhmr.png",
         features: [
             {
                 id: 1,
@@ -36,30 +37,31 @@ export const productsData = [
         name: "Marine Grade",
         slug: "marine-grade",
         banner: "/images/banners/product-details-banner.jpg",
+        productImage: "/images/wudon/hdhmr.png",
         features: [
             {
                 id: 1,
-                para: "",
+                para: "ISI 710 STD MARINE GRADE PLYWOOD",
             },
             {
                 id: 2,
-                para: "",
+                para: "100% GURJAN PLYWOOD",
             },
             {
                 id: 3,
-                para: "",
+                para: "DOUBLE SIDE CALIBRATED & SANDED",
             },
             {
                 id: 4,
-                para: "",
+                para: "ZERO GAP LAYUP WITH 8X4 FT CORE VENEERS",
             },
             {
                 id: 5,
-                para: "",
+                para: "TETRA LOOP PRESS TECHNOLOGY",
             },
             {
                 id: 6,
-                para: "",
+                para: "LIFETIME GUARANTEE",
             },
         ],
     },
@@ -68,30 +70,31 @@ export const productsData = [
         name: "BWP Grade",
         slug: "bwp-grade",
         banner: "/images/banners/product-details-banner.jpg",
+        productImage: "/images/wudon/hdhmr.png",
         features: [
             {
                 id: 1,
-                para: "",
+                para: "ISI 710 STD BWP GRADE PLYWOOD",
             },
             {
                 id: 2,
-                para: "",
+                para: "A1 GRADE HARDWOOD CORE PLYWOOD",
             },
             {
                 id: 3,
-                para: "",
+                para: "DOUBLE SIDE CALIBRATED & SANDED",
             },
             {
                 id: 4,
-                para: "",
+                para: "ZERO GAP LAYUP WITH 8X4FT CORE VENEERS",
             },
             {
                 id: 5,
-                para: "",
+                para: "TETRA LOOP PRESS TECHNOLOGY",
             },
             {
                 id: 6,
-                para: "",
+                para: "32 YEARS GUARANTEE",
             },
         ],
     },
@@ -100,30 +103,27 @@ export const productsData = [
         name: "BWR Grade",
         slug: "bwr-grade",
         banner: "/images/banners/product-details-banner.jpg",
+        productImage: "/images/wudon/hdhmr.png",
         features: [
             {
                 id: 1,
-                para: "",
+                para: "ISI 303 STD BWR GRADE PLYWOOD",
             },
             {
                 id: 2,
-                para: "",
+                para: "A1 GRADE HARDWOOD CORE PLYWOOD",
             },
             {
                 id: 3,
-                para: "",
+                para: "DOUBLE SIDE CALIBRATED & SANDED",
             },
             {
                 id: 4,
-                para: "",
+                para: "COMPOSED CORE VENEERS",
             },
             {
                 id: 5,
-                para: "",
-            },
-            {
-                id: 6,
-                para: "",
+                para: "QUAD PRESS TECHNOLOGY",
             },
         ],
     },
@@ -132,30 +132,31 @@ export const productsData = [
         name: "Flush Door",
         slug: "flush-door",
         banner: "/images/banners/product-details-banner.jpg",
+        productImage: "/images/wudon/hdhmr.png",
         features: [
             {
                 id: 1,
-                para: "",
+                para: "CRAFTED FROM 100% PREMIUM PINE WOOD",
             },
             {
                 id: 2,
-                para: "",
+                para: "SMOOTH FLUSH DESIGN FOR SEAMLESS INTERIORS",
             },
             {
                 id: 3,
-                para: "",
+                para: "BWP TREATMENT FOR ENHANCED DURABILITY",
             },
             {
                 id: 4,
-                para: "",
+                para: "SUITABLE FOR BOTH INTERIOR AND EXTERIOR USE",
             },
             {
                 id: 5,
-                para: "",
+                para: "SOLID CORE CONSTRUCTION FOR SOUND INSULATION",
             },
             {
                 id: 6,
-                para: "",
+                para: "FULLY CUSTOMIZABLE SIZES, FINISHES, AND STYLES",
             },
         ],
     },
@@ -164,30 +165,31 @@ export const productsData = [
         name: "Block Board",
         slug: "block-board",
         banner: "/images/banners/product-details-banner.jpg",
+        productImage: "/images/wudon/hdhmr.png",
         features: [
             {
                 id: 1,
-                para: "",
+                para: "STRONG BONDED CORE FOR ENHANCED STRUCTURAL STRENGTH",
             },
             {
                 id: 2,
-                para: "",
+                para: "NO GAPPING ENSURES LONG-TERM DIMENSIONAL STABILITY",
             },
             {
                 id: 3,
-                para: "",
+                para: "MOISTURE-RESISTANT TREATMENT FOR ENHANCED DURABILITY",
             },
             {
                 id: 4,
-                para: "",
+                para: "SUPERIOR NAIL HOLDING FOR SECURE INSTALLATIONS",
             },
             {
                 id: 5,
-                para: "",
+                para: "NO DELAMINATION EVEN UNDER HEAVY USAGE",
             },
             {
                 id: 6,
-                para: "",
+                para: "LIGHTWEIGHT YET STURDY PINEWOOD BLOCK BOARD",
             },
         ],
     },
