@@ -8,17 +8,17 @@ import { headingVariant } from "@/utils/animations"
 const OurStory = () => {
     return (
         <>
-            <section className="flex justify-between flex-wrap">
+            <section className="flex justify-between flex-wrap" id="our-story">
                 {/* Left */}
                 <div className="w-[46%] relative">
                     <GlareImage
-                        src="/images/demo-1.jpg"
+                        src="/images/our-story/1.avif"
                         alt="Our Story 1"
-                        className="w-[80%] rounded-lg"
+                        className="w-[80%] rounded-lg aspect-[5/7]"
                     />
                     <div className="rounded-lg bg-[#f7f7f7] w-[60%] absolute right-0 bottom-[4rem] p-1">
                         <GlareImage
-                            src="/images/demo-4.jpg"
+                            src="/images/our-story/2.avif"
                             alt="Our Story 2"
                             className="w-full rounded-md"
                         />
@@ -40,7 +40,7 @@ const OurStory = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="mt-[2rem]"
+                        className="mt-[2rem] w-max"
                     >
                         Five Decades of Expertise. <br /> A Legacy in the Making.
                     </motion.h2>
@@ -88,9 +88,9 @@ const OurStory = () => {
                         </div>
                         <div className="w-[30%]">
                             <GlareImage
-                                src="/images/demo-3.jpg"
+                                src="/images/our-story/3.avif"
                                 alt="Our Story 3"
-                                className="w-full rounded-lg"
+                                className="w-full rounded-lg aspect-[1/1]"
                             />
                         </div>
                     </div>

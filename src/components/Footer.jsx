@@ -20,11 +20,12 @@ const footContent = [
     {
         title: "Our Collection",
         links: [
-            { label: "Shuttering Plywood", url: "/products" },
-            { label: "Red Core Plywood", url: "/products" },
-            { label: "Full Pine Flush Door", url: "/products" },
-            { label: "Pinewood Block Board", url: "/products" },
-            { label: "Alternative Plywood", url: "/products" },
+            { label: "Film Faced", url: "/products/film-faced" },
+            { label: "Marine Grade", url: "/products/marine-grade" },
+            { label: "BWP Grade", url: "/products/bwp-grade" },
+            { label: "BWR Grade", url: "/products/bwr-grade" },
+            { label: "Flush Door", url: "/products/flush-door" },
+            { label: "Block Board", url: "/products/block-board" },
         ]
     },
     {
@@ -44,7 +45,7 @@ const Footer = () => {
     return (
         <>
             <footer className="
-                bg-[url('/images/banners/advantage-bg.jpg')] bg-cover bg-center relative
+                bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative
                 mt-[1rem]
                 px-[7%]
             ">
@@ -68,7 +69,7 @@ const Footer = () => {
                             text-[1rem]
                             mt-[1.5rem]
                         ">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus esse eveniet quibusdam fuga eos ex iure fugiat obcaecati, a labore.
+                            At Altwood, we understand that no two projects are alike. Your vision is our guide, and we take a collaborative approach to bring it to life.
                         </p>
                         <div className="
                             mt-[2.5rem]
@@ -130,7 +131,7 @@ const Footer = () => {
                             })}
                         </div>
                         <div className="
-                            mt-[3rem]
+                            mt-[1.5rem]
                             pt-[1.5rem]
                             border-t border-gray-700 
                         ">
@@ -140,10 +141,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Copyright */}
                 <div className="
-                    mt-[4rem]
+                    mt-[3rem]
                     border-t border-gray-700 relative
                     py-[2rem]
                 ">

@@ -2,8 +2,8 @@ import Advantage from "@/components/home/Advantage";
 import Compliances from "@/components/home/Compliances";
 import HomeBanner from "@/components/home/HomeBanner";
 import OurStory from "@/components/home/OurStory";
-import ProductShowcase from "@/components/home/ProductShowcase";
 import BuiltOnTrust from "@/components/home/BuiltOnTrust";
+import Collection from "@/components/home/Collection";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <HomeBanner />
       <OurStory />
       <Advantage />
-      <ProductShowcase />
+      <Collection />
       <BuiltOnTrust />
       <Compliances />
     </>

@@ -2,7 +2,7 @@
 export const mdfFeaturesData = {
     title: "MDF",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Dolore, adipisci.",
-    image: "/images/wudon/mdf.png",
+    image: "/images/wudon/mdf.avif",
     features: [
         {
             id: 1,

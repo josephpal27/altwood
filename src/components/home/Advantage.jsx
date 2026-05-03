@@ -33,7 +33,7 @@ const Advantage = () => {
     return (
         <>
             <section className="
-                bg-[url('/images/banners/advantage-bg.jpg')] bg-cover bg-center relative
+                bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative
                 mt-[5rem]
                 pb-[4.5rem]
             ">

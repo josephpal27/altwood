@@ -9,14 +9,14 @@ const HomeBanner = () => {
         <>
             <section className="p-0 relative">
                 <img
-                    src="/images/banners/home-banner.jpg"
+                    src="/images/banners/home-banner.avif"
                     alt="Home Banner"
                     loading="eager"
                     className="w-full h-screen object-cover"
                 />
                 {/* Content */}
                 <div className="
-                    absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-black/60
+                    absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-black/90
                     px-[7%] py-[4rem]
                 ">
                     <motion.h1
@@ -24,7 +24,7 @@ const HomeBanner = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="text-white text-[3.5rem]"
+                        className="text-white text-[3.5rem] w-max"
                     >
                         Leading Plywood <br /> Manufacturers In India
                     </motion.h1>

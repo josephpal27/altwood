@@ -1,16 +1,28 @@
+"use client"
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 import { GoArrowUpRight } from "react-icons/go";
 import GlareImage from "../GlareImage";
 
-const WudonProductFeatures = ({data, reverse}) => {
+const WudonProductFeatures = ({ data, reverse }) => {
     return (
         <>
             <section>
 
                 {/* Head */}
                 <div className="flex flex-col items-center">
-                    <h3>
+                    
+                    <motion.h2
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className=""
+                    >
                         {data.title}
-                    </h3>
+                    </motion.h2>
+
                     <p className="w-[50%] text-center mt-[1rem]">
                         {data.description}
                     </p>

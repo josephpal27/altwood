@@ -8,61 +8,61 @@ const stepsData = [
     {
         id: 1,
         title: "Step 1",
-        desc: "Responsible timber sourcing",
+        desc: "Responsible timber <br/> sourcing",
         image: "/images/built-on-trust/1.avif",
     },
     {
         id: 2,
         title: "Step 2",
-        desc: "Log conditioning and seasoning",
+        desc: "Log conditioning <br/> and seasoning",
         image: "/images/built-on-trust/2.avif",
     },
     {
         id: 3,
         title: "Step 3",
-        desc: "Precision log peeling",
+        desc: "Precision log <br/> peeling",
         image: "/images/built-on-trust/3.avif",
     },
     {
         id: 4,
         title: "Step 4",
-        desc: "Log drying and moisture control",
+        desc: "Log drying and <br/> moisture control",
         image: "/images/built-on-trust/4.avif",
     },
     {
         id: 5,
         title: "Step 5",
-        desc: "Log grading and selection",
+        desc: "Log grading <br/> and selection",
         image: "/images/built-on-trust/5.avif",
     },
     {
         id: 6,
         title: "Step 6",
-        desc: "Adhesive application",
+        desc: "Adhesive <br/> application",
         image: "/images/built-on-trust/6.avif",
     },
     {
         id: 7,
         title: "Step 7",
-        desc: "Layer assembly and cross graining",
+        desc: "Layer assembly and <br/> cross graining",
         image: "/images/built-on-trust/7.avif",
     },
     {
         id: 8,
         title: "Step 8",
-        desc: "Hot pressing under controlled pressure",
+        desc: "Hot pressing under <br/> controlled pressure",
         image: "/images/built-on-trust/8.avif",
     },
     {
         id: 9,
         title: "Step 9",
-        desc: "Finishing, sanding and edge calibration",
+        desc: "Finishing, sanding and <br/> edge calibration",
         image: "/images/built-on-trust/9.avif",
     },
     {
         id: 10,
         title: "Step 10",
-        desc: "Quality inspection",
+        desc: "Quality <br/> inspection",
         image: "/images/built-on-trust/10.avif",
     },
 ]
@@ -131,9 +131,9 @@ const BuiltOnTrust = () => {
                                     <span className="text-white text-[1.3rem] font-[600] font-clash">
                                         {item.title}
                                     </span>
-                                    <p className="text-white mt-[0.7rem] text-[1.1rem]">
-                                        {item.desc}
-                                    </p>
+                                    <p className="text-white mt-[0.7rem] text-[1.1rem]"
+                                        dangerouslySetInnerHTML={{__html: item.desc}}
+                                    />
                                 </div>
                             )
                         })}

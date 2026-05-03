@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 
 const ProductDetailsBanner = ({product}) => {
     return (
@@ -8,11 +12,17 @@ const ProductDetailsBanner = ({product}) => {
                     absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center
                     px-[7%] bg-black/50
                 ">
-                    <h1 className="
-                        text-white text-[4rem] mt-[4rem]
-                    ">
+                    <motion.h1
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="
+                            text-white text-[4rem] mt-[4rem]
+                        "
+                    >
                         {product?.name}
-                    </h1>
+                    </motion.h1>
                     <p className="
                         text-white mt-[0.5rem]
                     ">

@@ -48,7 +48,7 @@ const WudonHighlights = () => {
                     </p>
                     <div className="mt-[2rem]">
                         <GlareImage
-                            src="/images/demo-3.jpg"
+                            src="/images/wudon/highlight.avif"
                             alt="Wudon Highlight"
                             className="w-full rounded-md"
                         />

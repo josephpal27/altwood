@@ -2,16 +2,16 @@ export const mdfApplicationsData = [
     {
         id: 1,
         title: "Precision Work",
-        image: "/images/1.jpg",
+        image: "/images/wudon/applications/1.avif",
     },
     {
         id: 2,
         title: "Smooth Finishes",
-        image: "/images/4.jpg",
+        image: "/images/wudon/applications/2.avif",
     },
     {
         id: 3,
         title: "Decorative Applications",
-        image: "/images/3.jpg",
+        image: "/images/wudon/applications/3.avif",
     },
 ]

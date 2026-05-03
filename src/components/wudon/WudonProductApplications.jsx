@@ -1,9 +1,10 @@
 "use client"
 
 import { useState } from 'react';
+import { headingVariant } from "@/utils/animations"
 import { motion, AnimatePresence } from "framer-motion";
 
-const WudonProductApplications = ({data}) => {
+const WudonProductApplications = ({ data }) => {
 
     const [current, setCurrent] = useState(data[0].image);
 
@@ -16,9 +17,15 @@ const WudonProductApplications = ({data}) => {
         <>
             <section className="p-0 mt-[5rem]">
                 <div className="px-[7%]">
-                    <h3>
+                    <motion.h3
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="w-max"
+                    >
                         Applications
-                    </h3>
+                    </motion.h3>
                 </div>
 
                 <div className="relative overflow-hidden bg-black mt-[2.5rem]">
@@ -43,6 +50,7 @@ const WudonProductApplications = ({data}) => {
                     {/* Content */}
                     <div className="
                         flex justify-between flex-wrap z-20 relative h-[100dvh]
+                        bg-gradient-to-t from-black/90 via-black/30 to-transparent
                     ">
                         {data.map((item, index) => {
                             return (

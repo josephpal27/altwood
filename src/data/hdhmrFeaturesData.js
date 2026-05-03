@@ -1,7 +1,7 @@
 export const hdhmrFeaturesData = {
     title: "HDHMR",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Dolore, adipisci.",
-    image: "/images/wudon/hdhmr.png",
+    image: "/images/wudon/hdhmr.avif",
     features: [
         {
             id: 1,

@@ -3,8 +3,8 @@ export const productsData = [
         id: 1,
         name: "Film Faced",
         slug: "film-faced",
-        banner: "/images/banners/product-details-banner.jpg",
-        productImage: "/images/wudon/hdhmr.png",
+        banner: "/images/banners/product-details-banner.avif",
+        productImage: "/images/products/film-faced/1.avif",
         features: [
             {
                 id: 1,
@@ -59,8 +59,8 @@ export const productsData = [
         id: 2,
         name: "Marine Grade",
         slug: "marine-grade",
-        banner: "/images/banners/product-details-banner.jpg",
-        productImage: "/images/wudon/hdhmr.png",
+        banner: "/images/banners/product-details-banner.avif",
+        productImage: "/images/products/marine-grade/1.avif",
         features: [
             {
                 id: 1,
@@ -125,8 +125,8 @@ export const productsData = [
         id: 3,
         name: "BWP Grade",
         slug: "bwp-grade",
-        banner: "/images/banners/product-details-banner.jpg",
-        productImage: "/images/wudon/hdhmr.png",
+        banner: "/images/banners/product-details-banner.avif",
+        productImage: "/images/products/bwp/1.avif",
         features: [
             {
                 id: 1,
@@ -191,8 +191,8 @@ export const productsData = [
         id: 4,
         name: "BWR Grade",
         slug: "bwr-grade",
-        banner: "/images/banners/product-details-banner.jpg",
-        productImage: "/images/wudon/hdhmr.png",
+        banner: "/images/banners/product-details-banner.avif",
+        productImage: "/images/products/bwr/1.avif",
         features: [
             {
                 id: 1,
@@ -253,8 +253,8 @@ export const productsData = [
         id: 5,
         name: "Flush Door",
         slug: "flush-door",
-        banner: "/images/banners/product-details-banner.jpg",
-        productImage: "/images/wudon/hdhmr.png",
+        banner: "/images/banners/product-details-banner.avif",
+        productImage: "/images/products/flush-door/1.avif",
         features: [
             {
                 id: 1,
@@ -319,8 +319,8 @@ export const productsData = [
         id: 6,
         name: "Block Board",
         slug: "block-board",
-        banner: "/images/banners/product-details-banner.jpg",
-        productImage: "/images/wudon/hdhmr.png",
+        banner: "/images/banners/product-details-banner.avif",
+        productImage: "/images/products/block-board/1.avif",
         features: [
             {
                 id: 1,

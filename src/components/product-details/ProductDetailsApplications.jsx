@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations"
 import GlareImage from "../GlareImage"
 
 const ProductDetailsApplications = ({ product }) => {
@@ -8,7 +12,7 @@ const ProductDetailsApplications = ({ product }) => {
     return (
         <>
             <section className="
-                bg-[url('/images/banners/applications-bg.png')] bg-cover bg-center relative
+                bg-[url('/images/banners/black-bg-2.avif')] bg-cover bg-center relative
                 mt-[5rem]
                 pt-[4.5rem]
                 pb-[3rem]
@@ -16,9 +20,17 @@ const ProductDetailsApplications = ({ product }) => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-[#000] bg-opacity-20 w-full h-full"></div>
 
-                <h2 className="text-white text-center relative mx-auto w-max">
+                <motion.h2
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    className="
+                        text-white text-center relative mx-auto w-max
+                    "
+                >
                     Applications
-                </h2>
+                </motion.h2>
 
                 {/* Row */}
                 <div className="
@@ -66,7 +78,7 @@ const ProductDetailsApplications = ({ product }) => {
                                     </span>
                                     <p className="
                                         text-white text-center mt-[1rem] 
-                                    " dangerouslySetInnerHTML={{__html: item.title}} />
+                                    " dangerouslySetInnerHTML={{ __html: item.title }} />
                                 </div>
                             </div>
                         )

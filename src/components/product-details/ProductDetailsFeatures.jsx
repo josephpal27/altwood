@@ -13,7 +13,7 @@ const ProductDetailsFeatures = ({product}) => {
                     <GlareImage
                         src={product?.productImage}
                         alt={product?.name}
-                        className="w-full rounded-md"
+                        className="w-full rounded-md bg-[#ede6d4] aspect-[5/4]"
                     />
                 </div>
 
