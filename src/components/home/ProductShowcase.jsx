@@ -11,31 +11,37 @@ const servicesData = [
         title: "Film Faced",
         desc: "High density waterproof, BWP grade.",
         img: "/images/product-showcase/1.jpg",
+        url: "/products/film-faced",
     },
     {
         title: "Marine Grade",
         desc: "Marine Grade (IS: 710), BWP Grade, BWR Grade (IS: 303).",
         img: "/images/product-showcase/2.jpg",
+        url: "/products/marine-grade",
     },
     {
         title: "BWP Grade",
         desc: "100% premium pine wood, BWP treatment (IS: 2202).",
         img: "/images/product-showcase/3.jpg",
+        url: "/products/bwp-grade",
     },
     {
         title: "BWR Grade",
         desc: "Strong bonded core, moisture-resistant (IS: 1659).",
         img: "/images/product-showcase/4.jpg",
+        url: "/products/bwr-grade",
     },
     {
         title: "Flush Door",
         desc: "High-density (650-800 KG/M³), termite & borer resistant.",
         img: "/images/product-showcase/1.jpg",
+        url: "/products/flush-door",
     },
     {
         title: "Block Board",
         desc: "Heavy-core density (>850 KG/M³), super moisture resistant.",
         img: "/images/product-showcase/2.jpg",
+        url: "/products/block-board",
     },
 ];
 
@@ -101,7 +107,7 @@ const ProductShowcase = () => {
                                 </p>
                             </div>
                             <div>
-                                <Link href="/products/">
+                                <Link href={item.url}>
                                     <MdArrowOutward className="
                                         w-[45px] h-[45px] 
                                         rounded-full p-[0.5rem] hover:rotate-45 text-white transition duration-500
