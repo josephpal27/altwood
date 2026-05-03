@@ -11,8 +11,8 @@ const ProductDetailsFeatures = ({product}) => {
                 {/* Image */}
                 <div className="w-[48%]">
                     <GlareImage
-                        src={product.productImage}
-                        alt={product.name}
+                        src={product?.productImage}
+                        alt={product?.name}
                         className="w-full rounded-md"
                     />
                 </div>

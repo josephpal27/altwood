@@ -31,7 +31,30 @@ export const productsData = [
                 para: "12MM - 25KG, 30KG, 32KG & 34KG",
             },
         ],
+        applications: [
+            {
+                id: 1,
+                image: "/images/applications/1.avif",
+                title: "Concrete Formwork",
+            },
+            {
+                id: 2,
+                image: "/images/applications/1.avif",
+                title: "Heavy-Duty <br/> Infrastructure Projects",
+            },
+            {
+                id: 3,
+                image: "/images/applications/1.avif",
+                title: "Residential and <br/> Commercial Constructions",
+            },
+            {
+                id: 4,
+                image: "/images/applications/1.avif",
+                title: "Industrial Uses",
+            },
+        ],
     },
+
     {
         id: 2,
         name: "Marine Grade",
@@ -64,7 +87,40 @@ export const productsData = [
                 para: "LIFETIME GUARANTEE",
             },
         ],
+        applications: [
+            {
+                id: 1,
+                image: "/images/applications/1.avif",
+                title: "Furniture <br/> Manufacturing",
+            },
+            {
+                id: 2,
+                image: "/images/applications/1.avif",
+                title: "Interior Panelling <br/> & Partitioning",
+            },
+            {
+                id: 3,
+                image: "/images/applications/1.avif",
+                title: "Kitchen Cabinets <br/> and Shelving",
+            },
+            {
+                id: 4,
+                image: "/images/applications/1.avif",
+                title: "Doors and <br/> Window Frames",
+            },
+            {
+                id: 5,
+                image: "/images/applications/1.avif",
+                title: "Exhibitions",
+            },
+            {
+                id: 6,
+                image: "/images/applications/1.avif",
+                title: "Temporary <br/> Structures",
+            },
+        ],
     },
+
     {
         id: 3,
         name: "BWP Grade",
@@ -97,7 +153,40 @@ export const productsData = [
                 para: "32 YEARS GUARANTEE",
             },
         ],
+        applications: [
+            {
+                id: 1,
+                image: "/images/applications/1.avif",
+                title: "Furniture <br/> Manufacturing",
+            },
+            {
+                id: 2,
+                image: "/images/applications/1.avif",
+                title: "Interior Panelling <br/> & Partitioning",
+            },
+            {
+                id: 3,
+                image: "/images/applications/1.avif",
+                title: "Kitchen Cabinets <br/> and Shelving",
+            },
+            {
+                id: 4,
+                image: "/images/applications/1.avif",
+                title: "Doors and <br/> Window Frames",
+            },
+            {
+                id: 5,
+                image: "/images/applications/1.avif",
+                title: "Exhibitions",
+            },
+            {
+                id: 6,
+                image: "/images/applications/1.avif",
+                title: "Temporary <br/> Structures",
+            },
+        ],
     },
+
     {
         id: 4,
         name: "BWR Grade",
@@ -126,7 +215,40 @@ export const productsData = [
                 para: "QUAD PRESS TECHNOLOGY",
             },
         ],
+        applications: [
+            {
+                id: 1,
+                image: "/images/applications/1.avif",
+                title: "Furniture <br/> Manufacturing",
+            },
+            {
+                id: 2,
+                image: "/images/applications/1.avif",
+                title: "Interior Panelling <br/> & Partitioning",
+            },
+            {
+                id: 3,
+                image: "/images/applications/1.avif",
+                title: "Kitchen Cabinets <br/> and Shelving",
+            },
+            {
+                id: 4,
+                image: "/images/applications/1.avif",
+                title: "Doors and <br/> Window Frames",
+            },
+            {
+                id: 5,
+                image: "/images/applications/1.avif",
+                title: "Exhibitions",
+            },
+            {
+                id: 6,
+                image: "/images/applications/1.avif",
+                title: "Temporary <br/> Structures",
+            },
+        ],
     },
+
     {
         id: 5,
         name: "Flush Door",
@@ -159,7 +281,40 @@ export const productsData = [
                 para: "FULLY CUSTOMIZABLE SIZES, FINISHES, AND STYLES",
             },
         ],
+        applications: [
+            {
+                id: 1,
+                image: "/images/applications/1.avif",
+                title: "Furniture <br/> Manufacturing",
+            },
+            {
+                id: 2,
+                image: "/images/applications/1.avif",
+                title: "Interior Panelling <br/> & Partitioning",
+            },
+            {
+                id: 3,
+                image: "/images/applications/1.avif",
+                title: "Kitchen Cabinets <br/> and Shelving",
+            },
+            {
+                id: 4,
+                image: "/images/applications/1.avif",
+                title: "Doors and <br/> Window Frames",
+            },
+            {
+                id: 5,
+                image: "/images/applications/1.avif",
+                title: "Exhibitions",
+            },
+            {
+                id: 6,
+                image: "/images/applications/1.avif",
+                title: "Temporary <br/> Structures",
+            },
+        ],
     },
+
     {
         id: 6,
         name: "Block Board",
@@ -190,6 +345,38 @@ export const productsData = [
             {
                 id: 6,
                 para: "LIGHTWEIGHT YET STURDY PINEWOOD BLOCK BOARD",
+            },
+        ],
+        applications: [
+            {
+                id: 1,
+                image: "/images/applications/1.avif",
+                title: "Furniture <br/> Manufacturing",
+            },
+            {
+                id: 2,
+                image: "/images/applications/1.avif",
+                title: "Interior Panelling <br/> & Partitioning",
+            },
+            {
+                id: 3,
+                image: "/images/applications/1.avif",
+                title: "Kitchen Cabinets <br/> and Shelving",
+            },
+            {
+                id: 4,
+                image: "/images/applications/1.avif",
+                title: "Doors and <br/> Window Frames",
+            },
+            {
+                id: 5,
+                image: "/images/applications/1.avif",
+                title: "Exhibitions",
+            },
+            {
+                id: 6,
+                image: "/images/applications/1.avif",
+                title: "Temporary <br/> Structures",
             },
         ],
     },
