@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import SmoothScroll from "@/components/SmoothScroll";
+import ComingSoon from "@/components/ComingSoon";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,14 +27,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${clashGroteskVariable.variable}`}>
       <body>
-        {/* Global Effects */}
-        <CustomCursor />
-        <SmoothScroll />
 
-        {/* Site Content */}
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="sm:hidden">
+          <ComingSoon />
+        </div>
+
+        <div className="hidden sm:block">
+          {/* Global Effects */}
+          <CustomCursor />
+          <SmoothScroll />
+
+          {/* Site Content */}
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
+
       </body>
     </html>
   );

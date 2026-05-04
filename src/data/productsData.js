@@ -4,7 +4,6 @@ export const productsData = [
         name: "Film Faced",
         slug: "film-faced",
         banner: "/images/banners/product-details-banner.avif",
-        productImage: "/images/products/film-faced/1.avif",
         productImages: [
             "/images/products/film-faced/1.avif",
             "/images/products/film-faced/2.png",
@@ -66,7 +65,12 @@ export const productsData = [
         name: "Marine Grade",
         slug: "marine-grade",
         banner: "/images/banners/product-details-banner.avif",
-        productImage: "/images/products/marine-grade/1.avif",
+        productImages: [
+            "/images/products/marine-grade/1.avif",
+            "/images/products/marine-grade/2.png",
+            "/images/products/marine-grade/3.png",
+            "/images/products/marine-grade/4.png",
+        ],
         features: [
             {
                 id: 1,
@@ -132,7 +136,12 @@ export const productsData = [
         name: "BWP Grade",
         slug: "bwp-grade",
         banner: "/images/banners/product-details-banner.avif",
-        productImage: "/images/products/bwp/1.avif",
+        productImages: [
+            "/images/products/bwp/1.avif",
+            "/images/products/bwp/2.png",
+            "/images/products/bwp/3.png",
+            "/images/products/bwp/4.png",
+        ],
         features: [
             {
                 id: 1,
@@ -198,7 +207,12 @@ export const productsData = [
         name: "BWR Grade",
         slug: "bwr-grade",
         banner: "/images/banners/product-details-banner.avif",
-        productImage: "/images/products/bwr/1.avif",
+        productImages: [
+            "/images/products/bwr/1.avif",
+            "/images/products/bwr/2.png",
+            "/images/products/bwr/3.png",
+            "/images/products/bwr/4.png",
+        ],
         features: [
             {
                 id: 1,
@@ -260,7 +274,12 @@ export const productsData = [
         name: "Flush Door",
         slug: "flush-door",
         banner: "/images/banners/product-details-banner.avif",
-        productImage: "/images/products/flush-door/1.avif",
+        productImages: [
+            "/images/products/flush-door/1.avif",
+            "/images/products/flush-door/2.png",
+            "/images/products/flush-door/3.png",
+            "/images/products/flush-door/4.png",
+        ],
         features: [
             {
                 id: 1,
@@ -326,7 +345,12 @@ export const productsData = [
         name: "Block Board",
         slug: "block-board",
         banner: "/images/banners/product-details-banner.avif",
-        productImage: "/images/products/block-board/1.avif",
+        productImages: [
+            "/images/products/block-board/1.avif",
+            "/images/products/block-board/2.png",
+            "/images/products/block-board/3.png",
+            "/images/products/block-board/4.png",
+        ],
         features: [
             {
                 id: 1,
