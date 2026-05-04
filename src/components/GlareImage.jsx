@@ -1,6 +1,8 @@
-const GlareImage = ({ src, alt, className="" }) => {
+const GlareImage = ({ src, alt, className="", ...props }) => {
     return (
-        <div className={`relative overflow-hidden group ${className}`}>
+        <div className={`relative overflow-hidden group ${className}`}
+            {...props} // click + all events here
+        >
             <img
                 src={src}
                 alt={alt}

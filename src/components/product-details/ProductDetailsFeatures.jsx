@@ -1,7 +1,28 @@
+"use client"
+
+import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import GlareImage from "../GlareImage";
 
-const ProductDetailsFeatures = ({product}) => {
+const ProductDetailsFeatures = ({ product }) => {
+
+    const [activeImage, setActiveImage] = useState(
+        product?.productImages?.[0]
+    );
+
+    const [fade, setFade] = useState(true);
+
+    const handleImageChange = (img) => {
+        if (img === activeImage) return;
+
+        setFade(false);
+
+        setTimeout(() => {
+            setActiveImage(img);
+            setFade(true);
+        }, 200);
+    };
+
     return (
         <>
             <section className="
@@ -10,11 +31,33 @@ const ProductDetailsFeatures = ({product}) => {
 
                 {/* Image */}
                 <div className="w-[48%]">
-                    <GlareImage
-                        src={product?.productImage}
-                        alt={product?.name}
-                        className="w-full rounded-md bg-[#ede6d4] aspect-[5/4]"
-                    />
+                    <div className="bg-[#ede6d4] rounded-md overflow-hidden">
+                        <GlareImage
+                            src={activeImage}
+                            alt={product?.name}
+                            className={`
+                                w-full aspect-[5/4]
+                                transition-opacity duration-300
+                                ${fade ? "opacity-100" : "opacity-0"}
+                            `}
+                        />
+                    </div>
+                    <div className="
+                        mt-[1rem]
+                        flex justify-between gap-[1rem]
+                    ">
+                        {product?.productImages?.map((img, index) => {
+                            return (
+                                <GlareImage
+                                    key={index}
+                                    src={img}
+                                    alt={product?.name}
+                                    onClick={() => handleImageChange(img)}
+                                    className="w-[25%] rounded-md bg-[#ede6d4] aspect-[5/4] cursor-pointer"
+                                />
+                            )
+                        })}
+                    </div>
                 </div>
 
                 {/* Content */}

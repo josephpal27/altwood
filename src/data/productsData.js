@@ -5,6 +5,12 @@ export const productsData = [
         slug: "film-faced",
         banner: "/images/banners/product-details-banner.avif",
         productImage: "/images/products/film-faced/1.avif",
+        productImages: [
+            "/images/products/film-faced/1.avif",
+            "/images/products/film-faced/2.png",
+            "/images/products/film-faced/3.png",
+            "/images/products/film-faced/4.png",
+        ],
         features: [
             {
                 id: 1,
