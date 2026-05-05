@@ -20,12 +20,18 @@ const ProductListing = () => {
                                 hover:translate-y-[-7px] transition duration-300 shadow-md relative
                             ">
                                 {/* Image */}
-                                <div className="">
+                                <div className="relative w-full aspect-[5/4] overflow-hidden">
                                     <img
                                         src={product.productImages[0]}
                                         alt={product.name}
                                         loading="lazy"
-                                        className="w-full"
+                                        className="w-full h-auto transition-opacity duration-500 group-hover:opacity-0"
+                                    />
+                                    <img
+                                        src={product.productImages[2]}
+                                        alt={product.name}
+                                        loading="lazy"
+                                        className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pt-[7%]"
                                     />
                                 </div>
 
