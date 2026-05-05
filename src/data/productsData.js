@@ -6,9 +6,9 @@ export const productsData = [
         banner: "/images/banners/product-details-banner.avif",
         productImages: [
             "/images/products/film-faced/1.avif",
-            "/images/products/film-faced/2.png",
-            "/images/products/film-faced/3.png",
-            "/images/products/film-faced/4.png",
+            "/images/products/film-faced/2.avif",
+            "/images/products/film-faced/3.avif",
+            "/images/products/film-faced/4.avif",
         ],
         features: [
             {
@@ -67,9 +67,9 @@ export const productsData = [
         banner: "/images/banners/product-details-banner.avif",
         productImages: [
             "/images/products/marine-grade/1.avif",
-            "/images/products/marine-grade/2.png",
-            "/images/products/marine-grade/3.png",
-            "/images/products/marine-grade/4.png",
+            "/images/products/marine-grade/2.avif",
+            "/images/products/marine-grade/3.avif",
+            "/images/products/marine-grade/4.avif",
         ],
         features: [
             {
@@ -138,9 +138,9 @@ export const productsData = [
         banner: "/images/banners/product-details-banner.avif",
         productImages: [
             "/images/products/bwp/1.avif",
-            "/images/products/bwp/2.png",
-            "/images/products/bwp/3.png",
-            "/images/products/bwp/4.png",
+            "/images/products/bwp/2.avif",
+            "/images/products/bwp/3.avif",
+            "/images/products/bwp/4.avif",
         ],
         features: [
             {
@@ -209,9 +209,9 @@ export const productsData = [
         banner: "/images/banners/product-details-banner.avif",
         productImages: [
             "/images/products/bwr/1.avif",
-            "/images/products/bwr/2.png",
-            "/images/products/bwr/3.png",
-            "/images/products/bwr/4.png",
+            "/images/products/bwr/2.avif",
+            "/images/products/bwr/3.avif",
+            "/images/products/bwr/4.avif",
         ],
         features: [
             {
@@ -276,9 +276,9 @@ export const productsData = [
         banner: "/images/banners/product-details-banner.avif",
         productImages: [
             "/images/products/flush-door/1.avif",
-            "/images/products/flush-door/2.png",
-            "/images/products/flush-door/3.png",
-            "/images/products/flush-door/4.png",
+            "/images/products/flush-door/2.avif",
+            "/images/products/flush-door/3.avif",
+            "/images/products/flush-door/4.avif",
         ],
         features: [
             {
@@ -347,9 +347,9 @@ export const productsData = [
         banner: "/images/banners/product-details-banner.avif",
         productImages: [
             "/images/products/block-board/1.avif",
-            "/images/products/block-board/2.png",
-            "/images/products/block-board/3.png",
-            "/images/products/block-board/4.png",
+            "/images/products/block-board/2.avif",
+            "/images/products/block-board/3.avif",
+            "/images/products/block-board/4.avif",
         ],
         features: [
             {
