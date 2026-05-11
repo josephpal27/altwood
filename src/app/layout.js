@@ -28,11 +28,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${clashGroteskVariable.variable}`}>
       <body>
 
-        <div className="sm:hidden">
+        {/* <div className="sm:hidden">
           <ComingSoon />
-        </div>
+        </div> */}
 
-        <div className="hidden sm:block">
+        {/* <div className="hidden sm:block"> */}
           {/* Global Effects */}
           <CustomCursor />
           <SmoothScroll />
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Footer />
-        </div>
+        {/* </div> */}
 
       </body>
     </html>
