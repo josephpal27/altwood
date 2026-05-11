@@ -70,6 +70,7 @@ const CustomCursor = () => {
         pointer-events-none
         mix-blend-difference
         -translate-x-1/2 -translate-y-1/2
+        hidden lg:block
       "
     />
   );
