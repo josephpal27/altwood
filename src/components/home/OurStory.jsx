@@ -8,7 +8,7 @@ import { headingVariant } from "@/utils/animations"
 const OurStory = () => {
     return (
         <>
-            <section className="flex justify-between flex-wrap" id="our-story">
+            <section className="flex justify-between flex-wrap overflow-hidden" id="our-story">
                 {/* Left */}
                 <div className="w-[46%] relative">
                     <GlareImage

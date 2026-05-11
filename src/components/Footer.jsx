@@ -45,7 +45,7 @@ const Footer = () => {
     return (
         <>
             <footer className="
-                bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative
+                bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative overflow-hidden
                 mt-[1rem]
                 px-[7%]
             ">

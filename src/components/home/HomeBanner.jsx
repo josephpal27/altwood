@@ -17,21 +17,21 @@ const HomeBanner = () => {
                 {/* Content */}
                 <div className="
                     absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-black/90
-                    px-[7%] py-[4rem]
+                    px-[1rem] sm:px-[7%] py-[4rem]
                 ">
                     <motion.h1
                         variants={headingVariant}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="text-white text-[3.5rem] w-max"
+                        className="text-white text-[2rem] sm:text-[3.5rem] w-max"
                     >
                         Leading Plywood <br /> Manufacturers In India
                     </motion.h1>
-                    <p className="text-white w-[50%] mt-[1rem]">
+                    <p className="text-white w-full sm:w-[50%] mt-[1rem]">
                         Our premium plywood and wood panels are crafted with precision to meet the evolving needs of architecture and interior design, offering unmatched strength and durability.
                     </p>
-                    <div className="mt-[2rem]">
+                    <div className="mt-[1.7rem] sm:mt-[2rem]">
                         <Button label="Explore Our Collection" url="/" />
                     </div>
                 </div>

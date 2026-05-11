@@ -49,7 +49,7 @@ const Collection = () => {
     const [active, setActive] = useState(null);
 
     return (
-        <section className="pt-[4rem]">
+        <section className="pt-[4rem] overflow-hidden">
             <motion.h4
                 variants={headingVariant}
                 initial="hidden"
