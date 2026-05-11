@@ -63,13 +63,13 @@ const Navbar = () => {
         <>
             <nav className={`
                 fixed left-0 w-full z-50 transition-transform duration-300 
-                px-[7%]
+                px-[1rem] sm:px-[7%]
                 top-[1rem]
                 ${showNav ? "translate-y-0" : "-translate-y-[150%]"
                 }`}>
                 <div className="
                     bg-white rounded-full flex items-center justify-between shadow-md relative
-                    p-[0.8rem]
+                    p-[0.6rem] sm:p-[0.8rem]
                 ">
 
                     {/* Left Logo */}
@@ -82,8 +82,8 @@ const Navbar = () => {
                             }
                             alt="Logo"
                             className="
-                            w-[80px] 
-                            ml-[0.5rem]
+                            w-[65px] sm:w-[80px] 
+                            ml-[0.3rem] sm:ml-[0.5rem]
                         " />
                     </Link>
 
@@ -124,7 +124,7 @@ const Navbar = () => {
                     {/* Mobile Menu */}
                     <div className="md:hidden z-10">
                         <button onClick={() => setOpen(true)}>
-                            <FiMenu size={26} />
+                            <FiMenu size={26} className="mr-[0.5rem] sm:mr-0 mt-[3px] sm:mt-0" />
                         </button>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <div className="p-[1rem] mt-[1rem]">
+                <div className="p-[1rem] mt-[0.5rem] mt:mt-[1rem]">
                     <Button
                         label={isWudonPage ? "Explore Altwood" : "Explore Wudon"}
                         url={isWudonPage ? "/" : "/wudon"}
