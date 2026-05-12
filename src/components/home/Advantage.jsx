@@ -34,8 +34,8 @@ const Advantage = () => {
         <>
             <section className="
                 bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative
-                mt-[5rem]
-                pb-[4.5rem]
+                mt-[3rem] lg:mt-[5rem]
+                pb-[2.5rem] lg:pb-[4.5rem]
             ">
 
                 {/* Overlay */}
@@ -45,10 +45,10 @@ const Advantage = () => {
                 <div className="flex flex-col items-center relative">
                     <div className="
                         border-[1px] border-gray-300 w-max rounded-full flex items-center gap-[0.5rem]
-                        px-[1.1rem] py-[0.3rem]
+                        px-[1rem] lg:px-[1.1rem] py-[0.3rem]
                     ">
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
-                        <span className="text-[1rem] text-white font-[500]">The Altwood Advantage</span>
+                        <span className="text-[0.9rem] lg:text-[1rem] text-white font-[500]">The Altwood Advantage</span>
                     </div>
                     <motion.h3
                         variants={headingVariant}
@@ -64,35 +64,36 @@ const Advantage = () => {
                 {/* Cards */}
                 <div className="
                     flex justify-between flex-wrap relative
-                    mt-[3rem]
+                    mt-[2rem] lg:mt-[3rem]
                 ">
                     {advantageData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[31.5%] overflow-hidden rounded-md bg-[#313131] 
-                                p-[2.5rem] 
+                                w-full lg:w-[31.5%] overflow-hidden rounded-md bg-[#313131] 
+                                p-[1.2rem] lg:p-[2.5rem] 
                                 hover:translate-y-[-7px] transition duration-300
+                                mb-[0.6rem] lg:mb-0
                             ">
                                 <img src={item.image} alt={item.title} loading="lazy" className="
                                     w-[22%]
                                 " />
                                 <span className="
                                     text-white block
-                                    text-[1.4rem] font-[700]
-                                    mt-[2.5rem]
+                                    text-[1.3rem] lg:text-[1.4rem] font-[700]
+                                    mt-[1.5rem] lg:mt-[2.5rem]
                                 ">
                                     {item.title}
                                 </span>
                                 <p className="
                                     text-[#ededed]
-                                    mt-[1rem]
+                                    mt-[0.8rem] lg:mt-[1rem]
                                 ">
                                     {item.desc}
                                 </p>
                                 <div className="
                                     border-t border-gray-600 
-                                    mt-[1.5rem] 
-                                    pt-[1.5rem]
+                                    mt-[1.2rem] lg:mt-[1.5rem] 
+                                    pt-[1.2rem] lg:pt-[1.5rem]
                                 ">
                                     <Link href={item.url} className="
                                     text-white w-max group
@@ -111,11 +112,11 @@ const Advantage = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="relative flex justify-center items-center mt-[3.5rem]">
+                <div className="relative flex justify-center items-center mt-[1rem] lg:mt-[3.5rem]">
                     {/* Icon will add here */}
-                    <p className="text-center text-white flex items-center gap-[0.6rem]">
+                    <p className="text-center text-white flex items-center gap-[0.6rem] text-[0.9rem] sm:text-[1.1rem]">
                         Let's bring your vision to life.
-                        <Link href="/contact" className="text-white underline">Get a Free Quote</Link>
+                        <Link href="/contact" className="text-white underline text-[0.9rem] sm:text-[1.1rem]">Get a Free Quote</Link>
                     </p>
                 </div>
             </section>

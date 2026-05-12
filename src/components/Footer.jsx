@@ -47,15 +47,15 @@ const Footer = () => {
             <footer className="
                 bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative overflow-hidden
                 mt-[1rem]
-                px-[7%]
+                px-[1rem] sm:px-[7%]
             ">
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-[#272727] bg-opacity-80 w-full h-full"></div>
 
                 {/* Content */}
-                <div className="flex justify-between flex-wrap pt-[5.5rem] relative">
+                <div className="flex justify-between flex-wrap pt-[2rem] lg:pt-[5.5rem] relative">
                     {/* Left */}
-                    <div className="w-[32%] rounded-md bg-[#313131] p-[2.5rem]">
+                    <div className="w-full lg:w-[32%] rounded-md bg-[#313131] p-[1rem] lg:p-[2.5rem]">
                         <div className="
                             bg-white aspect-square rounded-full flex items-center justify-center
                             w-[23%] px-[7px]
@@ -66,31 +66,31 @@ const Footer = () => {
                         </div>
                         <p className="
                             text-[#ededed]
-                            text-[1rem]
-                            mt-[1.5rem]
+                            text-[0.9rem] lg:text-[1rem]
+                            mt-[1.1rem] lg:mt-[1.5rem]
                         ">
                             At Altwood, we understand that no two projects are alike. Your vision is our guide, and we take a collaborative approach to bring it to life.
                         </p>
                         <div className="
-                            mt-[2.5rem]
+                            mt-[1.2rem] lg:mt-[2.5rem]
                             pt-[1rem]
                             border-t border-gray-600 
                         ">
                             <span className="
-                                text-white text-[1.3rem] font-[600] font-clash
+                                text-white text-[1.2rem] lg:text-[1.3rem] font-[600] font-clash
                             ">
                                 Follow Us on Social
                             </span>
                             <div className="
                                 flex
-                                gap-[1.1rem]
-                                mt-[1rem] 
+                                gap-[1rem] lg:gap-[1.1rem]
+                                mt-[0.9rem] lg:mt-[1rem] 
                             ">
                                 {socialHandles.map((item, index) => {
                                     return (
                                         <a href={item.url} target="_blank" key={index} className="
-                                            w-[40px]
-                                            h-[40px]
+                                            w-[35px] lg:w-[40px]
+                                            h-[35px] lg:h-[40px]
                                             rounded-full text-white border border-gray-600 flex justify-center items-center
                                             hover:bg-[#d7b36e] transition
                                         ">
@@ -102,23 +102,26 @@ const Footer = () => {
                         </div>
                     </div>
                     {/* Right */}
-                    <div className="w-[60%]">
+                    <div className="w-full lg:w-[60%] mt-[1rem] lg:mt-0">
                         <div className="flex justify-between flex-wrap">
                             {footContent.map((item, index) => {
                                 return (
                                     <div key={index} className="
-                                        w-[30%] first:w-[20%] last:w-[40%]
+                                        w-full lg:w-[30%] 
+                                        first:w-full lg:first:w-[20%] 
+                                        last:w-full lg:last:w-[40%]
+                                        mt-[1.2rem] lg:mt-0
                                     ">
                                         <span className="
-                                            text-white text-[1.4rem] font-[600] font-clash
+                                            text-white text-[1.3rem] lg:text-[1.4rem] font-[600] font-clash
                                         ">
                                             {item.title}
-                                            <div className="mt-[1.5rem]">
+                                            <div className="mt-[1rem] lg:mt-[1.5rem]">
                                                 {item.links.map((link, index) => {
                                                     return (
                                                         <Link href={link.url} key={index} className="
                                                             flex items-center text-white hover:text-[#d7b36e] transition
-                                                            mb-[1rem]
+                                                            mb-[0.5rem] lg:mb-[1rem] 
                                                         ">
                                                             {link.label}
                                                         </Link>
@@ -131,11 +134,11 @@ const Footer = () => {
                             })}
                         </div>
                         <div className="
-                            mt-[1.5rem]
-                            pt-[1.5rem]
+                            mt-[1rem] lg:mt-[1.5rem]
+                            pt-[1rem] lg:pt-[1.5rem]
                             border-t border-gray-700 
                         ">
-                            <p className="text-white text-[1.2rem] font-[500] font-clash">
+                            <p className="text-white text-[1rem] lg:text-[1.2rem] font-[500] font-clash">
                                 Premium Plywood Manufacturing Excellence
                             </p>
                         </div>
@@ -144,11 +147,11 @@ const Footer = () => {
 
                 {/* Copyright */}
                 <div className="
-                    mt-[3rem]
+                    mt-[1.1rem] lg:mt-[3rem]
                     border-t border-gray-700 relative
-                    py-[2rem]
+                    py-[1rem] lg:py-[2rem]
                 ">
-                    <p className="text-center text-white text-[1rem]">
+                    <p className="text-center text-white text-[0.8rem] lg:text-[1rem]">
                         Copyright © 2026 | Altwood | All Rights Reserved
                     </p>
                 </div>

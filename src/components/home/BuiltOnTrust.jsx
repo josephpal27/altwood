@@ -78,9 +78,9 @@ const BuiltOnTrust = () => {
 
     return (
         <>
-            <section className="p-0 mt-[5rem]">
+            <section className="p-0 mt-[3rem] lg:mt-[5rem]">
 
-                <div className="px-[7%] flex flex-col items-center">
+                <div className="px-[1rem] sm:px-[7%] flex flex-col items-center">
                     <motion.h5
                         variants={headingVariant}
                         initial="hidden"
@@ -90,12 +90,12 @@ const BuiltOnTrust = () => {
                     >
                         Built On Trust
                     </motion.h5>
-                    <p className="text-center w-[80%] mt-[1rem]">
+                    <p className="text-center w-full lg:w-[80%] mt-[1rem]">
                         Altwood blends five decades of heritage with modern innovation to create premium, personalised wood solutions that enrich any space. Quality craftsmanship meets accessible pricing, making timeless beauty affordable for all.
                     </p>
                 </div>
 
-                <div className="relative overflow-hidden bg-black mt-[3rem]">
+                <div className="relative overflow-hidden bg-black mt-[1.7rem] lg:mt-[3rem]">
                     {/* Background Image */}
                     <div className="absolute top-0 left-0 w-full h-full z-10">
                         <AnimatePresence mode="sync">
@@ -116,22 +116,22 @@ const BuiltOnTrust = () => {
 
                     {/* Content */}
                     <div className="
-                        flex justify-between flex-wrap z-20 relative h-[100dvh] bg-[#0000005d]
+                        flex justify-between flex-wrap z-20 relative h-[auto] lg:h-[100dvh] bg-[#0000005d]
                     ">
                         {stepsData.map((item, index) => {
                             return (
                                 <div
                                     key={index}
                                     className="
-                                    w-[20%] border-[#ededed3c] border-b-[1px] border-r-[1px]   
+                                    w-[50%] lg:w-[20%] border-[#ededed3c] border-b-[1px] border-r-[1px]   
                                     flex flex-col justify-center items-center text-center p-[1rem]   
                                 "
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
-                                    <span className="text-white text-[1.3rem] font-[600] font-clash">
+                                    <span className="text-white text-[1.1rem] lg:text-[1.3rem] font-[600] font-clash">
                                         {item.title}
                                     </span>
-                                    <p className="text-white mt-[0.7rem] text-[1.1rem]"
+                                    <p className="text-white mt-[0.4rem] lg:mt-[0.7rem] text-[0.8rem] lg:text-[1.1rem]"
                                         dangerouslySetInnerHTML={{__html: item.desc}}
                                     />
                                 </div>

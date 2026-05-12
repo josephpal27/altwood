@@ -49,7 +49,7 @@ const Collection = () => {
     const [active, setActive] = useState(null);
 
     return (
-        <section className="pt-[4rem] overflow-hidden">
+        <section className="pt-[2rem] lg:pt-[4rem] overflow-hidden">
             <motion.h4
                 variants={headingVariant}
                 initial="hidden"
@@ -57,11 +57,11 @@ const Collection = () => {
                 viewport={{ once: true }}
                 className="text-center w-max mx-auto"
             >
-                Premium Plywood Collection
+                Premium Plywood <br className="block lg:hidden" /> Collection
             </motion.h4>
 
             {/* Row */}
-            <div className="flex h-[70dvh] gap-[1rem] mt-[3rem]">
+            <div className="flex h-[50dvh] lg:h-[70dvh] gap-[1rem] mt-[1.7rem] lg:mt-[3rem]">
                 {collectionData.map((item, index) => (
                     <div
                         key={index}

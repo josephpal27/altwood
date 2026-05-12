@@ -8,9 +8,9 @@ import { headingVariant } from "@/utils/animations"
 const OurStory = () => {
     return (
         <>
-            <section className="flex justify-between flex-wrap overflow-hidden" id="our-story">
+            <section className="flex justify-between flex-wrap flex-col-reverse lg:flex-row overflow-hidden" id="our-story">
                 {/* Left */}
-                <div className="w-[46%] relative">
+                <div className="w-full lg:w-[46%] relative mt-[2rem] lg:mt-0">
                     <GlareImage
                         src="/images/our-story/1.avif"
                         alt="Our Story 1"
@@ -25,35 +25,36 @@ const OurStory = () => {
                     </div>
                 </div>
                 {/* Right */}
-                <div className="w-[50%]">
+                <div className="w-full lg:w-[50%]">
 
                     {/* Top */}
                     <div className="
                         border-[1px] border-gray-300 w-max rounded-full flex items-center gap-[0.5rem]
-                        px-[1.1rem] py-[0.3rem]
+                        px-[1rem] lg:px-[1.1rem] py-[0.3rem]
                     ">
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
-                        <span className="text-[1rem] text-black font-[500]">Our Story</span>
+                        <span className="text-[0.9rem] lg:text-[1rem] text-black font-[500]">Our Story</span>
                     </div>
                     <motion.h2
                         variants={headingVariant}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="mt-[2rem] w-max"
+                        className="mt-[1.5rem] lg:mt-[2rem] w-max"
                     >
                         Five Decades of Expertise. <br /> A Legacy in the Making.
                     </motion.h2>
-                    <p className="mt-[1.5rem]">
+                    <p className="mt-[1rem] lg:mt-[1.5rem]">
                         We blend India's rich heritage with modern technology to craft premium wood solutions that stand the test of time. Your vision is our guide.
                     </p>
 
                     {/* Center */}
                     <div className="
-                        flex justify-between flex-wrap items-center
-                        mt-[3rem] py-[2rem] border-t-[1px] border-b-[1px] border-gray-200
+                        flex justify-between flex-wrap items-center border-t-[1px] border-b-[1px] border-gray-200
+                        mt-[1rem] lg:mt-[3rem] 
+                        py-[1rem] lg:py-[2rem]
                     ">
-                        <div className="w-[65%]">
+                        <div className="w-full lg:w-[65%]">
                             <div className="flex gap-[0.5rem] mb-[0.8rem]">
                                 {/* Icon Will Add Here */}
                                 <p>
@@ -68,25 +69,26 @@ const OurStory = () => {
                             </div>
                             <div className="
                                 border-t-[1px] border-gray-200 
-                                pt-[2rem] mt-[2rem]
+                                pt-[1rem] lg:pt-[2rem] 
+                                mt-[1rem] lg:mt-[2rem]
                             ">
                                 <div className="flex justify-between items-center">
-                                    <span className="text-[1rem] text-black font-[600]">
+                                    <span className="text-[0.9rem] lg:text-[1rem] text-black font-[600]">
                                         Excellence
                                     </span>
-                                    <span className="text-[1rem] text-black font-[600]">
+                                    <span className="text-[0.9rem] lg:text-[1rem] text-black font-[600]">
                                         95%
                                     </span>
                                 </div>
                                 {/* Progress Bar */}
-                                <div className="mt-[1rem] w-full bg-[#e5e5e5] h-[12px] rounded-full overflow-hidden">
+                                <div className="mt-[1rem] w-full bg-[#e5e5e5] h-[10px] lg:h-[12px] rounded-full overflow-hidden">
                                     <div className="
                                         h-full rounded-full bg-[#114a27] transition-all duration-700 ease-in-out w-[95%]
                                     "/>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[30%]">
+                        <div className="w-full lg:w-[30%] mt-[2rem] lg:mt-0">
                             <GlareImage
                                 src="/images/our-story/3.avif"
                                 alt="Our Story 3"
@@ -96,7 +98,7 @@ const OurStory = () => {
                     </div>
 
                     {/* Bottom */}
-                    <div className="mt-[3rem]">
+                    <div className="mt-[2rem] lg:mt-[3rem]">
                         <Button label="Discover Our Heritage" url="/about" />
                     </div>
                 </div>
