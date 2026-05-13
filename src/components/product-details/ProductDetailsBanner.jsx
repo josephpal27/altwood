@@ -12,7 +12,7 @@ const ProductDetailsBanner = ({product}) => {
                 " />
                 <div className="
                     absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center
-                    px-[7%] bg-black/50
+                    px-[1rem] lg:px-[7%] bg-black/50
                 ">
                     <motion.h1
                         variants={headingVariant}

@@ -30,7 +30,7 @@ const ProductDetailsFeatures = ({ product }) => {
             ">
 
                 {/* Image */}
-                <div className="w-full lg:w-[48%] mt-[-0.8rem] lg:mt-0">
+                <div className="w-full lg:w-[48%] mt-[-0.5rem] lg:mt-0">
                     <div className="bg-[#ede6d4] rounded-md overflow-hidden p-[1rem] lg:p-0">
                         <GlareImage
                             src={activeImage}
