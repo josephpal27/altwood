@@ -61,16 +61,22 @@ const Collection = () => {
             </motion.h4>
 
             {/* Row */}
-            <div className="flex h-[50dvh] lg:h-[70dvh] gap-[1rem] mt-[1.7rem] lg:mt-[3rem]">
+            <div className="
+                flex justify-between flex-wrap lg:flex-nowrap
+                h-[auto] lg:h-[70dvh] 
+                gap-[1rem] mt-[1.7rem] lg:mt-[3rem]
+            ">
                 {collectionData.map((item, index) => (
                     <div
                         key={index}
                         onMouseEnter={() => setActive(index)}
                         onMouseLeave={() => setActive(null)}
                         className={`
-                            relative rounded-[20px] overflow-hidden cursor-pointer
+                            relative rounded-[15px] lg:rounded-[20px] overflow-hidden cursor-pointer
                             transition-all duration-500 ease-in-out
-                            ${active === index ? "flex-[10]" : "flex-[1.5]"}
+                            w-[47.5%] lg:w-auto 
+                            h-[240px] lg:h-auto
+                            ${active === index ? "lg:flex-[10]" : "lg:flex-[1.5]"}
                         `}
                     >
                         {/* Image */}
@@ -80,37 +86,40 @@ const Collection = () => {
                             className={`
                                 w-full h-full object-cover
                                 transition-transform duration-700
-                                ${active === index ? "scale-102" : "scale-100"}
+                                ${active === index ? "scale-100 lg:scale-102" : "scale-100"}
                             `}
                         />
 
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
-                        {/* Content (visible on hover) */}
+                        {/* Content (always visible on mobile, hover-only on desktop) */}
                         <div className={`
-                            absolute bottom-0 left-0 w-full p-[2rem]
+                            absolute top-0 left-0 w-full h-full p-[0.7rem] lg:p-[2rem]
                             transition-all duration-300 z-10
                             flex justify-between items-end
                             ${active === index
-                                ? "opacity-100 translate-y-0"
-                                : "opacity-0 translate-y-10"
+                                ? "lg:opacity-100 lg:translate-y-0"
+                                : "lg:opacity-0 lg:translate-y-10"
                             }
                         `}
                         >
-                            <div className="w-[85%]">
-                                <span className="text-[1.7rem] font-[700] text-white">
+                            <div className="w-full lg:w-[85%]">
+                                <span className="text-[1.2rem] lg:text-[1.7rem] font-[700] text-white">
                                     {item.title}
                                 </span>
-                                <p className="opacity-90 text-white mt-[0.5rem] text-nowrap">
+                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] lg:text-nowrap text-[0.65rem] sm:text-[1.1rem]">
                                     {item.desc}
                                 </p>
                             </div>
-                            <div>
+                            <div className="
+                                absolute top-[0.6rem] right-[0.6rem] lg:relative
+                            ">
                                 <Link href={item.url}>
                                     <MdArrowOutward className="
-                                        w-[45px] h-[45px] 
-                                        rounded-full p-[0.5rem] hover:rotate-45 text-white transition duration-500
+                                        w-[25px] lg:w-[45px] 
+                                        h-[25px] lg:h-[45px]
+                                        rounded-full p-[0.3rem] lg:p-[0.5rem] hover:rotate-45 text-white transition duration-500
                                         bg-[#7d4c0a] hover:bg-[#114a27] 
                                     " />
                                 </Link>
@@ -119,9 +128,9 @@ const Collection = () => {
 
                         {/* Vertical Text (default state) */}
                         <div className={`
-                            absolute inset-0 flex items-center justify-center uppercase
+                            absolute inset-0 items-center justify-center uppercase
                             text-white text-[1.8rem] tracking-widest font-[700]
-                            transition-all duration-500
+                            transition-all duration-500 hidden lg:flex
                             ${active === index
                                 ? "opacity-0 scale-90"
                                 : "opacity-100 scale-100"

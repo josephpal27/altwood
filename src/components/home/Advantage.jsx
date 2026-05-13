@@ -35,7 +35,7 @@ const Advantage = () => {
             <section className="
                 bg-[url('/images/banners/black-bg-1.avif')] bg-cover bg-center relative
                 mt-[3rem] lg:mt-[5rem]
-                pb-[2.5rem] lg:pb-[4.5rem]
+                pb-[2rem] lg:pb-[4.5rem]
             ">
 
                 {/* Overlay */}
@@ -114,7 +114,7 @@ const Advantage = () => {
                 {/* CTA */}
                 <div className="relative flex justify-center items-center mt-[1rem] lg:mt-[3.5rem]">
                     {/* Icon will add here */}
-                    <p className="text-center text-white flex items-center gap-[0.6rem] text-[0.9rem] sm:text-[1.1rem]">
+                    <p className="text-center text-white flex items-center flex-col lg:flex-row gap-[0.6rem] text-[0.9rem] sm:text-[1.1rem]">
                         Let's bring your vision to life.
                         <Link href="/contact" className="text-white underline text-[0.9rem] sm:text-[1.1rem]">Get a Free Quote</Link>
                     </p>
