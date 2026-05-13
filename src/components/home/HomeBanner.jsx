@@ -12,7 +12,7 @@ const HomeBanner = () => {
                     src="/images/banners/home-banner.avif"
                     alt="Home Banner"
                     loading="eager"
-                    className="w-full h-screen object-cover"
+                    className="w-full h-[100dvh] object-cover"
                 />
                 {/* Content */}
                 <div className="
@@ -24,14 +24,14 @@ const HomeBanner = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="text-white text-[2rem] sm:text-[3.5rem] w-max"
+                        className="text-white text-[2rem] lg:text-[3.5rem] w-max"
                     >
                         Leading Plywood <br /> Manufacturers In India
                     </motion.h1>
-                    <p className="text-white w-full sm:w-[50%] mt-[1rem]">
+                    <p className="text-white w-full lg:w-[50%] mt-[1rem]">
                         Our premium plywood and wood panels are crafted with precision to meet the evolving needs of architecture and interior design, offering unmatched strength and durability.
                     </p>
-                    <div className="mt-[1.7rem] sm:mt-[2rem]">
+                    <div className="mt-[1.7rem] lg:mt-[2rem]">
                         <Button label="Explore Our Collection" url="/" />
                     </div>
                 </div>

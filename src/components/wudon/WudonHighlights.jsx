@@ -37,16 +37,16 @@ const WudonHighlights = () => {
     return (
         <>
             <section className="
-                flex justify-between flex-wrap
-                mt-[-1rem]
+                flex justify-between flex-wrap flex-col-reverse lg:flex-row
+                mt-[-2rem] lg:mt-[-1rem]
             ">
 
                 {/* left */}
-                <div className="w-[47%]">
-                    <p className="mt-[1.1rem]">
+                <div className="w-full lg:w-[47%]">
+                    <p className="mt-[2rem] lg:mt-[1.1rem]">
                         Wudon’s greenfield projects reflect a deep commitment to innovation, sustainability, and precision manufacturing. Guided by visionary promoters and a professional management team with academic excellence from institutions such as IITs and IIMs, the brand is built on strong operational standards and client-centric values.
                     </p>
-                    <div className="mt-[2rem]">
+                    <div className="mt-[1.5rem] lg:mt-[2rem]">
                         <GlareImage
                             src="/images/wudon/highlight.avif"
                             alt="Wudon Highlight"
@@ -56,24 +56,24 @@ const WudonHighlights = () => {
                 </div>
 
                 {/* Right */}
-                <div className="w-[49%] flex justify-between flex-wrap">
+                <div className="w-full lg:w-[49%] flex justify-between flex-wrap">
                     {wudonHighlightsData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[48%] bg-white shadow-sm rounded-md flex flex-col justify-between relative overflow-hidden
-                                mt-[1.6rem]
-                                p-[1.5rem]
+                                w-full lg:w-[48%] bg-white shadow-sm rounded-md flex flex-col justify-between relative overflow-hidden
+                                mt-[1.3rem] lg:mt-[1.6rem]
+                                p-[1rem] lg:p-[1.5rem]
                                 group
                             ">
                                 <div className="
-                                    border-b-[1px] border-gray-200 group-hover:border-gray-300 pb-[1rem] relative z-10
+                                    border-b-[1px] border-gray-200 group-hover:border-gray-300 pb-[0.6rem] lg:pb-[1rem] relative z-10
                                 ">
                                     <span className="
-                                        text-[1.2rem]
+                                        text-[1.1rem] lg:text-[1.2rem]
                                         font-clash text-[#1d1d1d] group-hover:text-white font-[600] transition duration-300
                                     " dangerouslySetInnerHTML={{ __html: item.title }} />
                                 </div>
-                                <div className="relative z-10">
+                                <div className="relative z-10 mt-[0.8rem] lg:mt-0">
                                     <p className="group-hover:text-white transition duration-300">
                                         {item.desc}
                                     </p>

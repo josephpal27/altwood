@@ -12,7 +12,7 @@ const WudonBanner = () => {
                     src="/images/banners/wudon-banner.avif"
                     alt="Wudon Banner"
                     loading="eager"
-                    className="w-full h-screen object-cover"
+                    className="w-full h-[100dvh] object-cover"
                 />
                 {/* Content */}
                 <div className="
@@ -24,14 +24,14 @@ const WudonBanner = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="text-white text-[4rem] w-max"
+                        className="text-white text-[2.5rem] lg:text-[4rem] w-max"
                     >
                         Wudon
                     </motion.h1>
-                    <p className="text-white w-[55%] mt-[1rem]">
+                    <p className="text-white w-full lg:w-[55%] mt-[1rem]">
                         Wudon embodies a vision to deliver world-class engineered wood solutions for modern India. From our early beginnings, we rapidly built a strong presence across multiple states, driven by quality, technology, and consistent performance.
                     </p>
-                    <div className="mt-[2rem]">
+                    <div className="mt-[1.7rem] lg:mt-[2rem]">
                         <Button label="Explore Our Collection" url="/" />
                     </div>
                 </div>

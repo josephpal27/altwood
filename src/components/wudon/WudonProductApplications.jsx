@@ -15,8 +15,8 @@ const WudonProductApplications = ({ data }) => {
 
     return (
         <>
-            <section className="p-0 mt-[5rem]">
-                <div className="px-[7%]">
+            <section className="p-0 mt-[2rem] lg:mt-[5rem]">
+                <div className="px-[1rem] lg:px-[7%">
                     <motion.h3
                         variants={headingVariant}
                         initial="hidden"
@@ -28,7 +28,7 @@ const WudonProductApplications = ({ data }) => {
                     </motion.h3>
                 </div>
 
-                <div className="relative overflow-hidden bg-black mt-[2.5rem]">
+                <div className="relative overflow-hidden bg-black mt-[1.7rem] lg:mt-[2.5rem]">
                     {/* Background Image */}
                     <div className="absolute top-0 left-0 w-full h-full z-10">
                         <AnimatePresence mode="sync">
@@ -49,7 +49,7 @@ const WudonProductApplications = ({ data }) => {
 
                     {/* Content */}
                     <div className="
-                        flex justify-between flex-wrap z-20 relative h-[100dvh]
+                        flex justify-between flex-wrap z-20 relative h-[auto] lg:h-[100dvh]
                         bg-gradient-to-t from-black/90 via-black/30 to-transparent
                     ">
                         {data.map((item, index) => {
@@ -57,12 +57,14 @@ const WudonProductApplications = ({ data }) => {
                                 <div
                                     key={index}
                                     className="
-                                    w-[33%] border-[#ededed3c] border-b-[1px] border-r-[1px]   
-                                    flex flex-col justify-end text-center p-[2rem]   
+                                    w-full lg:w-[33%] border-[#ededed3c] border-b-[1px] border-r-[1px]   
+                                    flex flex-col justify-end text-center 
+                                    px-[1rem]  
+                                    py-[3rem] lg:py-[2rem]
                                 "
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
-                                    <span className="text-white text-[2rem] font-[500] text-clash">
+                                    <span className="text-white text-[1.2rem] lg:text-[2rem] font-[500] text-clash">
                                         {item.title}
                                     </span>
                                 </div>

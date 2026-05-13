@@ -23,30 +23,30 @@ const WudonProductFeatures = ({ data, reverse }) => {
                         {data.title}
                     </motion.h2>
 
-                    <p className="w-[50%] text-center mt-[1rem]">
+                    <p className="w-full lg:w-[50%] text-center mt-[0.7rem] lg:mt-[1rem]">
                         {data.description}
                     </p>
                 </div>
 
                 {/* Content Row */}
                 <div className={`
-                    flex justify-between flex-wrap mt-[3rem] 
+                    flex justify-between flex-wrap flex-col-reverse lg:flex-row mt-[1.6rem] lg:mt-[3rem] 
                     ${reverse ? "flex-row-reverse" : ""}
                 `}>
-                    <div className="w-[48%]">
-                        <span className="text-[2rem] font-clash font-[600] text-[#1d1d1d]">
+                    <div className="w-full lg:w-[48%] mt-[1.3rem] lg:mt-0">
+                        <span className="text-[1.4rem] lg:text-[2rem] font-clash font-[600] text-[#1d1d1d]">
                             Key Features :
                         </span>
-                        <div className="mt-[2rem]">
+                        <div className="mt-[1rem] lg:mt-[2rem]">
                             {data.features.map((item) => {
                                 return (
                                     <p key={item.id} className="
                                         flex items-center gap-[0.5rem]
-                                        mb-[1.5rem]
-                                        underline underline-offset-[8px]
+                                        mb-[1rem] lg:mb-[1.5rem]
+                                        underline underline-offset-[5px] lg:underline-offset-[8px]
                                     ">
                                         <GoArrowUpRight className="
-                                            flex-shrink-0 text-[1.2rem]
+                                            flex-shrink-0 text-[1.4rem] lg:text-[1.2rem]
                                         " />
                                         {item.para}
                                     </p>
@@ -54,7 +54,7 @@ const WudonProductFeatures = ({ data, reverse }) => {
                             })}
                         </div>
                     </div>
-                    <div className="w-[48%]">
+                    <div className="w-full lg:w-[48%]">
                         <GlareImage
                             src={data.image}
                             alt={data.title}
