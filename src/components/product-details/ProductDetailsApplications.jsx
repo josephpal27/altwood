@@ -13,9 +13,9 @@ const ProductDetailsApplications = ({ product }) => {
         <>
             <section className="
                 bg-[url('/images/banners/black-bg-2.avif')] bg-cover bg-center relative
-                mt-[5rem]
-                pt-[4.5rem]
-                pb-[3rem]
+                mt-[2.5rem] lg:mt-[5rem]
+                pt-[2.5rem] lg:pt-[4.5rem]
+                pb-[0.5rem] lg:pb-[3rem]
             ">
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-[#000] bg-opacity-20 w-full h-full"></div>
@@ -34,7 +34,7 @@ const ProductDetailsApplications = ({ product }) => {
 
                 {/* Row */}
                 <div className="
-                    mt-[3.5rem]
+                    mt-[2rem] lg:mt-[3.5rem]
                     flex justify-between flex-wrap relative
                 ">
                     {items.map((item, index) => {
@@ -46,32 +46,32 @@ const ProductDetailsApplications = ({ product }) => {
 
                         return (
                             <div key={item.id} className={`
-                                ${isFour ? "w-[24%]" : "w-[30%]"}
+                                ${isFour ? "w-full lg:w-[24%]" : "w-full lg:w-[30%]"}
                                 flex flex-col items-center 
-                                ${isReverse ? "flex-col-reverse" : ""}
-                                ${isReverse ? "mb-[2rem]" : "mb-[1rem]"}
+                                ${isReverse ? "flex-col lg:flex-col-reverse" : ""}
+                                ${isReverse ? "mb-[1rem] lg:mb-[2rem]" : "mb-[1rem]"}
                             `}>
                                 {/* Image */}
                                 <div className="
-                                    px-[3rem]
+                                    px-[1rem] lg:px-[3rem]
                                 ">
                                     <GlareImage
                                         src={item.image}
                                         alt={` Application ${item.id}`}
                                         className={`
                                             w-full rounded-full border-[#363636] 
-                                            ${isFour ? "border-[10px]" : "border-[15px]"}
+                                            ${isFour ? "border-[9px] lg:border-[10px]" : "border-[9px] lg:border-[15px]"}
                                         `}
                                     />
                                 </div>
                                 {/* Content */}
                                 <div className="
-                                    py-[2rem]
+                                    py-[1.5rem] lg:py-[2rem]
                                     flex flex-col items-center
                                 ">
                                     <span className="
                                         bg-[#363636] text-white rounded-full font-clash
-                                        px-[1.6rem]
+                                        px-[1.5rem] lg:px-[1.6rem]
                                         py-[0.2rem]
                                     ">
                                         0{item.id}

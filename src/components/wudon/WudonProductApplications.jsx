@@ -28,7 +28,7 @@ const WudonProductApplications = ({ data }) => {
                     </motion.h3>
                 </div>
 
-                <div className="relative overflow-hidden bg-black mt-[1.7rem] lg:mt-[2.5rem]">
+                <div className="relative overflow-hidden bg-black mt-[1.5rem] lg:mt-[2.5rem]">
                     {/* Background Image */}
                     <div className="absolute top-0 left-0 w-full h-full z-10">
                         <AnimatePresence mode="sync">

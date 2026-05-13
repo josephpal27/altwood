@@ -30,8 +30,8 @@ const ProductDetailsFeatures = ({ product }) => {
             ">
 
                 {/* Image */}
-                <div className="w-[48%]">
-                    <div className="bg-[#ede6d4] rounded-md overflow-hidden">
+                <div className="w-full lg:w-[48%] mt-[-0.8rem] lg:mt-0">
+                    <div className="bg-[#ede6d4] rounded-md overflow-hidden p-[1rem] lg:p-0">
                         <GlareImage
                             src={activeImage}
                             alt={product?.name}
@@ -43,8 +43,8 @@ const ProductDetailsFeatures = ({ product }) => {
                         />
                     </div>
                     <div className="
-                        mt-[1rem]
-                        flex justify-between gap-[1rem]
+                        mt-[0.5rem] lg:mt-[1rem]
+                        flex justify-between gap-[0.5rem] lg:gap-[1rem]
                     ">
                         {product?.productImages?.map((img, index) => {
                             return (
@@ -53,7 +53,7 @@ const ProductDetailsFeatures = ({ product }) => {
                                     src={img}
                                     alt={product?.name}
                                     onClick={() => handleImageChange(img)}
-                                    className="w-[25%] rounded-md bg-[#ede6d4] aspect-[5/4] cursor-pointer"
+                                    className="w-[25%] rounded-md bg-[#ede6d4] aspect-[5/4] cursor-pointer p-[0.3rem] lg:p-0"
                                 />
                             )
                         })}
@@ -61,20 +61,20 @@ const ProductDetailsFeatures = ({ product }) => {
                 </div>
 
                 {/* Content */}
-                <div className="w-[48%]">
-                    <span className="text-[2rem] font-clash font-[600] text-[#1d1d1d]">
+                <div className="w-full lg:w-[48%] mt-[1.5rem] lg:mt-0">
+                    <span className="text-[1.4rem] lg:text-[2rem] font-clash font-[600] text-[#1d1d1d]">
                         Key Features :
                     </span>
-                    <div className="mt-[2rem]">
+                    <div className="mt-[1rem] lg:mt-[2rem]">
                         {product?.features.map((item) => {
                             return (
                                 <p key={item.id} className="
                                     flex items-center gap-[0.5rem]
-                                    mb-[1.5rem]
-                                    underline underline-offset-[8px]
+                                    mb-[1rem] lg:mb-[1.5rem]
+                                    underline underline-offset-[5px] lg:underline-offset-[8px]
                                 ">
                                     <GoArrowUpRight className="
-                                        flex-shrink-0 text-[1.2rem]
+                                        flex-shrink-0 text-[1.3rem] lg:text-[1.2rem]
                                     " />
                                     {item.para}
                                 </p>
