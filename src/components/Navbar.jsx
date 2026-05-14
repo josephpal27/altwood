@@ -31,26 +31,36 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [lastScroll]);
 
-    // Body Scroll Lock on Mob
-    useEffect(() => {
-        if (open) {
-            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    // Body Scroll Lock + Lenis Stop
+useEffect(() => {
+    if (open) {
+        const scrollBarWidth =
+            window.innerWidth -
+            document.documentElement.clientWidth;
 
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarWidth}px`; // prevent shift
-            document.body.style.touchAction = "none";
-        } else {
-            document.body.style.overflow = "auto";
-            document.body.style.paddingRight = "0px";
-            document.body.style.touchAction = "auto";
-        }
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarWidth}px`;
+        document.body.style.touchAction = "none";
 
-        return () => {
-            document.body.style.overflow = "auto";
-            document.body.style.paddingRight = "0px";
-            document.body.style.touchAction = "auto";
-        };
-    }, [open]);
+        // Stop Lenis
+        window.lenis?.stop();
+    } else {
+        document.body.style.overflow = "auto";
+        document.body.style.paddingRight = "0px";
+        document.body.style.touchAction = "auto";
+
+        // Start Lenis
+        window.lenis?.start();
+    }
+
+    return () => {
+        document.body.style.overflow = "auto";
+        document.body.style.paddingRight = "0px";
+        document.body.style.touchAction = "auto";
+
+        window.lenis?.start();
+    };
+}, [open]);
 
     const navLinks = [
         { name: "Home", href: "/" },
@@ -69,7 +79,7 @@ const Navbar = () => {
                 }`}>
                 <div className="
                     bg-white rounded-full flex items-center justify-between shadow-md relative
-                    p-[0.6rem] sm:p-[0.8rem]
+                    p-[0.7rem] sm:p-[0.8rem]
                 ">
 
                     {/* Left Logo */}
@@ -82,8 +92,8 @@ const Navbar = () => {
                             }
                             alt="Logo"
                             className="
-                            w-[65px] sm:w-[80px] 
-                            ml-[0.3rem] sm:ml-[0.5rem]
+                            w-[75px] sm:w-[80px] 
+                            ml-[0.4rem] sm:ml-[0.5rem]
                         " />
                     </Link>
 
@@ -124,7 +134,7 @@ const Navbar = () => {
                     {/* Mobile Menu */}
                     <div className="md:hidden z-10">
                         <button onClick={() => setOpen(true)}>
-                            <FiMenu size={26} className="mr-[0.5rem] sm:mr-0 mt-[3px] sm:mt-0" />
+                            <FiMenu size={26} className="mr-[0.5rem] sm:mr-0 mt-[6px] sm:mt-0" />
                         </button>
                     </div>
                 </div>
@@ -168,7 +178,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <div className="p-[1rem] mt-[0.5rem] mt:mt-[1rem]">
+                <div className="p-[1rem] mt-[0.5rem] mt:mt-[1rem] w-max" onClick={() => setOpen(false)}>
                     <Button
                         label={isWudonPage ? "Explore Altwood" : "Explore Wudon"}
                         url={isWudonPage ? "/" : "/wudon"}
