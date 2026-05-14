@@ -37,7 +37,7 @@ const Compliances = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="mt-[1.3rem] lg:mt-[2rem] w-max"
+                        className="mt-[1.3rem] lg:mt-[2rem] lg:w-max"
                     >
                         Trusted by partners and <br /> projects worldwide
                     </motion.h6>

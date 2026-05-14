@@ -24,7 +24,7 @@ const HomeBanner = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="text-white text-[2rem] lg:text-[3.5rem] w-max"
+                        className="text-white text-[2rem] lg:text-[3.5rem] lg:w-max"
                     >
                         Leading Plywood <br /> Manufacturers In India
                     </motion.h1>

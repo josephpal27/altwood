@@ -40,7 +40,7 @@ const OurStory = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="mt-[1.5rem] lg:mt-[2rem] w-max"
+                        className="mt-[1.5rem] lg:mt-[2rem] lg:w-max"
                     >
                         Five Decades of Expertise. <br /> A Legacy in the Making.
                     </motion.h2>

@@ -55,7 +55,7 @@ const Collection = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-center w-max mx-auto"
+                className="text-center lg:w-max mx-auto"
             >
                 Premium Plywood <br className="block lg:hidden" /> Collection
             </motion.h4>
@@ -105,7 +105,7 @@ const Collection = () => {
                         `}
                         >
                             <div className="w-full lg:w-[85%]">
-                                <span className="text-[1.2rem] lg:text-[1.7rem] font-[700] text-white">
+                                <span className="text-[1.1rem] lg:text-[1.7rem] font-[700] text-white">
                                     {item.title}
                                 </span>
                                 <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] lg:text-nowrap text-[0.65rem] sm:text-[1.1rem]">
