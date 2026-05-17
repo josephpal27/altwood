@@ -17,11 +17,11 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-  @apply font-clash text-[1.7rem] sm:text-[3rem] font-[500] leading-[1.1];
+  @apply font-clash text-[1.7rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem] font-[500] leading-[1.1];
 }
 
 p, span, li, a, label, b, button, input, textarea, select, option{
-  @apply font-inter text-[1rem] sm:text-[1.1rem] font-[450] text-gray-700
+  @apply font-inter text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] font-[450] text-gray-700
 }
 
 section{
