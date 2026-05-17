@@ -30,17 +30,18 @@ const OurStory = () => {
                     {/* Top */}
                     <div className="
                         border-[1px] border-gray-300 w-max rounded-full flex items-center gap-[0.5rem]
-                        px-[1rem] lg:px-[1.1rem] py-[0.3rem]
+                        px-[1rem] sm:px-[1.1rem] lg:px-[0.9rem] xl:px-[1rem] 2xl:px-[1.1rem] 
+                        py-[0.3rem] sm:py-[0.3rem] lg:py-[0.23rem] xl:py-[0.26rem] 2xl:py-[0.3rem]
                     ">
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
-                        <span className="text-[0.9rem] lg:text-[1rem] text-black font-[500]">Our Story</span>
+                        <span className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black font-[500]">Our Story</span>
                     </div>
                     <motion.h2
                         variants={headingVariant}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="mt-[1.5rem] lg:mt-[2rem] lg:w-max"
+                        className="mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem] lg:w-max"
                     >
                         Five Decades of Expertise. <br /> A Legacy in the Making.
                     </motion.h2>
@@ -51,8 +52,8 @@ const OurStory = () => {
                     {/* Center */}
                     <div className="
                         flex justify-between flex-wrap items-center border-t-[1px] border-b-[1px] border-gray-200
-                        mt-[1rem] lg:mt-[3rem] 
-                        py-[1rem] lg:py-[2rem]
+                        mt-[1rem] sm:mt-[1.5rem] lg:mt-[2.3rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                        py-[1rem] sm:py-[1.5rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
                     ">
                         <div className="w-full lg:w-[65%]">
                             <div className="flex gap-[0.5rem] mb-[0.8rem]">
@@ -69,19 +70,24 @@ const OurStory = () => {
                             </div>
                             <div className="
                                 border-t-[1px] border-gray-200 
-                                pt-[1rem] lg:pt-[2rem] 
-                                mt-[1rem] lg:mt-[2rem]
+                                pt-[1rem] sm:pt-[1.5rem] lg:pt-[1.6rem] xl:pt-[1.8rem] 2xl:pt-[2rem]
+                                mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                             ">
                                 <div className="flex justify-between items-center">
-                                    <span className="text-[0.9rem] lg:text-[1rem] text-black font-[600]">
+                                    <span className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black font-[600]">
                                         Excellence
                                     </span>
-                                    <span className="text-[0.9rem] lg:text-[1rem] text-black font-[600]">
+                                    <span className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black font-[600]">
                                         95%
                                     </span>
                                 </div>
                                 {/* Progress Bar */}
-                                <div className="mt-[1rem] w-full bg-[#e5e5e5] h-[10px] lg:h-[12px] rounded-full overflow-hidden">
+                                <div className="
+                                    mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                    w-full bg-[#e5e5e5] 
+                                    h-[10px] sm:h-[11px] lg:h-[10px] xl:h-[11px] 2xl:h-[12px]
+                                    rounded-full overflow-hidden
+                                ">
                                     <div className="
                                         h-full rounded-full bg-[#114a27] transition-all duration-700 ease-in-out w-[95%]
                                     "/>
@@ -98,7 +104,7 @@ const OurStory = () => {
                     </div>
 
                     {/* Bottom */}
-                    <div className="mt-[2rem] lg:mt-[3rem]">
+                    <div className="mt-[2rem] sm:mt-[1.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]">
                         <Button label="Discover Our Heritage" url="/about" />
                     </div>
                 </div>
