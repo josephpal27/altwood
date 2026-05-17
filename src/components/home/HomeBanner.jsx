@@ -17,7 +17,7 @@ const HomeBanner = () => {
                 {/* Content */}
                 <div className="
                     absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-black/90
-                    px-[1rem] sm:px-[7%] py-[4rem]
+                    px-[1rem] sm:px-[7%] py-[4rem] sm:py-[3.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 ">
                     <motion.h1
                         variants={headingVariant}

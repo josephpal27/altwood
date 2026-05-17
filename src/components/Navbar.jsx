@@ -74,12 +74,12 @@ useEffect(() => {
             <nav className={`
                 fixed left-0 w-full z-50 transition-transform duration-300 
                 px-[1rem] sm:px-[7%]
-                top-[1rem]
+                top-[1rem] sm:top-[0.9rem] lg:top-[0.8rem] xl:top-[0.9rem] 2xl:top-[1rem] 
                 ${showNav ? "translate-y-0" : "-translate-y-[150%]"
                 }`}>
                 <div className="
                     bg-white rounded-full flex items-center justify-between shadow-md relative
-                    p-[0.7rem] sm:p-[0.8rem]
+                    p-[0.7rem] sm:p-[0.8rem] lg:p-[0.7rem] xl:p-[0.75rem] 2xl:p-[0.8rem] 
                 ">
 
                     {/* Left Logo */}
@@ -92,7 +92,7 @@ useEffect(() => {
                             }
                             alt="Logo"
                             className="
-                            w-[75px] sm:w-[80px] 
+                            w-[75px] sm:w-[80px] lg:w-[65px] xl:w-[73px] 2xl:w-[80px] 
                             ml-[0.4rem] sm:ml-[0.5rem]
                         " />
                     </Link>
@@ -100,7 +100,7 @@ useEffect(() => {
                     {/* Center */}
                     <ul className="
                         hidden md:flex absolute left-1/2 -translate-x-1/2 items-center 
-                        gap-[2.5rem]
+                        gap-[2.5rem] sm:gap-[2rem] lg:gap-[2.1rem] xl:gap-[2.3rem] 2xl:gap-[2.5rem] 
                     ">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
