@@ -34,7 +34,9 @@ const OurStory = () => {
                         py-[0.3rem] sm:py-[0.3rem] lg:py-[0.23rem] xl:py-[0.26rem] 2xl:py-[0.3rem]
                     ">
                         <span className="w-2 h-2 rounded-full bg-[#a87310] block" />
-                        <span className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black font-[500]">Our Story</span>
+                        <span className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black font-[500]">
+                            Our Story
+                        </span>
                     </div>
                     <motion.h2
                         variants={headingVariant}

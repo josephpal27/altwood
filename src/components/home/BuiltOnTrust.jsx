@@ -78,7 +78,7 @@ const BuiltOnTrust = () => {
 
     return (
         <>
-            <section className="p-0 mt-[3rem] lg:mt-[5rem]">
+            <section className="p-0 mt-[3rem] sm:mt-[3.5rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]">
 
                 <div className="px-[1rem] sm:px-[7%] flex flex-col items-center">
                     <motion.h5
@@ -95,7 +95,7 @@ const BuiltOnTrust = () => {
                     </p>
                 </div>
 
-                <div className="relative overflow-hidden bg-black mt-[1.7rem] lg:mt-[3rem]">
+                <div className="relative overflow-hidden bg-black mt-[1.7rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.8rem] 2xl:mt-[3rem]">
                     {/* Background Image */}
                     <div className="absolute top-0 left-0 w-full h-full z-10">
                         <AnimatePresence mode="sync">
@@ -128,10 +128,12 @@ const BuiltOnTrust = () => {
                                 "
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
-                                    <span className="text-white text-[1.1rem] lg:text-[1.3rem] font-[600] font-clash">
+                                    <span className="
+                                        text-white text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-[600] font-clash
+                                    ">
                                         {item.title}
                                     </span>
-                                    <p className="text-white mt-[0.4rem] lg:mt-[0.7rem] text-[0.8rem] lg:text-[1.1rem]"
+                                    <p className="text-white mt-[0.4rem] lg:mt-[0.7rem] text-[0.8rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]"
                                         dangerouslySetInnerHTML={{__html: item.desc}}
                                     />
                                 </div>

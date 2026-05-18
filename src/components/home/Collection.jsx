@@ -49,7 +49,7 @@ const Collection = () => {
     const [active, setActive] = useState(null);
 
     return (
-        <section className="pt-[2rem] lg:pt-[4rem] overflow-hidden">
+        <section className="pt-[2rem] sm:pt-[2.5rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem] overflow-hidden">
             <motion.h4
                 variants={headingVariant}
                 initial="hidden"
@@ -64,7 +64,7 @@ const Collection = () => {
             <div className="
                 flex justify-between flex-wrap lg:flex-nowrap
                 h-[auto] lg:h-[70dvh] 
-                gap-[1rem] mt-[1.7rem] lg:mt-[3rem]
+                gap-[1rem] mt-[1.7rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
             ">
                 {collectionData.map((item, index) => (
                     <div
@@ -95,7 +95,7 @@ const Collection = () => {
 
                         {/* Content (always visible on mobile, hover-only on desktop) */}
                         <div className={`
-                            absolute top-0 left-0 w-full h-full p-[0.7rem] lg:p-[2rem]
+                            absolute top-0 left-0 w-full h-full p-[0.7rem] sm:p-[1rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
                             transition-all duration-300 z-10
                             flex justify-between items-end
                             ${active === index
@@ -105,10 +105,10 @@ const Collection = () => {
                         `}
                         >
                             <div className="w-full lg:w-[85%]">
-                                <span className="text-[1.1rem] lg:text-[1.7rem] font-[700] text-white">
+                                <span className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-[700] text-white">
                                     {item.title}
                                 </span>
-                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] lg:text-nowrap text-[0.65rem] sm:text-[1.1rem]">
+                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] lg:text-nowrap text-[0.65rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                     {item.desc}
                                 </p>
                             </div>
@@ -117,8 +117,8 @@ const Collection = () => {
                             ">
                                 <Link href={item.url}>
                                     <MdArrowOutward className="
-                                        w-[25px] lg:w-[45px] 
-                                        h-[25px] lg:h-[45px]
+                                        w-[25px] sm:w-[30px] lg:w-[38px] xl:w-[42px] 2xl:w-[45px]
+                                        h-[25px] sm:h-[30px] lg:h-[38px] xl:h-[42px] 2xl:h-[45px]
                                         rounded-full p-[0.3rem] lg:p-[0.5rem] hover:rotate-45 text-white transition duration-500
                                         bg-[#7d4c0a] hover:bg-[#114a27] 
                                     " />
@@ -129,7 +129,8 @@ const Collection = () => {
                         {/* Vertical Text (default state) */}
                         <div className={`
                             absolute inset-0 items-center justify-center uppercase
-                            text-white text-[1.8rem] tracking-widest font-[700]
+                            text-white text-[1.8rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
+                            tracking-widest font-[700]
                             transition-all duration-500 hidden lg:flex
                             ${active === index
                                 ? "opacity-0 scale-90"
