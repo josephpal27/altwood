@@ -64,7 +64,7 @@ useEffect(() => {
 
     const navLinks = [
         { name: "Home", href: "/" },
-        { name: "About", href: "/#our-story" },
+        { name: "About Us", href: "/#our-story" },
         { name: "Products", href: "/products/" },
         { name: "Contact Us", href: "/contact/" },
     ];

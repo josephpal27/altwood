@@ -12,7 +12,7 @@ const footContent = [
         title: "Quick Links",
         links: [
             { label: "Home", url: "/" },
-            { label: "About", url: "/about" },
+            { label: "About Us", url: "/about" },
             { label: "Products", url: "/products" },
             { label: "Contact Us", url: "/contact" },
         ]
@@ -69,7 +69,7 @@ const Footer = () => {
                             text-[0.9rem] lg:text-[1rem]
                             mt-[1.1rem] lg:mt-[1.5rem]
                         ">
-                            At Altwood, we understand that no two projects are alike. Your vision is our guide, and we take a collaborative approach to bring it to life.
+                            Behind every wall that’s never needed replacing, there’s a legacy passed into every layer and that legacy is Altwood.
                         </p>
                         <div className="
                             mt-[1.2rem] lg:mt-[2.5rem]
@@ -139,7 +139,7 @@ const Footer = () => {
                             border-t border-gray-700 
                         ">
                             <p className="text-white text-[1rem] lg:text-[1.2rem] font-[500] font-clash">
-                                Premium Plywood Manufacturing Excellence
+                                Premium Plywood Manufacturing
                             </p>
                         </div>
                     </div>

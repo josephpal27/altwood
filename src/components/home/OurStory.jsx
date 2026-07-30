@@ -54,20 +54,20 @@ const OurStory = () => {
                     {/* Center */}
                     <div className="
                         flex justify-between flex-wrap items-center border-t-[1px] border-b-[1px] border-gray-200
-                        mt-[1rem] sm:mt-[1.5rem] lg:mt-[2.3rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
-                        py-[1rem] sm:py-[1.5rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
+                        mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
+                        py-[1rem] sm:py-[1.5rem] lg:py-[1.1rem] xl:py-[1.3rem] 2xl:py-[1.5rem]
                     ">
                         <div className="w-full lg:w-[65%]">
                             <div className="flex gap-[0.5rem] mb-[0.8rem]">
                                 {/* Icon Will Add Here */}
                                 <p>
-                                    Advanced processes for engineered strength
+                                    Every product we deliver meets the highest standards of strength, finish, and durability.
                                 </p>
                             </div>
                             <div className="flex gap-[0.5rem]">
                                 {/* Icon Will Add Here */}
                                 <p>
-                                    Tailored finishes for individual preferences
+                                    From dimensions to finishes, every solution is tailored precisely to your project needs.
                                 </p>
                             </div>
                             <div className="
