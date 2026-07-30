@@ -9,37 +9,37 @@ import Link from "next/link";
 const collectionData = [
     {
         title: "Film Faced",
-        desc: "High density waterproof, BWP grade.",
+        desc: "High Density Waterproof, BWP Grade, ISI 4990",
         img: "/images/collection/film-faced.avif",
         url: "/products/film-faced",
     },
     {
         title: "Marine Grade",
-        desc: "Marine Grade (IS: 710), BWP Grade, BWR Grade (IS: 303).",
+        desc: "Marine Grade (ISI 710), BWP Grade, BWR Grade (ISI 303)",
         img: "/images/collection/marine-grade.avif",
         url: "/products/marine-grade",
     },
     {
         title: "BWP Grade",
-        desc: "100% premium pine wood, BWP treatment (IS: 2202).",
+        desc: "A1 Grade Hardwood Core Plywood, BWP Treatment (ISI 710 STD)",
         img: "/images/collection/bwp.avif",
         url: "/products/bwp-grade",
     },
     {
         title: "BWR Grade",
-        desc: "Strong bonded core, moisture-resistant (IS: 1659).",
+        desc: "Strong Bonded Core, Moisture Resistant (ISI 303 STD)",
         img: "/images/collection/bwr.avif",
         url: "/products/bwr-grade",
     },
     {
         title: "Flush Door",
-        desc: "High-density (650-800 KG/M³), termite & borer resistant.",
+        desc: "100% Premium Pine Wood, BWP Treatment for enhanced durability, IS 2202",
         img: "/images/collection/flush-door.avif",
         url: "/products/flush-door",
     },
     {
         title: "Block Board",
-        desc: "Heavy-core density (>850 KG/M³), super moisture resistant.",
+        desc: "Lightweight yet sturdy pinewood, Moisture Resistant Treatment, IS 1659",
         img: "/images/collection/block-board.avif",
         url: "/products/block-board",
     },
@@ -108,7 +108,7 @@ const Collection = () => {
                                 <span className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-[700] text-white">
                                     {item.title}
                                 </span>
-                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] lg:text-nowrap text-[0.65rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
+                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] text-[0.65rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                     {item.desc}
                                 </p>
                             </div>
