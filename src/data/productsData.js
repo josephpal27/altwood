@@ -203,9 +203,10 @@ export const productsData = [
 
     {
         id: 4,
-        name: "BWR Grade",
+        name: "BWR Grade Plywood",
         slug: "bwr-grade",
         banner: "/images/banners/product-details-banner.avif",
+        desc: "ISI 303 certified BWR plywood with A1 hardwood core — double side calibrated and built for reliable everyday use.",
         productImages: [
             "/images/products/bwr/1.avif",
             "/images/products/bwr/2.avif",
@@ -238,32 +239,32 @@ export const productsData = [
             {
                 id: 1,
                 image: "/images/applications/1.avif",
-                title: "Furniture <br/> Manufacturing",
+                title: "Wardrobes and <br/> Bedroom Furniture",
             },
             {
                 id: 2,
                 image: "/images/applications/1.avif",
-                title: "Interior Panelling <br/> & Partitioning",
+                title: "Study tables and <br/> Office Workstations",
             },
             {
                 id: 3,
                 image: "/images/applications/1.avif",
-                title: "Kitchen Cabinets <br/> and Shelving",
+                title: "Living Room TV Units <br/> and Storage Cabinets",
             },
             {
                 id: 4,
                 image: "/images/applications/1.avif",
-                title: "Doors and <br/> Window Frames",
+                title: "Interior Wall Panelling <br/> and Partitions",
             },
             {
                 id: 5,
                 image: "/images/applications/1.avif",
-                title: "Exhibitions",
+                title: "Retail Counters and <br/> Shop Display Units",
             },
             {
                 id: 6,
                 image: "/images/applications/1.avif",
-                title: "Temporary <br/> Structures",
+                title: "EXTRA",
             },
         ],
     },
