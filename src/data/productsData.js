@@ -135,9 +135,10 @@ export const productsData = [
 
     {
         id: 3,
-        name: "BWP Grade",
+        name: "BWP Grade Plywood",
         slug: "bwp-grade",
         banner: "/images/banners/product-details-banner.avif",
+        desc: "A1 hardwood core, ISI 710 certified BWP plywood — calibrated, sanded, and backed by a 32-year guarantee.",
         productImages: [
             "/images/products/bwp/1.avif",
             "/images/products/bwp/2.avif",
@@ -155,18 +156,14 @@ export const productsData = [
             },
             {
                 id: 3,
-                para: "DOUBLE SIDE CALIBRATED & SANDED",
+                para: "DOUBLE SIDE LAYUP WITH 8X4 FT CORE VENEERS",
             },
             {
                 id: 4,
-                para: "ZERO GAP LAYUP WITH 8X4FT CORE VENEERS",
-            },
-            {
-                id: 5,
                 para: "TETRA LOOP PRESS TECHNOLOGY",
             },
             {
-                id: 6,
+                id: 5,
                 para: "32 YEARS GUARANTEE",
             },
         ],
@@ -174,32 +171,32 @@ export const productsData = [
             {
                 id: 1,
                 image: "/images/applications/1.avif",
-                title: "Furniture <br/> Manufacturing",
+                title: "Modular Kitchens and <br/> Kitchen Cabinets",
             },
             {
                 id: 2,
                 image: "/images/applications/1.avif",
-                title: "Interior Panelling <br/> & Partitioning",
+                title: "Bathroom Vanities and <br/> Wet Area Furniture",
             },
             {
                 id: 3,
                 image: "/images/applications/1.avif",
-                title: "Kitchen Cabinets <br/> and Shelving",
+                title: "Exterior Doors and <br/> Door Frames",
             },
             {
                 id: 4,
                 image: "/images/applications/1.avif",
-                title: "Doors and <br/> Window Frames",
+                title: "Laundry Areas and <br/> Utility Spaces",
             },
             {
                 id: 5,
                 image: "/images/applications/1.avif",
-                title: "Exhibitions",
+                title: "Furniture in Coastal and <br/> High-Humidity Homes",
             },
             {
                 id: 6,
                 image: "/images/applications/1.avif",
-                title: "Temporary <br/> Structures",
+                title: "EXTRA",
             },
         ],
     },
