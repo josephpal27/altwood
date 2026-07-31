@@ -12,25 +12,25 @@ export async function generateStaticParams() {
 }
 
 // Dynamic SEO per product
-// export async function generateMetadata({ params }) {
-//     const { slug } = await params;
+export async function generateMetadata({ params }) {
+    const { slug } = await params;
 
-//     const product = productsData.find(
-//         (item) => item.slug === slug
-//     );
+    const product = productsData.find(
+        (item) => item.slug === slug
+    );
 
-//     if (!product) {
-//         return {
-//             title: "Product Not Found - Marsons Limited",
-//             description: "",
-//         };
-//     }
+    if (!product) {
+        return {
+            title: "Product Not Found - Altwood",
+            description: "",
+        };
+    }
 
-//     return {
-//         title: product.title + " - Marsons Limited",
-//         description: product.desc,
-//     };
-// }
+    return {
+        title: product.name + " - Altwood",
+        description: product.desc,
+    };
+}
 
 export default async function ProductDetails({ params }) {
 

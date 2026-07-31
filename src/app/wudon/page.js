@@ -9,6 +9,11 @@ import { hdhmrFeaturesData } from "@/data/hdhmrFeaturesData";
 import { mdfApplicationsData } from "@/data/mdfApplicationsData";
 import { hdhmrApplicationsData } from "@/data/hdhmrApplicationsData";
 
+export const metadata = {
+  title: "Wudon - A Vision to Deliver World-Class Engineered Wood Solutions for Modern India",
+  description: "Wudon embodies a vision to deliver world-class engineered wood solutions for modern India. From our early beginnings, we rapidly built a strong presence across multiple states, driven by quality, technology, and consistent performance.",
+};
+
 export default function Wudon() {
   return (
     <>
