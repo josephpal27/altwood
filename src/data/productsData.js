@@ -274,6 +274,7 @@ export const productsData = [
         name: "Flush Door",
         slug: "flush-door",
         banner: "/images/banners/product-details-banner.avif",
+        desc: "100% premium pine, BWP treated flush doors — solid core, waterproof, and fully customizable for any interior.",
         productImages: [
             "/images/products/flush-door/1.avif",
             "/images/products/flush-door/2.avif",
@@ -310,32 +311,32 @@ export const productsData = [
             {
                 id: 1,
                 image: "/images/applications/1.avif",
-                title: "Furniture <br/> Manufacturing",
+                title: "Residential Bedroom and <br/> Living Room Doors",
             },
             {
                 id: 2,
                 image: "/images/applications/1.avif",
-                title: "Interior Panelling <br/> & Partitioning",
+                title: "Office and <br/> Commercial Entrances",
             },
             {
                 id: 3,
                 image: "/images/applications/1.avif",
-                title: "Kitchen Cabinets <br/> and Shelving",
+                title: "Hotels and <br/> Hospitality Spaces",
             },
             {
                 id: 4,
                 image: "/images/applications/1.avif",
-                title: "Doors and <br/> Window Frames",
+                title: "Hospitals and <br/> Institutional Buildings",
             },
             {
                 id: 5,
                 image: "/images/applications/1.avif",
-                title: "Exhibitions",
+                title: "Soundproof and Fire-Rated <br/> Door Applications",
             },
             {
                 id: 6,
                 image: "/images/applications/1.avif",
-                title: "Temporary <br/> Structures",
+                title: "EXTRA",
             },
         ],
     },
@@ -345,6 +346,7 @@ export const productsData = [
         name: "Block Board",
         slug: "block-board",
         banner: "/images/banners/product-details-banner.avif",
+        desc: "Lightweight yet sturdy pinewood block board — moisture resistant, gap-free, and built for long-term dimensional stability.",
         productImages: [
             "/images/products/block-board/1.avif",
             "/images/products/block-board/2.avif",
@@ -381,32 +383,32 @@ export const productsData = [
             {
                 id: 1,
                 image: "/images/applications/1.avif",
-                title: "Furniture <br/> Manufacturing",
+                title: "Large Wardrobe Shutters <br/> and Panels",
             },
             {
                 id: 2,
                 image: "/images/applications/1.avif",
-                title: "Interior Panelling <br/> & Partitioning",
+                title: "Tabletops and <br/> Study Tables",
             },
             {
                 id: 3,
                 image: "/images/applications/1.avif",
-                title: "Kitchen Cabinets <br/> and Shelving",
+                title: "Staircase Treads <br/> and Steps",
             },
             {
                 id: 4,
                 image: "/images/applications/1.avif",
-                title: "Doors and <br/> Window Frames",
+                title: "Partition Walls and <br/> Room Dividers",
             },
             {
                 id: 5,
                 image: "/images/applications/1.avif",
-                title: "Exhibitions",
+                title: "Modular Kitchen Framework <br/> and Cabinets",
             },
             {
                 id: 6,
                 image: "/images/applications/1.avif",
-                title: "Temporary <br/> Structures",
+                title: "EXTRA",
             },
         ],
     },

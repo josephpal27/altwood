@@ -49,7 +49,7 @@ const ProductListing = () => {
                                         text-center text-gray-900 font-[500] mt-[0.5rem]
                                         text-[0.6rem] lg:text-[1rem]
                                     ">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, unde.
+                                        {product.desc}
                                     </p>
                                 </div>
 
