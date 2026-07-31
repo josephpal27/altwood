@@ -4,6 +4,7 @@ export const productsData = [
         name: "Film Faced",
         slug: "film-faced",
         banner: "/images/banners/product-details-banner.avif",
+        desc: "ISI certified, BWP grade, film-faced shuttering ply — dense, waterproof, and built for heavy concrete work.",
         productImages: [
             "/images/products/film-faced/1.avif",
             "/images/products/film-faced/2.avif",

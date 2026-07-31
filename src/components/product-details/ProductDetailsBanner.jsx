@@ -28,7 +28,7 @@ const ProductDetailsBanner = ({product}) => {
                     <p className="
                         text-white text-center mt-[0.5rem] text-[0.9rem] sm:text-[1.1rem]
                     ">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        {product?.desc}
                     </p>
                 </div>
             </section>
