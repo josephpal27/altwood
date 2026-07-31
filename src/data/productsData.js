@@ -41,22 +41,22 @@ export const productsData = [
             {
                 id: 1,
                 image: "/images/applications/1.avif",
-                title: "Concrete Formwork",
+                title: "Concrete Framework <br/> and Shuttering",
             },
             {
                 id: 2,
                 image: "/images/applications/1.avif",
-                title: "Heavy-Duty <br/> Infrastructure Projects",
+                title: "Scaffolding <br/> Platforms",
             },
             {
                 id: 3,
                 image: "/images/applications/1.avif",
-                title: "Residential and <br/> Commercial Constructions",
+                title: "Column and <br/> Beam Casting",
             },
             {
                 id: 4,
                 image: "/images/applications/1.avif",
-                title: "Industrial Uses",
+                title: "Slab and Wall <br/> Construction",
             },
         ],
     },
@@ -66,6 +66,7 @@ export const productsData = [
         name: "Marine Grade",
         slug: "marine-grade",
         banner: "/images/banners/product-details-banner.avif",
+        desc: "100% Gurjan, ISI 710 certified marine grade plywood — zero gap, lifetime guaranteed, and built to last.",
         productImages: [
             "/images/products/marine-grade/1.avif",
             "/images/products/marine-grade/2.avif",
@@ -102,32 +103,32 @@ export const productsData = [
             {
                 id: 1,
                 image: "/images/applications/1.avif",
-                title: "Furniture <br/> Manufacturing",
+                title: "Boat Building and <br/> Hull Construction",
             },
             {
                 id: 2,
                 image: "/images/applications/1.avif",
-                title: "Interior Panelling <br/> & Partitioning",
+                title: "Modular Kitchens with Heavy <br/> Moisture Exposure",
             },
             {
                 id: 3,
                 image: "/images/applications/1.avif",
-                title: "Kitchen Cabinets <br/> and Shelving",
+                title: "Docks, Jetties and <br/> Waterfront Structures",
             },
             {
                 id: 4,
                 image: "/images/applications/1.avif",
-                title: "Doors and <br/> Window Frames",
+                title: "Rain Exposed <br/> Furniture",
             },
             {
                 id: 5,
                 image: "/images/applications/1.avif",
-                title: "Exhibitions",
+                title: "Balcony Wall <br/> Cladding",
             },
             {
                 id: 6,
                 image: "/images/applications/1.avif",
-                title: "Temporary <br/> Structures",
+                title: "EXTRA",
             },
         ],
     },
