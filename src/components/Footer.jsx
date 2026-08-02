@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 const socialHandles = [
@@ -42,6 +45,11 @@ const footContent = [
 ]
 
 const Footer = () => {
+
+    const pathname = usePathname();
+    
+    const isWudonPage = pathname === "/wudon" || pathname === "/wudon/";
+
     return (
         <>
             <footer className="
@@ -60,16 +68,32 @@ const Footer = () => {
                             bg-white aspect-square rounded-full flex items-center justify-center
                             w-[23%] px-[7px]
                         ">
-                            <img src="/images/logo/altwood-logo.png" alt="Logo" loading="lazy" className="
-                                w-full
-                            " />
+                            <img 
+                                src={
+                                    isWudonPage
+                                    ? "/images/logo/wudon-footer-logo.png"
+                                    : "/images/logo/altwood-logo.png"
+                                }
+                                alt="Logo" 
+                                loading="lazy" 
+                                className={`
+                                    w-full   
+                                    ${isWudonPage ? "p-[6px]" : ""} 
+                                `}
+                            />
                         </div>
                         <p className="
                             text-[#ededed]
                             text-[0.9rem] lg:text-[1rem]
                             mt-[1.1rem] lg:mt-[1.5rem]
                         ">
-                            Behind every wall that’s never needed replacing, there’s a legacy passed into every layer and that legacy is Altwood.
+                            {
+                                isWudonPage 
+                                ? 
+                                "The brand behind spaces built to last a lifetime. Wudon brings together the best of technology and craftsmanship to deliver engineered wood products that are as reliable as they are refined." 
+                                : 
+                                "Behind every wall that’s never needed replacing, there’s a legacy passed into every layer and that legacy is Altwood."
+                            }
                         </p>
                         <div className="
                             mt-[1.2rem] lg:mt-[2.5rem]
