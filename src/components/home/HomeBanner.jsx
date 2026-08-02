@@ -32,7 +32,7 @@ const HomeBanner = () => {
                         Our premium plywood and wood panels are crafted with precision to meet the evolving needs of architecture and interior design, offering unmatched strength and durability.
                     </p>
                     <div className="mt-[1.7rem] lg:mt-[2rem]">
-                        <Button label="Explore Our Collection" url="/" />
+                        <Button label="Explore Our Collection" url="/products" />
                     </div>
                 </div>
             </section>

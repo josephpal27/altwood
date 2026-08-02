@@ -64,9 +64,10 @@ const WudonProductApplications = ({ data }) => {
                                 "
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
-                                    <span className="text-white text-[1.2rem] lg:text-[2rem] font-[500] text-clash">
-                                        {item.title}
-                                    </span>
+                                    <span 
+                                        className="text-white text-[1.2rem] lg:text-[2rem] font-[500] text-clash" 
+                                        dangerouslySetInnerHTML={{__html: item.title}}
+                                    />
                                 </div>
                             )
                         })}

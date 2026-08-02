@@ -1,6 +1,6 @@
 export const hdhmrFeaturesData = {
     title: "HDHMR",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Dolore, adipisci.",
+    description: "Built tough, born for moisture. Wudon HDHMR delivers heavy-core strength with zero swelling, even in the harshest, high-humidity spaces — backed by a 10-year promise.",
     image: "/images/wudon/hdhmr.avif",
     features: [
         {

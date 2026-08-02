@@ -4,7 +4,7 @@ const wudonHighlightsData = [
     {
         id: 1,
         title: "HIGH DENSITY & <br/> STRENGTH",
-        desc: "Engineered for superior load-bearing capacity and long-term structural stability",
+        desc: "Engineered for superior load-bearing capacity and long-term structural stability.",
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ const WudonHighlights = () => {
                 {/* left */}
                 <div className="w-full lg:w-[47%]">
                     <p className="mt-[2rem] lg:mt-[1.1rem]">
-                        Wudon’s greenfield projects reflect a deep commitment to innovation, sustainability, and precision manufacturing. Guided by visionary promoters and a professional management team with academic excellence from institutions such as IITs and IIMs, the brand is built on strong operational standards and client-centric values.
+                        Wudon operates one of India's most advanced panel manufacturing facilities, setting new benchmarks in product consistency and structural performance. With a management team rooted in technical expertise and professional excellence, the brand continues to raise the standard for the engineered wood industry.
                     </p>
                     <div className="mt-[1.5rem] lg:mt-[2rem]">
                         <GlareImage

@@ -1,17 +1,17 @@
 export const hdhmrApplicationsData = [
     {
         id: 1,
-        title: " High-load",
+        title: "Kitchen Cabinets <br/> & Shutters",
         image: "/images/wudon/applications/1.avif",
     },
     {
         id: 2,
-        title: "High-moisture",
+        title: "Bathroom Vanity <br/> Units",
         image: "/images/wudon/applications/2.avif",
     },
     {
         id: 3,
-        title: "Demanding Environments",
+        title: "Modular Furniture in <br/> Humid Climates",
         image: "/images/wudon/applications/3.avif",
     },
 ]

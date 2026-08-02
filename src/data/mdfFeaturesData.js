@@ -1,7 +1,7 @@
 
 export const mdfFeaturesData = {
     title: "MDF",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Dolore, adipisci.",
+    description: "Engineered for strength, finished for perfection. Wudon MDF combines high-density stability with a silky-smooth surface, ready for CNC precision, flawless paint jobs, and furniture that lasts.",
     image: "/images/wudon/mdf.avif",
     features: [
         {
