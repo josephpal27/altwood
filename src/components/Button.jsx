@@ -16,7 +16,7 @@ const Button = ({ label, url }) => {
         py-[0.4rem] sm:py-[0.5rem] lg:py-[0.4rem] xl:py-[0.45rem] 2xl:py-[0.5rem]
         pr-[0.5rem] sm:pr-[0.5rem] lg:pr-[0.4rem] xl:pr-[0.45rem] 2xl:pr-[0.5rem]
         text-[1rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
-        font-[600] ${isWudonPage ? "hover:bg-[#ad030c]" : "hover:bg-[#7d4c0a]"} group transition duration-500
+        font-medium ${isWudonPage ? "hover:bg-[#ad030c]" : "hover:bg-[#7d4c0a]"} group transition duration-500
     `}>
       {label}
       <MdArrowOutward className={`
