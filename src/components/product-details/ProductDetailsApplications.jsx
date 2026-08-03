@@ -7,7 +7,52 @@ import GlareImage from "../GlareImage"
 const ProductDetailsApplications = ({ product }) => {
 
     const items = product?.applications || [];
-    const isFour = items.length === 4;
+    const topRow = items.slice(0, 3);
+    const bottomRow = items.slice(3, 5);
+
+    const renderCard = (item, index) => {
+        // Only the 2nd card (index 1) gets reversed (text on top, image on bottom)
+        const isReverse = index === 1;
+
+        return (
+            <div key={item.id} className={`
+                w-full lg:w-[30%]
+                flex flex-col items-center 
+                ${isReverse ? "flex-col lg:flex-col-reverse" : ""}
+                ${isReverse ? "mb-[1rem] lg:mb-[2rem]" : "mb-[1rem]"}
+            `}>
+                {/* Image */}
+                <div className="
+                    px-[1rem] sm:px-[1.5rem] lg:px-[1.4rem] xl:px-[1.7rem] 2xl:px-[2rem]
+                ">
+                    <GlareImage
+                        src={item.image}
+                        alt={` Application ${item.id}`}
+                        className="
+                            w-full rounded-full border-[#363636] 
+                            border-[9px] lg:border-[10px] xl:border-[13px] 2xl:border-[15px]
+                        "
+                    />
+                </div>
+                {/* Content */}
+                <div className="
+                    py-[1.5rem] lg:py-[2rem]
+                    flex flex-col items-center
+                ">
+                    <span className="
+                        bg-[#363636] text-white rounded-full font-clash
+                        px-[1.5rem] lg:px-[1.6rem]
+                        py-[0.2rem]
+                    ">
+                        0{item.id}
+                    </span>
+                    <p className="
+                        text-white text-center mt-[1rem] 
+                    " dangerouslySetInnerHTML={{ __html: item.title }} />
+                </div>
+            </div>
+        )
+    }
 
     return (
         <>
@@ -32,57 +77,20 @@ const ProductDetailsApplications = ({ product }) => {
                     Applications
                 </motion.h2>
 
-                {/* Row */}
+                {/* Top Row */}
                 <div className="
                     mt-[2rem] lg:mt-[3.5rem]
                     flex justify-between flex-wrap relative
                 ">
-                    {items.map((item, index) => {
+                    {topRow.map((item, index) => renderCard(item, index))}
+                </div>
 
-                        // Reverse logic
-                        const isReverse = isFour
-                            ? (index === 1 || index === 3) // 2nd & 4th
-                            : (index === 1 || index === 4); // 2nd & 5th
-
-                        return (
-                            <div key={item.id} className={`
-                                ${isFour ? "w-full lg:w-[24%]" : "w-full lg:w-[30%]"}
-                                flex flex-col items-center 
-                                ${isReverse ? "flex-col lg:flex-col-reverse" : ""}
-                                ${isReverse ? "mb-[1rem] lg:mb-[2rem]" : "mb-[1rem]"}
-                            `}>
-                                {/* Image */}
-                                <div className="
-                                    px-[1rem] lg:px-[3rem]
-                                ">
-                                    <GlareImage
-                                        src={item.image}
-                                        alt={` Application ${item.id}`}
-                                        className={`
-                                            w-full rounded-full border-[#363636] 
-                                            ${isFour ? "border-[9px] lg:border-[10px]" : "border-[9px] lg:border-[10px] xl:border-[13px] 2xl:border-[15px]"}
-                                        `}
-                                    />
-                                </div>
-                                {/* Content */}
-                                <div className="
-                                    py-[1.5rem] lg:py-[2rem]
-                                    flex flex-col items-center
-                                ">
-                                    <span className="
-                                        bg-[#363636] text-white rounded-full font-clash
-                                        px-[1.5rem] lg:px-[1.6rem]
-                                        py-[0.2rem]
-                                    ">
-                                        0{item.id}
-                                    </span>
-                                    <p className="
-                                        text-white text-center mt-[1rem] 
-                                    " dangerouslySetInnerHTML={{ __html: item.title }} />
-                                </div>
-                            </div>
-                        )
-                    })}
+                {/* Bottom Row */}
+                <div className="
+                    mt-[1rem] lg:mt-0
+                    flex justify-center flex-wrap gap-x-[10%] relative
+                ">
+                    {bottomRow.map((item, index) => renderCard(item, index + 3))}
                 </div>
 
             </section >
@@ -91,4 +99,3 @@ const ProductDetailsApplications = ({ product }) => {
 }
 
 export default ProductDetailsApplications
-

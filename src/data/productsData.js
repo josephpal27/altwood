@@ -58,6 +58,11 @@ export const productsData = [
                 image: "/images/applications/1.avif",
                 title: "Slab and Wall <br/> Construction",
             },
+            {
+                id: 5,
+                image: "/images/applications/1.avif",
+                title: "Industrial Flooring <br/> and Site Decking",
+            },
         ],
     },
 
@@ -125,11 +130,6 @@ export const productsData = [
                 image: "/images/applications/1.avif",
                 title: "Balcony Wall <br/> Cladding",
             },
-            {
-                id: 6,
-                image: "/images/applications/1.avif",
-                title: "EXTRA",
-            },
         ],
     },
 
@@ -193,11 +193,6 @@ export const productsData = [
                 image: "/images/applications/1.avif",
                 title: "Furniture in Coastal and <br/> High-Humidity Homes",
             },
-            {
-                id: 6,
-                image: "/images/applications/1.avif",
-                title: "EXTRA",
-            },
         ],
     },
 
@@ -260,11 +255,6 @@ export const productsData = [
                 id: 5,
                 image: "/images/applications/1.avif",
                 title: "Retail Counters and <br/> Shop Display Units",
-            },
-            {
-                id: 6,
-                image: "/images/applications/1.avif",
-                title: "EXTRA",
             },
         ],
     },
@@ -333,11 +323,6 @@ export const productsData = [
                 image: "/images/applications/1.avif",
                 title: "Soundproof and Fire-Rated <br/> Door Applications",
             },
-            {
-                id: 6,
-                image: "/images/applications/1.avif",
-                title: "EXTRA",
-            },
         ],
     },
 
@@ -404,11 +389,6 @@ export const productsData = [
                 id: 5,
                 image: "/images/applications/1.avif",
                 title: "Modular Kitchen Framework <br/> and Cabinets",
-            },
-            {
-                id: 6,
-                image: "/images/applications/1.avif",
-                title: "EXTRA",
             },
         ],
     },

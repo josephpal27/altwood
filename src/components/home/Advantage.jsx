@@ -99,14 +99,14 @@ const Advantage = () => {
                                     pt-[1.2rem] sm:pt-[1.4rem] lg:pt-[1.3rem] xl:pt-[1.4rem] 2xl:pt-[1.5rem]
                                 ">
                                     <Link href={item.url} className="
-                                    text-white w-max group
-                                    flex items-center gap-[0.5rem]
-                                ">
+                                        text-white w-max group
+                                        flex items-center gap-[0.5rem]
+                                    ">
                                         View Products
                                         <MdArrowOutward className="
-                                        text-[1.2rem] 
-                                        group-hover:rotate-45 transition duration-500
-                                    "/>
+                                            text-[1.2rem] 
+                                            group-hover:rotate-45 transition duration-500
+                                        "/>
                                     </Link>
                                 </div>
                             </div>
