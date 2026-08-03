@@ -23,7 +23,7 @@ const WudonProductFeatures = ({ data, reverse }) => {
                         {data.title}
                     </motion.h2>
 
-                    <p className="w-full lg:w-[50%] text-center mt-[0.7rem] lg:mt-[1rem]">
+                    <p className="w-full lg:w-[70%] text-center mt-[0.7rem] lg:mt-[1rem]">
                         {data.description}
                     </p>
                 </div>
@@ -34,7 +34,7 @@ const WudonProductFeatures = ({ data, reverse }) => {
                     ${reverse ? "flex-row-reverse" : ""}
                 `}>
                     <div className="w-full lg:w-[48%] mt-[1.3rem] lg:mt-0">
-                        <span className="text-[1.4rem] lg:text-[2rem] font-clash font-[600] text-[#1d1d1d]">
+                        <span className="text-[1.4rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-clash font-[600] text-[#1d1d1d]">
                             Key Features :
                         </span>
                         <div className="mt-[1rem] lg:mt-[2rem]">

@@ -16,7 +16,7 @@ const WudonProductApplications = ({ data }) => {
     return (
         <>
             <section className="p-0 mt-[2rem] lg:mt-[5rem]">
-                <div className="px-[1rem] lg:px-[7%">
+                <div className="px-[1rem] lg:px-[7%]">
                     <motion.h3
                         variants={headingVariant}
                         initial="hidden"
@@ -65,7 +65,7 @@ const WudonProductApplications = ({ data }) => {
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
                                     <span 
-                                        className="text-white text-[1.2rem] lg:text-[2rem] font-[500] text-clash" 
+                                        className="text-white text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-[500] text-clash" 
                                         dangerouslySetInnerHTML={{__html: item.title}}
                                     />
                                 </div>
