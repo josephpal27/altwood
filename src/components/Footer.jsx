@@ -47,7 +47,6 @@ const footContent = [
 const Footer = () => {
 
     const pathname = usePathname();
-    
     const isWudonPage = pathname === "/wudon" || pathname === "/wudon/";
 
     return (
@@ -84,7 +83,7 @@ const Footer = () => {
                         </div>
                         <p className="
                             text-[#ededed]
-                            text-[0.9rem] lg:text-[1rem]
+                            text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                             mt-[1.1rem] lg:mt-[1.5rem]
                         ">
                             {
@@ -101,7 +100,7 @@ const Footer = () => {
                             border-t border-gray-600 
                         ">
                             <span className="
-                                text-white text-[1.2rem] lg:text-[1.3rem] font-[600] font-clash
+                                text-white text-[1.2rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-[600] font-clash
                             ">
                                 Follow Us on Social
                             </span>
@@ -162,7 +161,7 @@ const Footer = () => {
                             pt-[1rem] lg:pt-[1.5rem]
                             border-t border-gray-700 
                         ">
-                            <p className="text-white text-[1rem] lg:text-[1.2rem] font-[500] font-clash">
+                            <p className="text-white text-[1rem] sm:text-[1.1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] font-[500] font-clash">
                                 Premium Plywood Manufacturing
                             </p>
                         </div>
@@ -173,9 +172,9 @@ const Footer = () => {
                 <div className="
                     mt-[1.1rem] lg:mt-[3rem]
                     border-t border-gray-700 relative
-                    py-[1rem] lg:py-[2rem]
+                    py-[1.5rem] lg:py-[2rem]
                 ">
-                    <p className="text-center text-white text-[0.8rem] lg:text-[1rem]">
+                    <p className="text-center text-white text-[0.8rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
                         Copyright © 2026 | Altwood | All Rights Reserved
                     </p>
                 </div>

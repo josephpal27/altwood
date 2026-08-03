@@ -12,7 +12,6 @@ const Navbar = () => {
     const [lastScroll, setLastScroll] = useState(0);
 
     const pathname = usePathname();
-
     const isWudonPage = pathname === "/wudon" || pathname === "/wudon/";
 
     // Scroll Hide/Show Logic
