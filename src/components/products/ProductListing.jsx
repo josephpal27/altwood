@@ -16,7 +16,7 @@ const ProductListing = () => {
                             <Link href={`/products/${product.slug}`} key={index} className="
                                 w-[48%] lg:w-[32%] bg-[#ebebeb] hover:bg-[#e3e3e3] overflow-hidden rounded-md group
                                 mb-[1.1rem] lg:mb-[1.7rem]
-                                p-[0.8rem] lg:p-[2rem]
+                                p-[0.5rem] lg:p-[2rem]
                                 hover:translate-y-[-7px] transition duration-300 shadow-md relative
                             ">
                                 {/* Image */}
@@ -41,13 +41,13 @@ const ProductListing = () => {
                                     flex flex-col items-center
                                 ">
                                     <span className="
-                                        font-clash text-[1.2rem] lg:text-[2rem] font-[600] text-gray-900 text-center
+                                        font-clash text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-[600] text-gray-900 text-center
                                     ">
                                         {product.name}
                                     </span>
                                     <p className="
                                         text-center text-gray-900 font-[500] mt-[0.5rem]
-                                        text-[0.6rem] lg:text-[1rem]
+                                        text-[0.7rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                     ">
                                         {product.desc}
                                     </p>

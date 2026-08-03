@@ -60,7 +60,7 @@ const ProductDetailsApplications = ({ product }) => {
                                         alt={` Application ${item.id}`}
                                         className={`
                                             w-full rounded-full border-[#363636] 
-                                            ${isFour ? "border-[9px] lg:border-[10px]" : "border-[9px] lg:border-[15px]"}
+                                            ${isFour ? "border-[9px] lg:border-[10px]" : "border-[9px] lg:border-[10px] xl:border-[13px] 2xl:border-[15px]"}
                                         `}
                                     />
                                 </div>

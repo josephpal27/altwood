@@ -20,13 +20,15 @@ const ProductDetailsBanner = ({product}) => {
                         whileInView="visible"
                         viewport={{ once: true }}
                         className="
-                            text-white text-[2rem] lg:text-[4rem] mt-[4rem]
+                            text-white 
+                            text-[2rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
+                            mt-[7rem] lg:mt-[4.5rem]
                         "
                     >
                         {product?.name}
                     </motion.h1>
                     <p className="
-                        text-white text-center mt-[0.5rem] text-[0.9rem] sm:text-[1.1rem]
+                        text-white text-center mt-[0.6rem] lg:mt-[0.8rem] w-full lg:w-[50%]
                     ">
                         {product?.desc}
                     </p>

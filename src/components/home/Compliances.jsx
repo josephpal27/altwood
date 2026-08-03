@@ -51,7 +51,7 @@ const Compliances = () => {
                     {compliancesData.map((item, index) => {
                         return (
                             <div key={index} className="
-                                w-[31.5%] aspect-square bg-white rounded-md shadow-md
+                                w-full lg:w-[31.5%] aspect-square bg-white rounded-md shadow-md mb-[1.5rem] lg:mb-0
                             ">
                                 <GlareImage
                                     src={item.image}
