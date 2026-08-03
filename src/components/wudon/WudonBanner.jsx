@@ -24,9 +24,9 @@ const WudonBanner = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="text-white text-[2rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem] w-max"
+                        className="text-white text-[1.8rem] sm:text-[2rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem] lg:w-max"
                     >
-                        Engineered Wood Solutions <br/> for Modern Spaces
+                        Engineered Wood Solutions <br className="hidden lg:block"/> for Modern Spaces
                     </motion.h1>
                     <p className="text-white w-full lg:w-[55%] mt-[1rem]">
                         Our brand is the result of visionary leadership, world-class manufacturing infrastructure, and a firm commitment to quality delivering engineered wood solutions that professionals across India trust and rely on.

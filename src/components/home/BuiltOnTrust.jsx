@@ -129,11 +129,11 @@ const BuiltOnTrust = () => {
                                     onMouseEnter={() => handleHover(item.image)}
                                 >
                                     <span className="
-                                        text-white text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-[600] font-clash
+                                        text-white text-[1.15rem] sm:text-[1.25rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-[600] font-clash
                                     ">
                                         {item.title}
                                     </span>
-                                    <p className="text-white mt-[0.4rem] lg:mt-[0.7rem] text-[0.8rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]"
+                                    <p className="text-white mt-[0.4rem] lg:mt-[0.7rem] text-[0.85rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]"
                                         dangerouslySetInnerHTML={{__html: item.desc}}
                                     />
                                 </div>

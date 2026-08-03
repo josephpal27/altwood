@@ -21,7 +21,7 @@ const ProductsBanner = () => {
                         viewport={{ once: true }}
                         className="
                             text-white
-                            text-[2.2rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
+                            text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
                             mt-[7rem] lg:mt-[4.5rem]
                         "
                     >

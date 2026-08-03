@@ -10,44 +10,52 @@ const socialHandles = [
     { icon: <FaLinkedinIn />, url: "#", },
 ]
 
-const footContent = [
-    {
-        title: "Quick Links",
-        links: [
-            { label: "Home", url: "/" },
-            { label: "About Us", url: "/about" },
-            { label: "Products", url: "/products" },
-            { label: "Contact Us", url: "/contact" },
-        ]
-    },
-    {
-        title: "Our Collection",
-        links: [
-            { label: "Film Faced", url: "/products/film-faced" },
-            { label: "Marine Grade", url: "/products/marine-grade" },
-            { label: "BWP Grade", url: "/products/bwp-grade" },
-            { label: "BWR Grade", url: "/products/bwr-grade" },
-            { label: "Flush Door", url: "/products/flush-door" },
-            { label: "Block Board", url: "/products/block-board" },
-        ]
-    },
-    {
-        title: "Get In Touch",
-        links: [
-            {
-                label: "46C, Jawaharlal Nehru Road, Everest House, 20th Floor, Suite-C, Kolkata 700071",
-                url: "#"
-            },
-            { label: "info@altwood.in", url: "mailto:info@altwood.in" },
-            { label: "+91 98754 61678", url: "tel:+919875461678" },
-        ]
-    },
-]
-
 const Footer = () => {
 
     const pathname = usePathname();
     const isWudonPage = pathname === "/wudon" || pathname === "/wudon/";
+
+    const footContent = [
+        {
+            title: "Quick Links",
+            links: [
+                { label: "Home", url: "/" },
+                { label: "About Us", url: "/about" },
+                { label: "Products", url: "/products" },
+                { label: "Contact Us", url: "/contact" },
+            ]
+        },
+        {
+            title: "Our Collection",
+            links: isWudonPage
+                ? [
+                    { label: "MDF", url: "/wudon" },
+                    { label: "HDHMR", url: "/wudon" },
+                ]
+                : [
+                    { label: "Film Faced", url: "/products/film-faced" },
+                    { label: "Marine Grade", url: "/products/marine-grade" },
+                    { label: "BWP Grade", url: "/products/bwp-grade" },
+                    { label: "BWR Grade", url: "/products/bwr-grade" },
+                    { label: "Flush Door", url: "/products/flush-door" },
+                    { label: "Block Board", url: "/products/block-board" },
+                ]
+        },
+        {
+            title: "Get In Touch",
+            links: [
+                {
+                    label: "46C, Jawaharlal Nehru Road, Everest House, 20th Floor, Suite-C, Kolkata 700071",
+                    url: "#"
+                },
+                {
+                    label: isWudonPage ? "info@wudon.in" : "info@altwood.in",
+                    url: isWudonPage ? "mailto:info@wudon.in" : "mailto:info@altwood.in"
+                },
+                { label: "+91 98754 61678", url: "tel:+919875461678" },
+            ]
+        },
+    ]
 
     return (
         <>
@@ -67,14 +75,14 @@ const Footer = () => {
                             bg-white aspect-square rounded-full flex items-center justify-center
                             w-[23%] px-[7px]
                         ">
-                            <img 
+                            <img
                                 src={
                                     isWudonPage
-                                    ? "/images/logo/wudon-footer-logo.png"
-                                    : "/images/logo/altwood-logo.png"
+                                        ? "/images/logo/wudon-footer-logo.png"
+                                        : "/images/logo/altwood-logo.png"
                                 }
-                                alt="Logo" 
-                                loading="lazy" 
+                                alt="Logo"
+                                loading="lazy"
                                 className={`
                                     w-full   
                                     ${isWudonPage ? "p-[6px]" : ""} 
@@ -87,11 +95,11 @@ const Footer = () => {
                             mt-[1.1rem] lg:mt-[1.5rem]
                         ">
                             {
-                                isWudonPage 
-                                ? 
-                                "The brand behind spaces built to last a lifetime. Wudon brings together the best of technology and craftsmanship to deliver engineered wood products that are as reliable as they are refined." 
-                                : 
-                                "Behind every wall that’s never needed replacing, there’s a legacy passed into every layer and that legacy is Altwood."
+                                isWudonPage
+                                    ?
+                                    "The brand behind spaces built to last a lifetime. Wudon brings together the best of technology and craftsmanship to deliver engineered wood products that are as reliable as they are refined."
+                                    :
+                                    "Behind every wall that’s never needed replacing, there’s a legacy passed into every layer and that legacy is Altwood."
                             }
                         </p>
                         <div className="
@@ -174,7 +182,7 @@ const Footer = () => {
                     border-t border-gray-700 relative
                     py-[1.5rem] lg:py-[2rem]
                 ">
-                    <p className="text-center text-white text-[0.8rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
+                    <p className="text-center text-white text-[0.8rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
                         Copyright © 2026 | Altwood | All Rights Reserved
                     </p>
                 </div>

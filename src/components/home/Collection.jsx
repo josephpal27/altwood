@@ -108,7 +108,7 @@ const Collection = () => {
                                 <span className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-[700] text-white">
                                     {item.title}
                                 </span>
-                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] text-[0.65rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
+                                <p className="opacity-90 text-white mt-[0.3rem] lg:mt-[0.5rem] text-[0.8rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                     {item.desc}
                                 </p>
                             </div>

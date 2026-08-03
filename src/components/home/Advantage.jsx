@@ -75,7 +75,7 @@ const Advantage = () => {
                                 w-full lg:w-[31.5%] overflow-hidden rounded-md bg-[#313131] 
                                 p-[1.2rem] sm:p-[1.5rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 hover:translate-y-[-7px] transition duration-300
-                                mb-[0.6rem] lg:mb-0
+                                mb-[1.2rem] lg:mb-0
                             ">
                                 <img src={item.image} alt={item.title} loading="lazy" className="
                                     w-[22%]
@@ -117,9 +117,9 @@ const Advantage = () => {
                 {/* CTA */}
                 <div className="relative flex justify-center items-center mt-[1rem] sm:mt-[1.5rem] lg:mt-[3.1rem] xl:mt-[3.3rem] 2xl:mt-[3.5rem]">
                     {/* Icon will add here */}
-                    <p className="text-center text-white flex items-center flex-col lg:flex-row gap-[0.6rem] text-[0.9rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
+                    <p className="text-center text-white flex items-center flex-col lg:flex-row gap-[0.6rem]">
                         Let's bring your vision to life.
-                        <Link href="/contact" className="text-white underline text-[0.9rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">Get a Free Quote</Link>
+                        <Link href="/contact" className="text-white underline">Get a Free Quote</Link>
                     </p>
                 </div>
             </section>
