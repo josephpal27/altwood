@@ -27,9 +27,9 @@ const ProductDetailsApplications = ({ product }) => {
                 ">
                     <GlareImage
                         src={item.image}
-                        alt={` Application ${item.id}`}
+                        alt={`Application ${item.id}`}
                         className="
-                            w-full rounded-full border-[#363636] 
+                            w-full rounded-full border-[#363636] aspect-square
                             border-[9px] lg:border-[10px] xl:border-[13px] 2xl:border-[15px]
                         "
                     />

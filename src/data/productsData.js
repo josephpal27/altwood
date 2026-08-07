@@ -40,27 +40,27 @@ export const productsData = [
         applications: [
             {
                 id: 1,
-                image: "/images/applications/film-faced/1.png",
+                image: "/images/applications/film-faced/1.avif",
                 title: "Concrete Framework <br/> and Shuttering",
             },
             {
                 id: 2,
-                image: "/images/applications/film-faced/2.png",
+                image: "/images/applications/film-faced/2.avif",
                 title: "Scaffolding <br/> Platforms",
             },
             {
                 id: 3,
-                image: "/images/applications/film-faced/3.png",
+                image: "/images/applications/film-faced/3.avif",
                 title: "Column and <br/> Beam Casting",
             },
             {
                 id: 4,
-                image: "/images/applications/film-faced/4.png",
+                image: "/images/applications/film-faced/4.avif",
                 title: "Slab and Wall <br/> Construction",
             },
             {
                 id: 5,
-                image: "/images/applications/film-faced/5.png",
+                image: "/images/applications/film-faced/5.avif",
                 title: "Industrial Flooring <br/> and Site Decking",
             },
         ],
@@ -107,27 +107,27 @@ export const productsData = [
         applications: [
             {
                 id: 1,
-                image: "/images/applications/marine-grade/1.png",
+                image: "/images/applications/marine-grade/1.avif",
                 title: "Boat Building and <br/> Hull Construction",
             },
             {
                 id: 2,
-                image: "/images/applications/marine-grade/2.png",
+                image: "/images/applications/marine-grade/2.avif",
                 title: "Modular Kitchens with Heavy <br/> Moisture Exposure",
             },
             {
                 id: 3,
-                image: "/images/applications/marine-grade/3.png",
+                image: "/images/applications/marine-grade/3.avif",
                 title: "Docks, Jetties and <br/> Waterfront Structures",
             },
             {
                 id: 4,
-                image: "/images/applications/marine-grade/4.png",
+                image: "/images/applications/marine-grade/4.avif",
                 title: "Rain Exposed <br/> Furniture",
             },
             {
                 id: 5,
-                image: "/images/applications/marine-grade/5.png",
+                image: "/images/applications/marine-grade/5.avif",
                 title: "Balcony Wall <br/> Cladding",
             },
         ],
@@ -170,27 +170,27 @@ export const productsData = [
         applications: [
             {
                 id: 1,
-                image: "/images/applications/bwp/1.png",
+                image: "/images/applications/bwp/1.avif",
                 title: "Modular Kitchens and <br/> Kitchen Cabinets",
             },
             {
                 id: 2,
-                image: "/images/applications/bwp/2.png",
+                image: "/images/applications/bwp/2.avif",
                 title: "Bathroom Vanities and <br/> Wet Area Furniture",
             },
             {
                 id: 3,
-                image: "/images/applications/bwp/3.png",
+                image: "/images/applications/bwp/3.avif",
                 title: "Exterior Doors and <br/> Door Frames",
             },
             {
                 id: 4,
-                image: "/images/applications/bwp/4.png",
+                image: "/images/applications/bwp/4.avif",
                 title: "Laundry Areas and <br/> Utility Spaces",
             },
             {
                 id: 5,
-                image: "/images/applications/bwp/5.png",
+                image: "/images/applications/bwp/5.avif",
                 title: "Furniture in Coastal and <br/> High-Humidity Homes",
             },
         ],
@@ -233,27 +233,27 @@ export const productsData = [
         applications: [
             {
                 id: 1,
-                image: "/images/applications/bwr/1.png",
+                image: "/images/applications/bwr/1.avif",
                 title: "Wardrobes and <br/> Bedroom Furniture",
             },
             {
                 id: 2,
-                image: "/images/applications/bwr/2.png",
+                image: "/images/applications/bwr/2.avif",
                 title: "Study tables and <br/> Office Workstations",
             },
             {
                 id: 3,
-                image: "/images/applications/bwr/3.png",
+                image: "/images/applications/bwr/3.avif",
                 title: "Living Room TV Units <br/> and Storage Cabinets",
             },
             {
                 id: 4,
-                image: "/images/applications/bwr/4.png",
+                image: "/images/applications/bwr/4.avif",
                 title: "Interior Wall Panelling <br/> and Partitions",
             },
             {
                 id: 5,
-                image: "/images/applications/bwr/5.png",
+                image: "/images/applications/bwr/5.avif",
                 title: "Retail Counters and <br/> Shop Display Units",
             },
         ],
@@ -300,27 +300,27 @@ export const productsData = [
         applications: [
             {
                 id: 1,
-                image: "/images/applications/flush-door/1.png",
+                image: "/images/applications/flush-door/1.avif",
                 title: "Residential Bedroom and <br/> Living Room Doors",
             },
             {
                 id: 2,
-                image: "/images/applications/flush-door/2.png",
+                image: "/images/applications/flush-door/2.avif",
                 title: "Office and <br/> Commercial Entrances",
             },
             {
                 id: 3,
-                image: "/images/applications/flush-door/3.png",
+                image: "/images/applications/flush-door/3.avif",
                 title: "Hotels and <br/> Hospitality Spaces",
             },
             {
                 id: 4,
-                image: "/images/applications/flush-door/4.png",
+                image: "/images/applications/flush-door/4.avif",
                 title: "Hospitals and <br/> Institutional Buildings",
             },
             {
                 id: 5,
-                image: "/images/applications/flush-door/5.png",
+                image: "/images/applications/flush-door/5.avif",
                 title: "Soundproof and Fire-Rated <br/> Door Applications",
             },
         ],
@@ -367,27 +367,27 @@ export const productsData = [
         applications: [
             {
                 id: 1,
-                image: "/images/applications/block-board/1.png",
+                image: "/images/applications/block-board/1.avif",
                 title: "Large Wardrobe Shutters <br/> and Panels",
             },
             {
                 id: 2,
-                image: "/images/applications/block-board/2.png",
+                image: "/images/applications/block-board/2.avif",
                 title: "Tabletops and <br/> Study Tables",
             },
             {
                 id: 3,
-                image: "/images/applications/block-board/3.png",
+                image: "/images/applications/block-board/3.avif",
                 title: "Staircase Treads <br/> and Steps",
             },
             {
                 id: 4,
-                image: "/images/applications/block-board/4.png",
+                image: "/images/applications/block-board/4.avif",
                 title: "Partition Walls and <br/> Room Dividers",
             },
             {
                 id: 5,
-                image: "/images/applications/block-board/5.png",
+                image: "/images/applications/block-board/5.avif",
                 title: "Modular Kitchen Framework <br/> and Cabinets",
             },
         ],
