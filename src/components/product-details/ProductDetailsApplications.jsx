@@ -29,8 +29,9 @@ const ProductDetailsApplications = ({ product }) => {
                         src={item.image}
                         alt={`Application ${item.id}`}
                         className="
-                            w-full rounded-full border-[#363636] aspect-square hover:scale-[1.03] transition duration-300
+                            w-full rounded-full border-[#363636] aspect-square transition-all duration-300
                             border-[9px] lg:border-[10px] xl:border-[13px] 2xl:border-[15px]
+                            hover:border-[6px] lg:hover:border-[5px] xl:hover:border-[6px] 2xl:hover:border-[7px]
                         "
                     />
                 </div>
