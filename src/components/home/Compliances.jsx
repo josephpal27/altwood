@@ -39,7 +39,7 @@ const Compliances = () => {
                         viewport={{ once: true }}
                         className="mt-[1.3rem] lg:mt-[2rem] lg:w-max"
                     >
-                        Trusted by partners and <br /> projects worldwide
+                        Trusted by Partners and <br /> Projects Worldwide
                     </motion.h6>
                 </div>
                 {/* Cards Row */}

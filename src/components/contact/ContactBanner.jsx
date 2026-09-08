@@ -7,12 +7,12 @@ const ContactBanner = () => {
     return (
         <>
             <section className="p-0 relative">
-                <img src="/images/banners/product-details-banner.avif" alt="Products Banner" loading="eager" className="
+                <img src="/images/banners/contact-banner.avif" alt="Products Banner" loading="eager" className="
                     w-full h-[45dvh] lg:h-auto object-cover
                 " />
                 <div className="
                     absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center
-                    px-[1rem] lg:px-[7%] bg-black/50
+                    px-[1rem] lg:px-[7%] bg-black/40
                 ">
                     <motion.h1
                         variants={headingVariant}

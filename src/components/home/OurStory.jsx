@@ -1,9 +1,9 @@
 "use client"
 
-import Button from "../Button"
-import GlareImage from "../GlareImage"
+import Button from "../Button";
+import GlareImage from "../GlareImage";
 import { motion } from "framer-motion";
-import { headingVariant } from "@/utils/animations"
+import { headingVariant } from "@/utils/animations";
 
 const OurStory = () => {
     return (
