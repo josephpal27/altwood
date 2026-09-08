@@ -26,7 +26,7 @@ const ContactDetails = () => {
                 Connect with Our Expert for <br /> Premium Plywoods
             </motion.h2>
             <p className="mt-[1rem] lg:mt-[1.5rem]">
-                Connect with our experienced specialists for premium tile and marble solutions designed to elevate every space.
+                Connect with our experienced specialists for premium plywood solutions designed to elevate every space.
             </p>
         </div>
     )

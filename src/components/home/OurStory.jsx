@@ -107,7 +107,7 @@ const OurStory = () => {
 
                     {/* Bottom */}
                     <div className="mt-[2rem] sm:mt-[1.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]">
-                        <Button label="Discover Our Heritage" url="/about" />
+                        <Button label="Discover Our Heritage" url="/products" />
                     </div>
                 </div>
             </section>
