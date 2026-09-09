@@ -46,13 +46,15 @@ const Footer = () => {
             links: [
                 {
                     label: "46C, Jawaharlal Nehru Road, Everest House, 20th Floor, Suite-C, Kolkata 700071",
-                    url: "#"
+                    url: "https://maps.app.goo.gl/SXiL9Eo13XArS6wr9",
+                    target: "_blank",
                 },
                 {
                     label: isWudonPage ? "info@wudon.in" : "info@altwood.in",
-                    url: isWudonPage ? "mailto:info@wudon.in" : "mailto:info@altwood.in"
+                    url: isWudonPage ? "mailto:info@wudon.in" : "mailto:info@altwood.in",
+                    target: "_self",
                 },
-                { label: "+91 98754 61678", url: "tel:+919875461678" },
+                { label: "+91 98754 61678", url: "tel:+919875461678", target: "_self" },
             ]
         },
     ]
@@ -149,7 +151,20 @@ const Footer = () => {
                                             {item.title}
                                             <div className="mt-[1rem] lg:mt-[1.5rem]">
                                                 {item.links.map((link, index) => {
-                                                    return (
+                                                    return link.target ? (
+                                                        <a
+                                                            href={link.url}
+                                                            target={link.target}
+                                                            rel={link.target === "_blank" ? "noopener noreferrer" : undefined}
+                                                            key={index}
+                                                            className="
+                                                                flex items-center text-white hover:text-[#d7b36e] transition
+                                                                mb-[0.5rem] lg:mb-[1rem] 
+                                                            "
+                                                        >
+                                                            {link.label}
+                                                        </a>
+                                                    ) : (
                                                         <Link href={link.url} key={index} className="
                                                             flex items-center text-white hover:text-[#d7b36e] transition
                                                             mb-[0.5rem] lg:mb-[1rem] 
@@ -174,7 +189,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div >
 
                 {/* Copyright */}
                 <div className="
@@ -187,7 +202,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-            </footer>
+            </footer >
         </>
     )
 }

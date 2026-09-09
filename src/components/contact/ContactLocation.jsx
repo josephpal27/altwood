@@ -5,7 +5,8 @@ import { headingVariant } from "@/utils/animations";
 
 const ContactLocation = () => {
     return (
-        <section>
+        <section className="pb-[2rem] lg:pb-[5rem]">
+
             {/* Head */}
             <div>
                 <div className="
@@ -27,10 +28,24 @@ const ContactLocation = () => {
                 >
                     Let's Connect & Build Spaces
                 </motion.h2>
-                <p className="mt-[1rem] lg:mt-[1.5rem]">
+                <p className="mt-[1rem] lg:mt-[1.5rem] w-full lg:w-[60%]">
                     Collaborate with us to transform ideas into inspiring spaces. we'll create environments that reflect your vision, blending functionality, style, and innovation.
                 </p>
             </div>
+
+            {/* Map */}
+            <div className="mt-[3rem] h-[60dvh] rounded-lg overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.8721528720534!2d88.3457348750769!3d22.54646142951039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027713e10193a3%3A0xd678eb064667ffdc!2sEverest%20House!5e0!3m2!1sen!2sin!4v1788978051612!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                ></iframe>
+            </div>
+
         </section>
     )
 }
