@@ -1,5 +1,6 @@
 import ContactBanner from "@/components/contact/ContactBanner";
 import ContactDetailsContainer from "@/components/contact/ContactDetailsContainer";
+import ContactLocation from "@/components/contact/ContactLocation";
 
 export const metadata = {
   title: "Contact Us - Altwood",
@@ -11,6 +12,7 @@ export default function Contact() {
     <>
       <ContactBanner />
       <ContactDetailsContainer />
+      <ContactLocation />
     </>
   );
 }

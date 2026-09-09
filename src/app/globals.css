@@ -27,3 +27,15 @@ p, span, li, a, label, b, button, input, textarea, select, option{
 section{
   @apply px-[1rem] sm:px-[7%] pt-[2.5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
 }
+
+/* Contact Page */
+.contact_form input,
+.contact_form textarea{
+  @apply bg-[#f7f7f7] w-full lg:w-[48%] p-[1.2rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] outline-none
+}
+.contact_form textarea{
+  @apply w-full resize-none h-[9rem] mb-[1rem]
+}
+.contact_form input::-webkit-inner-spin-button{
+  @apply hidden
+}
