@@ -3,6 +3,32 @@
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
+const contactData = [
+    
+    
+    {
+        id: 3,
+        label: "Visit Us",
+        value: "46C, Jawaharlal Nehru Road, Everest House, 20th Floor, Suite-C, Kolkata 700071",
+        url: "https://maps.app.goo.gl/SXiL9Eo13XArS6wr9",
+        target: "_blank",
+    },
+    {
+        id: 2,
+        label: "Email Us",
+        value: "info@altwood.in",
+        url: "mailto:info@altwood.in",
+        target: "_self",
+    },
+    {
+        id: 1,
+        label: "Call Us",
+        value: "+91 98754 61678",
+        url: "tel:+919875461678",
+        target: "_self",
+    },
+]
+
 const ContactDetails = () => {
     return (
         <div>
@@ -28,6 +54,26 @@ const ContactDetails = () => {
             <p className="mt-[1rem] lg:mt-[1.5rem]">
                 Connect with our experienced specialists for premium plywood solutions designed to elevate every space.
             </p>
+
+            <div className="mt-[3rem]">
+                {contactData.map((contact, index) => {
+                    return(
+                        <div key={index} className="flex gap-[1rem] mb-[1.5rem]">
+                            <div>
+                                ICON
+                            </div>
+                            <div>
+                                <span className="block font-bold text-[1.2rem] text-[#7d4c0a]">
+                                    {contact.label}
+                                </span>
+                                <a href={contact.url} target={contact.target} className="block mt-[0.5rem]">
+                                    {contact.value}
+                                </a>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

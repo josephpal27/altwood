@@ -2,7 +2,7 @@ import Button from "../Button";
 
 const ContactForm = () => {
     return (
-        <div className="bg-white p-[2rem]">
+        <div className="bg-white rounded-lg p-[2rem]">
             <h3>
                 Talk to Us Today
             </h3>

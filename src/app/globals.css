@@ -31,7 +31,11 @@ section{
 /* Contact Page */
 .contact_form input,
 .contact_form textarea{
-  @apply bg-[#f7f7f7] w-full lg:w-[48%] p-[1.2rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] outline-none
+  @apply bg-[#f7f7f7] w-full lg:w-[48%] p-[1.2rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] rounded-md outline-none transition-all duration-200
+}
+.contact_form input:focus,
+.contact_form textarea:focus{
+  @apply bg-[#f2f1f1] shadow-md
 }
 .contact_form textarea{
   @apply w-full resize-none h-[9rem] mb-[1rem]
