@@ -31,7 +31,7 @@ const ContactBanner = () => {
                         text-white mt-[0.6rem] lg:mt-[0.8rem] 
                         w-full lg:w-[50%] text-center
                     ">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Connect with us today for premium, reliable plywood solutions. Let’s create better spaces together, with confidence.
                     </p>
                 </div>
             </section>

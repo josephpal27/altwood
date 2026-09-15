@@ -7,7 +7,7 @@ const ContactDetailsContainer = () => {
             <div className="w-full lg:w-[48%]">
                 <ContactDetails />
             </div>
-            <div className="w-full lg:w-[48%]">
+            <div className="w-full lg:w-[48%] mt-[2rem] lg:mt-0">
                 <ContactForm />
             </div>
         </section>

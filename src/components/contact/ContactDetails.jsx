@@ -53,7 +53,7 @@ const ContactDetails = () => {
                 viewport={{ once: true }}
                 className="mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem] lg:w-max"
             >
-                Connect with Our Expert for <br /> Premium Plywoods
+                Connect with Our Expert for <br className="hidden lg:block" /> Premium Plywoods
             </motion.h2>
             <p className="mt-[1rem] lg:mt-[1.5rem]">
                 Connect with our experienced specialists for premium plywood solutions designed to elevate every space.
@@ -62,12 +62,12 @@ const ContactDetails = () => {
             <div className="mt-[2rem] sm:mt-[2.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]">
                 {contactData.map((contact, index) => {
                     return(
-                        <div key={index} className="flex gap-[1rem] mb-[1.5rem]">
-                            <div className="text-[1.7rem] sm:text-[2rem] lg:text-[1.7rem] xl:text-[1.8rem] 2xl:text-[2rem] text-[#114a27]">
+                        <div key={index} className="flex gap-[0.7rem] lg:gap-[1rem] mb-[1.3rem] lg:mb-[1.5rem]">
+                            <div className="text-[1.7rem] sm:text-[1.9rem] lg:text-[1.7rem] xl:text-[1.8rem] 2xl:text-[2rem] text-[#114a27]">
                                 {contact.icon}
                             </div>
                             <div>
-                                <span className="block font-bold text-[1.2rem] sm:text-[1.4rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] text-[#7d4c0a]">
+                                <span className="block font-bold text-[1.2rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] text-[#7d4c0a]">
                                     {contact.label}
                                 </span>
                                 <a href={contact.url} target={contact.target} className="block mt-[0.5rem] hover:text-[#114a27]">

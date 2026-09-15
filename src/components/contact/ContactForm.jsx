@@ -2,15 +2,15 @@ import Button from "../Button";
 
 const ContactForm = () => {
     return (
-        <div className="bg-white rounded-lg p-[1rem] sm:p-[1.2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]">
-            <h3 className="lg:w-max">
+        <div className="bg-white rounded-lg p-[1.3rem] sm:p-[1.4rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]">
+            <h3 className="lg:w-max mt-[0.3rem] lg:mt-0">
                 Talk to Us Today
             </h3>
-            <p className="mt-[1rem] lg:mt-[1.3rem]">
+            <p className="mt-[0.8rem] lg:mt-[1.3rem]">
                 Reach out to our team for product inquiries, project consultations, or custom plywood solutions tailored to your needs.
             </p>
 
-            <form action="" className="contact_form mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem] flex justify-between flex-wrap gap-y-[1rem] sm:gap-y-[1.1rem] lg:gap-y-[1.2rem] xl:gap-y-[1.3rem] 2xl:gap-y-[1.4rem]">
+            <form action="" className="contact_form mt-[1.7rem] sm:mt-[1.8rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem] flex justify-between flex-wrap gap-y-[1rem] sm:gap-y-[1.1rem] lg:gap-y-[1.2rem] xl:gap-y-[1.3rem] 2xl:gap-y-[1.4rem]">
                 <input type="text" name="First Name" placeholder="First Name" required />
                 <input type="text" name="Last Name" placeholder="Last Name" required />
                 <input type="number" name="Phone No." placeholder="Phone" required />
