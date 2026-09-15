@@ -38,7 +38,7 @@ section{
   @apply bg-[#f2f1f1]
 }
 .contact_form textarea{
-  @apply w-full resize-none h-[5rem] sm:h-[6rem] lg:h-[7rem] xl:h-[8rem] 2xl:h-[9rem] mb-[1rem] sm:mb-[1.1rem] lg:mb-[0.7rem] xl:mb-[0.8rem] 2xl:mb-[0.9rem]
+  @apply w-full resize-none h-[5rem] sm:h-[6rem] lg:h-[8rem] xl:h-[8.5rem] 2xl:h-[9rem] mb-[1rem] sm:mb-[1.1rem] lg:mb-[0.7rem] xl:mb-[0.8rem] 2xl:mb-[0.9rem]
 }
 .contact_form input::-webkit-inner-spin-button{
   @apply hidden

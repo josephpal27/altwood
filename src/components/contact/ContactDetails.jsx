@@ -7,10 +7,8 @@ import { IoMdMail } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
 
 const contactData = [
-    
-    
     {
-        id: 3,
+        id: 1,
         icon: <FaLocationDot />,
         label: "Visit Us",
         value: "46C, Jawaharlal Nehru Road, Everest House, 20th Floor, Suite-C, Kolkata 700071",
@@ -26,7 +24,7 @@ const contactData = [
         target: "_self",
     },
     {
-        id: 1,
+        id: 3,
         icon: <BiSupport />,
         label: "Call Us",
         value: "+91 98754 61678",
@@ -61,15 +59,15 @@ const ContactDetails = () => {
                 Connect with our experienced specialists for premium plywood solutions designed to elevate every space.
             </p>
 
-            <div className="mt-[3rem]">
+            <div className="mt-[2rem] sm:mt-[2.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]">
                 {contactData.map((contact, index) => {
                     return(
                         <div key={index} className="flex gap-[1rem] mb-[1.5rem]">
-                            <div className="text-[2rem] text-[#114a27]">
+                            <div className="text-[1.7rem] sm:text-[2rem] lg:text-[1.7rem] xl:text-[1.8rem] 2xl:text-[2rem] text-[#114a27]">
                                 {contact.icon}
                             </div>
                             <div>
-                                <span className="block font-bold text-[1.2rem] text-[#7d4c0a]">
+                                <span className="block font-bold text-[1.2rem] sm:text-[1.4rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] text-[#7d4c0a]">
                                     {contact.label}
                                 </span>
                                 <a href={contact.url} target={contact.target} className="block mt-[0.5rem] hover:text-[#114a27]">
