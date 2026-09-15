@@ -31,14 +31,14 @@ section{
 /* Contact Page */
 .contact_form input,
 .contact_form textarea{
-  @apply bg-[#f7f7f7] w-full lg:w-[48%] p-[1.2rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] rounded-md outline-none transition-all duration-200
+  @apply bg-[#f7f7f7] w-full lg:w-[48%] p-[1rem] sm:p-[1.1rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] rounded-md outline-none transition-all duration-200
 }
 .contact_form input:focus,
 .contact_form textarea:focus{
-  @apply bg-[#f2f1f1] shadow-md
+  @apply bg-[#f2f1f1]
 }
 .contact_form textarea{
-  @apply w-full resize-none h-[9rem] mb-[1rem]
+  @apply w-full resize-none h-[5rem] sm:h-[6rem] lg:h-[7rem] xl:h-[8rem] 2xl:h-[9rem] mb-[1rem] sm:mb-[1.1rem] lg:mb-[0.7rem] xl:mb-[0.8rem] 2xl:mb-[0.9rem]
 }
 .contact_form input::-webkit-inner-spin-button{
   @apply hidden

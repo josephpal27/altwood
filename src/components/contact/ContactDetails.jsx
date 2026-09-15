@@ -2,12 +2,16 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { BiSupport } from "react-icons/bi";
 
 const contactData = [
     
     
     {
         id: 3,
+        icon: <FaLocationDot />,
         label: "Visit Us",
         value: "46C, Jawaharlal Nehru Road, Everest House, 20th Floor, Suite-C, Kolkata 700071",
         url: "https://maps.app.goo.gl/SXiL9Eo13XArS6wr9",
@@ -15,6 +19,7 @@ const contactData = [
     },
     {
         id: 2,
+        icon: <IoMdMail />,
         label: "Email Us",
         value: "info@altwood.in",
         url: "mailto:info@altwood.in",
@@ -22,6 +27,7 @@ const contactData = [
     },
     {
         id: 1,
+        icon: <BiSupport />,
         label: "Call Us",
         value: "+91 98754 61678",
         url: "tel:+919875461678",
@@ -59,14 +65,14 @@ const ContactDetails = () => {
                 {contactData.map((contact, index) => {
                     return(
                         <div key={index} className="flex gap-[1rem] mb-[1.5rem]">
-                            <div>
-                                ICON
+                            <div className="text-[2rem] text-[#114a27]">
+                                {contact.icon}
                             </div>
                             <div>
                                 <span className="block font-bold text-[1.2rem] text-[#7d4c0a]">
                                     {contact.label}
                                 </span>
-                                <a href={contact.url} target={contact.target} className="block mt-[0.5rem]">
+                                <a href={contact.url} target={contact.target} className="block mt-[0.5rem] hover:text-[#114a27]">
                                     {contact.value}
                                 </a>
                             </div>
