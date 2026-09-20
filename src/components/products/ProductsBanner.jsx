@@ -31,7 +31,7 @@ const ProductsBanner = () => {
                         text-white mt-[0.6rem] lg:mt-[0.8rem] 
                         w-full lg:w-[50%] text-center
                     ">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Discover our premium plywood collections, crafted with precision, strength, and timeless quality for every modern space.
                     </p>
                 </div>
             </section>
