@@ -31,7 +31,7 @@ const ProductDetailsFeatures = ({ product }) => {
 
                 {/* Image */}
                 <div className="w-full lg:w-[48%] mt-[-0.5rem] lg:mt-0">
-                    <div className="bg-[#ede6d4] rounded-md overflow-hidden p-[1rem] lg:p-0">
+                    <div className="bg-[#ede6d4] rounded-md overflow-hidden">
                         <GlareImage
                             src={activeImage}
                             alt={product?.name}
@@ -53,7 +53,7 @@ const ProductDetailsFeatures = ({ product }) => {
                                     src={img}
                                     alt={product?.name}
                                     onClick={() => handleImageChange(img)}
-                                    className="w-[25%] rounded-md bg-[#ede6d4] aspect-[5/4] cursor-pointer p-[0.3rem] lg:p-0"
+                                    className="w-[25%] rounded-md bg-[#ede6d4] aspect-[5/4] cursor-pointer"
                                 />
                             )
                         })}

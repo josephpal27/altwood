@@ -46,6 +46,7 @@ const collectionData = [
 ];
 
 const Collection = () => {
+    
     const [active, setActive] = useState(null);
 
     return (

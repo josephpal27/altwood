@@ -16,7 +16,7 @@ const ProductListing = () => {
                             <Link href={`/products/${product.slug}`} key={index} className="
                                 w-[48%] lg:w-[32%] bg-[#ebebeb] hover:bg-[#e3e3e3] overflow-hidden rounded-md group
                                 mb-[1.1rem] lg:mb-[1.7rem]
-                                p-[0.5rem] lg:p-[2rem]
+                                p-[0.5rem] lg:p-[1rem]
                                 hover:translate-y-[-7px] transition duration-300 shadow-md relative
                             ">
                                 {/* Image */}
@@ -25,13 +25,13 @@ const ProductListing = () => {
                                         src={product.productImages[0]}
                                         alt={product.name}
                                         loading="lazy"
-                                        className="w-full h-auto transition-opacity duration-500 group-hover:opacity-0"
+                                        className="w-full h-auto transition-opacity duration-500 group-hover:opacity-0 rounded-md"
                                     />
                                     <img
-                                        src={product.productImages[2]}
+                                        src={product.productImages[1]}
                                         alt={product.name}
                                         loading="lazy"
-                                        className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pt-[7%]"
+                                        className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 rounded-md"
                                     />
                                 </div>
 
@@ -46,7 +46,7 @@ const ProductListing = () => {
                                         {product.name}
                                     </span>
                                     <p className="
-                                        text-center text-gray-900 font-[500] mt-[0.5rem]
+                                        text-center text-gray-900 font-[500] my-[0.3rem] lg:my-[0.5rem]
                                         text-[0.7rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                     ">
                                         {product.desc}
