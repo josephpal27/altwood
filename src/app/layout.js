@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import CustomCursor from "@/components/CustomCursor";
+// import CustomCursor from "@/components/CustomCursor";
 import SmoothScroll from "@/components/SmoothScroll";
 // import ComingSoon from "@/components/ComingSoon";
 
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
 
         {/* <div className="hidden sm:block"> */}
           {/* Global Effects */}
-          <CustomCursor />
+          {/* <CustomCursor /> */}
           <SmoothScroll />
 
           {/* Site Content */}
