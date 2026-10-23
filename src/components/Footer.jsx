@@ -185,7 +185,7 @@ const Footer = () => {
                             border-t border-gray-700 
                         ">
                             <p className="text-white text-[1rem] sm:text-[1.1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] font-[500] font-clash">
-                                Premium Plywood Manufacturing
+                                {isWudonPage ? "Precision Engineered Manufacturing" : "Premium Plywood Manufacturing"}
                             </p>
                         </div>
                     </div>
@@ -198,7 +198,7 @@ const Footer = () => {
                     py-[1.5rem] lg:py-[2rem]
                 ">
                     <p className="text-center text-white text-[0.8rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
-                        Copyright © 2026 | Altwood | All Rights Reserved
+                        Copyright © {new Date().getFullYear()} | {isWudonPage ? "Wudon" : "Altwood"} | All Rights Reserved
                     </p>
                 </div>
 
